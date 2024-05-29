@@ -1,0 +1,259 @@
+This is a talk about metacognition.
+- Metacognition is all about learning about learning... or more broadly, thinking about thinking.
+
+I'm drawn to metacognition, which is probably what drew me to teaching.
+
+I love learning.
+But I also I really enjoy learning about learning.
+
+I really enjoy thinking about my own thinking process and the thinking processes of others.
+
+
+---
+
+Who has heard a word that describes that you didn't know had a name?
+
+Sometimes having a word for a concept can help us think about a concept more easily.
+
+TODO examples
+
+Why?
+
+A word or phrase can act as a shorthand to describe something bigger than itself.
+
+Our brains love shorthands.
+It makes things easier to remember and easier to reason about.
+
+TODO though it doesn't always make our reasoning more effective. All models are wrong, but some models are useful. (maybe later in the talk?)
+
+---
+
+I really enjoy chatting about Python oddities.
+
+When I say "oddity", I don't mean bug.
+I mean "something that might catch you by surprise, especially if you're new".
+
+More specifically, I think of a Python oddity as a bit of code that's surprising when the way you think about Python happens to differ from the way Python thinks about itself.
+In other words... when your mental model of Python is different from Python's mental model of itself then you've found a Python oddity.
+
+TODO a few example Python oddities
+
+---
+
+TODO Our brain forms mental models implicitly, but it's often helpful to make our mental models more explicit
+
+TODO for example... depending on how you use Python and what programming languages you've used before Python, you might not realize that you have a mental model of how variables and data structures work in Python.
+That mental model might not match up with Python's own model of itself.
+Or even if your mental model is pretty much right, your mental model may still be a bit fuzzy in some areas.
+Making it explicit can help shine a light on those areas, so you can flesh them out more thoroughly.
+
+---
+
+As I read and re-read books about effective and ineffective learning strategies, I often find myself feeling a bit of discomfort over a few competing thoughts:
+
+1. I want to learn how to teach more effectively
+2. Every time I teach, I want to teach as effectively as I know how
+3. It takes me a lot of time to change my teaching style
+
+Of course I want to learn how to do what I do better.
+Once I've learned how to be better, I then feel a strong urge to actually *be* better.
+But I can't just suddenly put it all into practice!
+
+I have trainings scheduled.
+I have tons and tons of existing curriculum that I've poured hundreds of hours of time into creating.
+I have a learning-oriented web app based around ideas that I now believe to be slightly flawed.
+
+I can either:
+
+1. Drop everything I'm doing and pour all of my energy into fixing the problem that until days ago I didn't even know was a problem
+2. Decide to ignore this new information, deny that there's a problem, and decide that everything is currently as good as could be
+
+As I learn new things, those often *feel* like the only two options I have.
+But there is (of course) an in-between
+
+3. Appreciate what I have and gradually work to make it better
+
+I sometimes find comfort in a quote by Hans Rosling from his book Factfulness:
+
+> "The world can be both bad and better. Better is not good enough. It is possible for things to be bad and better."
+
+This is true of some of the most pressing problems in the world and it's true of many parts of my own live.
+This is true of:
+
+1. Python skills: they're not as good as they could be, but they're better than they were
+2. Teaching skills: I'm a decent teacher, but I can see so much more that I need to improve on
+3. Writing skills: I write decently and definitely better than I used to write
+
+Okay, I kind of cheated with that list.
+Those are skills I have that are better than they were and they're pretty good.
+I think I'm at *least* a decent teacher and a pretty good Python programmer.
+
+These are things I'm actually not very good at, despite being on a mostly positive trajectory:
+
+1. Marketing skills
+2. ...
+
+---
+
+Some examples of how my teaching has changed:
+
+I used to make statements much more often when teaching, but now I try to phrase things as questions as much as possible.
+
+Why: the testing effect. It might work simply because our brains focus on things that surprise us. So if we guess incorrectly we've solidified that surprise. If you say your guess out loud you've made that eventual surprise even more real because you committed a bit more fully to an incorrect guess that your brain now wants to think about.
+
+I also have a habit of explaining a new topic with a bit of telling and a bit interactive questioning, guessing, and quizzing, followed by hands-on exercises.
+I eventually learned that this teaching style could be improved upon and it took me years to finally work toward this particular improvement and I *still* haven't fully embraced it.
+
+Why: When learning something new, instead of learning about it and then trying it out, I now try to have students try it out before we've talked about it at all.
+We attempt something brand new with the expectation that failure will likely happen.
+Then learn about what we were doing and then we do it again, with a slightly more challenging problem.
+I think of this as an expected failure, learning, trying again approach.
+It takes time for me to rearrange my curriculum toward small pieces of a topic that we can *fail at* before we dive in so I still haven't embraced this as much as I'd like.
+
+I also spent my first couple years while creating Python Morsels thinking in terms of forward motion.
+I would recommend an exercise, you'd attempt it, reflect on my solutions and find out new techniques and tools you didn't know about or you hadn't thought to use, and then you were done with the problem... never to see it again.
+That last bit of reflection was helpful, but it didn't stick nearly as effectively as it *could* have.
+
+That learning reflection contained useful information.
+But we don't learn by reading, right.
+It's not putting the information *in* that's most important.
+For the sake of memory, it's practicing *retrieval* that matters most.
+
+Revisiting the same exercise a few days later, a few weeks later, or a few months later would have allowed for the opportunity to practice *recall*.
+But that's not how Python Morsels was setup.
+Revisiting wasn't part of the plan.
+
+My students always wanted to move onto the next topic and I usually do too.
+That urge to move onto the next thing does us a disservice when it comes to effective learning.
+
+---
+
+I still wish I taught differently.
+
+I don't embrace interleaved practice as much as I'd like.
+Text books tend to teach one topic, and then another, and then another.
+Most curriculum works the same way.
+
+TODO more on that
+
+I also know that spaced repetition is incredibly effective... think of flash cards as an example.
+Short sessions of practicing active recall, spaced out over days and weeks.
+Very few learning systems embrace this learning technique and Python Morsels isn't currently one of them.
+
+It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
+It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
+Hopefully I'll improve, but it's never going to be as much as I'd like.
+
+---
+
+**Cognitive dissonance**
+
+- Cognitive dissonance is discomfort that occurs when we find that our brain contains conflicting beliefs, values, or attitudes.
+- Cognitive dissonance can be quite acute when you realize that your values and your actions are misaligned.
+
+Years ago, I organized a group called the San Diego Hacker News meetup.
+I originally joined the group years before I was the organizer.
+The original organizer moved to the Bay Area, and then the next one moved to the Bay Area, and then the next one did.
+So eventually I became the organizer.
+I was not going to move to the Bay Area.
+
+But at some point I stopped regularly reading Hacker News.
+Partly I didn't have the time and partly I felt that the comments on Hacker News were too often contentious.
+I found much of the discussions on Hacker News were overly aggressive and mostly unconstructive.
+
+**cesspool** (shown on the screen while talking about Hacker News comments)
+
+After months of running a meetup for an online space that I didn't care about anymore, I experienced enough cognitive dissonance to change my actions.
+I ended the group.
+
+Honestly, that was a pretty mild case of cognitive dissonance.
+I felt that didn't really want to support Hacker News, but I also didn't care that much.
+Mostly I found myself doing something I was no longer interested in.
+
+---
+
+Years later, I experienced much more acute cognitive dissonance.
+
+In 2020 I listened to some podcast interviews that started me down a path of questioning some of my actions and beliefs.
+
+I realized that had and still have a few related mental models in my head that are both incomplete and inconsistent.
+
+I love eating all the types of meat....
+
+
+Who has attempted to meditate before?
+Who has found meditating challenging because the thinking just keeps happening?
+
+Sometimes meditation teachers will say that you shouldn't try to stop thoughts from happening.
+Just let them happen.
+Observe the thought and acknowledge it and it will eventually be on its way.
+
+That's a little bit similar to the way I try to handle cognitive dissonance.
+One idea 
+
+- I have been experiencing cognitive dissonance 
+
+A bit of a warning: you may have a feeling of cognitive dissonance over3
+
+
+---
+
+Admit your failings to yourself.
+
+Admit your failings to others.
+
+It's especially hard when you haven't yet and may never move through a particular failing.
+
+Saying "I failed", "I learned from it", and "now I'm better for it" isn't so hard.
+In fact, it can feel empowering.
+
+Saying "I failed" and "I'm still failing"... that's hard.
+
+Our brains like to defend us.
+When we act inconsistently with our own values, we prefer not to think too hard about that fact.
+
+> That didn't happen.
+> Okay, but it wasn't bad.
+> Well, it wasn't *very* bad.
+> Besides, it wasn't my fault.
+> And if it was, that wasn't my intention.
+> And regardless, my actions were justified.
+
+- An adaptation of "The Narcissist's Prayer"
+
+---
+
+I'm a good person.
+I wouldn't do that because it would be wrong, which would mean *I'm* wrong.
+I wouldn't do that because it would be bad, which would mean *I'm* bad.
+
+---
+
+TODO I am speaking as a cisgender straight white man with pretty good self-esteem who doesn't currently suffer from depression.
+
+Our brains all have a limit at which we no longer are able to feel good about ourselves.
+
+--I did a bad thing, so I'm a bad person.--
+
+I'm a good person, so I don't do bad things... at least not *too* bad.
+
+I did enough bad things and they were bad enough, that I must be a bad person.
+
+---
+
+Admitting you were wrong with small things is important.
+
+---
+
+--I don't believe in free will.--
+
+Well... maybe.
+
+I know that I don't believe in a very strong form of free will.
+
+Was it someone's fault that they grew up an an environment that made it increasingly likely that they would be a certain way?
+
+Fault, ownership, responsibility... these are all social constructs.
+It's my understanding that we're all just that take actions because a number of things in the past caused the present to happen.
+
+But just because something is a social construct doesn't mean it's not real.
