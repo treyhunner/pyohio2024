@@ -1,0 +1,47 @@
+- Metacognition
+    - What's metacognition?
+    - I enjoy metacognition
+- Naming things
+    - Having a word for a concept can be very handy
+    - Linguistic determinism vs relativism
+- Mental models
+    - Python oddities
+    - Making implicit mental models explicit
+- Progress
+    - The world can be both bad and better
+    - How do you climb a mountain? One step at a time.
+    - Working on progress in my teaching curriculum
+- Cognitive dissonance
+    - This is the worst when your values and actions are misaligned
+    - Remedying cognitive disonnance
+        - **Deny the inconsistency** If you decide that there's not actually an inconsistency, then there's no experience of disonnance at all. "I don't understand".
+        - **Avoid the inconsistency**: If you can avoid situations that shine a lot on your disonnance, then the discomfort won't happen very often. "Out of sight, out of mind".
+        - **Change your beliefs** to be consistent with your behavior. "Do as I say, not as I do."??
+            - **Downplay**: conclude that the inconsistency isn't very significant.
+            - **Additional layers**: maintain your existing beliefs but adopt new ones that bridge the gap between your beliefs and your actions.
+            - ... TODO?
+        - **Change your behavior** to be consistent with your beliefs. Sometimes this is easy but the more stark the dissonance is, the more challenging the change usually is.
+    - Cognitive dissonance over my eating habits
+- Moral framework
+    - Deontology: each action is either right or wrong and we should try to perform only right actions.
+    - Consequentialism: actions should be judged based on their outcomes.
+        - Utilitariasism: The most ethical actions are the ones that produce the greatest good.
+    - Both of these moral frameworks have problems, but I'm *mostly* a consequentialist.
+    - I think outcomes are very important and most actions have a mix of positive and negative outcomes. I also think the heavy focus deontology has for focusing on the rightness and wrongness of an action based on rules can lead to an unhealthy focus on minimizing the bad actions.
+    - No world is free of bad actions.
+    - I'd rather focus on maximizing the good outcomes in the world rather than minimizing individual bad actions.
+- Focus on outcomes
+    - Stop focusing on your moral worth. Try to maximize the good in the world.
+    - Outcomes matter a lot more than intent
+    - Selfish versus selfless doesn't matter nearly as much as maximizing outcomes
+    - In 100 years, most likely no one will remember anything that any of us did... but we *can* leave the world a little bit better off in the process
+- Admin fault
+    - The unfortunate balance of ego:
+        - Inflated self-worth: I am good, so if I did something bad there was a good reason.
+        - Deflated self-worth: If I did a bad thing, that means I'm bad. I can't handle being bad.
+    - A focus on "self" is a slipper slope toward not being able to handle the fact that you made a mistake
+    - We all cause harm
+        - You did someting that caused harm. Maybe it was a "bad" thing or maybe a "good" thing that had some sort of negative outcome.
+        - Doing a "bad" thing or simply causing harm does not mean you're "bad".
+        - Your moral worth doesn't matter.
+

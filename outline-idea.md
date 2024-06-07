@@ -26,7 +26,7 @@ What might I no longer believe in the future that I do now?
 
 ---
 
-Who has heard a word that describes that you didn't know had a name?
+Who has heard a word that describes a concept that you didn't know had a name?
 
 Sometimes having a word for a concept can help us think about a concept more easily.
 
@@ -38,6 +38,18 @@ A word or phrase can act as a shorthand to describe something bigger than itself
 
 Our brains love shorthands.
 It makes things easier to remember and easier to reason about.
+
+---
+
+TODO linguistic determinism is false. Our language does not strongly determine our thoughts. In other words, (TODO is this right?) there exist categories of ideas that we can conceptualize even though we don't have words for them. Linguistic determinists believe that language we use can limit our thinking.
+
+TODO Linguistic relativity does exist though. (That's the weak version of Sapir-Worf)... that the language we use influences our perceptions. TODO mention examples involving color and other things.
+
+It's not just language that influences our perception though.
+When we convey information to others, the way we phrase our words affects the perception.
+We all know this.
+
+"The medium *is* the message."
 
 ---
 
@@ -55,10 +67,14 @@ TODO a few example Python oddities
 
 TODO Our brain forms mental models implicitly, but it's often helpful to make our mental models more explicit
 
-TODO for example... depending on how you use Python and what programming languages you've used before Python, you might not realize that you have a mental model of how variables and data structures work in Python.
-That mental model might not match up with Python's own model of itself.
-Or even if your mental model is pretty much right, your mental model may still be a bit fuzzy in some areas.
+For example... depending on how you use Python and what programming languages you've used before Python, you might not realize that you have a mental model of how variables and data structures work in Python.
+That mental model might not closely align with Python's own model of itself.
+Or even if your mental model is pretty much right, it may still be a bit fuzzy in some areas.
 Making it explicit can help shine a light on those areas, so you can flesh them out more thoroughly.
+
+Let's use Python's variables and objects as an example mental model.
+
+TODO put mental model about variables and objects after this?
 
 ---
 
@@ -86,6 +102,10 @@ But there is (of course) an in-between
 
 3. Appreciate what I have and gradually work to make it better
 
+I *could* try to both appreciate what I have so far *and* gradually improve what I have to make it closer to the idealized version of my curriculum that I imagine might one day exist.
+
+---
+
 I sometimes find comfort in a quote by Hans Rosling from his book Factfulness:
 
 > "The world can be both bad and better. Better is not good enough. It is possible for things to be bad and better."
@@ -98,13 +118,12 @@ This is true of:
 3. Writing skills: I write decently and definitely better than I used to write
 
 Okay, I kind of cheated with that list.
-Those are skills I have that are better than they were and they're pretty good.
-I think I'm at *least* a decent teacher and a pretty good Python programmer.
+I *am* getter better at those skills, but I'm also pretty decent at them already.
 
-These are things I'm actually not very good at, despite being on a mostly positive trajectory:
+These are things I'm *actually* not very good at, despite being on a mostly positive trajectory:
 
 1. Marketing skills
-2. ...
+2. ... TODO
 
 ---
 
@@ -406,3 +425,48 @@ TODO and who knows what else...
 
 TODO Do chairs exist?
 
+There is no objective experience of reality.
+
+Our brains are simply modeling the world.
+
+TODO a few quick facts on why/how this is the case...
+
+---
+
+Things you can improve:
+
+your mental model of the various social constructs around us:
+
+- Python
+- Economics: markets and incentives
+    - What are markets and competition good at?
+    - What are the downsides to markets?
+    - When/where do people's incentives align and where do they misalign?
+    - What are positive and negative externalities?
+- Politics
+    - What are the likely consequences of a new law?
+    - What are the likely consequences
+- Gender
+    - How do different societies perceive gender today?
+    - How has the role of gender changed throughout history?
+    - What purpose has gender served evolutionarily?
+    - What purpose does gender serve today?
+- Sexuality
+- Religion
+- Free will: including blame-worthiness, praise-worthiness and how much of a role luck plays in the specific outcomes over an individual's lifetime
+- Self: do individual humans exist?
+- Ontology: does anything exist?
+- Empathy
+    - TODO
+
+---
+
+Disclaimer:
+
+I am not:
+
+- A neurologist
+- A cognitive scientist
+- A psychologist
+- A philosopher
+- An economist
