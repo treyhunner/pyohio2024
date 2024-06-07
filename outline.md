@@ -11,6 +11,10 @@
     - The world can be both bad and better
     - How do you climb a mountain? One step at a time.
     - Working on progress in my teaching curriculum
+- You can ignore me if you want to
+    - This talk involves a lot of discussion about topics that I am not an expert in
+    - I *have* done quite of thinking about these topics, but that doesn't mean I know what I'm talking about
+    - Then again... how often do people actually know what they're talking about?
 - Cognitive dissonance
     - This is the worst when your values and actions are misaligned
     - Remedying cognitive disonnance
@@ -35,7 +39,7 @@
     - Outcomes matter a lot more than intent
     - Selfish versus selfless doesn't matter nearly as much as maximizing outcomes
     - In 100 years, most likely no one will remember anything that any of us did... but we *can* leave the world a little bit better off in the process
-- Admin fault
+- Admit fault
     - The unfortunate balance of ego:
         - Inflated self-worth: I am good, so if I did something bad there was a good reason.
         - Deflated self-worth: If I did a bad thing, that means I'm bad. I can't handle being bad.
@@ -44,4 +48,9 @@
         - You did someting that caused harm. Maybe it was a "bad" thing or maybe a "good" thing that had some sort of negative outcome.
         - Doing a "bad" thing or simply causing harm does not mean you're "bad".
         - Your moral worth doesn't matter.
-
+    - Apologizing is hard. It's a learned skill and it's not trivial.
+- Work toward improvement
+    - Improve your understanding of the world
+    - Improve your understanding of yourself
+    - Improve your understanding of others
+    - Try to improve the world
