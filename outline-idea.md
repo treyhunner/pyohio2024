@@ -10,6 +10,24 @@ But I also I really enjoy learning about learning.
 
 ---
 
+One of these faces is white and one is black.
+
+But they're actually both the same exact shade of gray.
+
+This illusion is due to the way our brain tries to correct for what it perceives as the quality of light within a given space.
+
+This mental model that our brain is making for us is very useful for some things but no so useful for others.
+
+https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html
+
+The left and rigth eyes are the same color in these two faces.
+
+https://www.psy.ritsumei.ac.jp/akitaoka/color25e.html
+
+Email akitaoka@lt.ritsumei.ac.jp to ask if I can use the images on those two pages in a talk to programmers on their brains and I'll include links to those pages.
+
+---
+
 I really enjoy thinking about thinking.
 I find in interesting to think about my own thinking process and the thinking processes of others.
 
@@ -23,6 +41,18 @@ Why do I believe something now that I didn't used to?
 TODO example?
 
 What might I no longer believe in the future that I do now?
+
+---
+
+Disclaimer: I don't know what I'm talking about
+
+I do often learn about learning for the sake of improving my teaching style, but most of my interest in metacognition is as a hobby.
+
+I'm mostly a...
+
+- learner
+- dabbler
+- hobbyist
 
 ---
 
@@ -75,6 +105,24 @@ Making it explicit can help shine a light on those areas, so you can flesh them 
 Let's use Python's variables and objects as an example mental model.
 
 TODO put mental model about variables and objects after this?
+
+---
+
+A mental model of the world that depends on humans having a considerable amount of free will.
+
+Is that accurate though?
+
+And does it matter?
+
+I think it does.
+
+If every action we take is entirely taken thanks to free will, then every success or mistake that an individual makes is theirs alone. "You get what you deserve."
+
+If instead, our genetics, our childhood environment, and countless other factors shape our actions then that ownership doesn't as much sense anymore. "TODO?"
+
+Extending grace (?) to those around us can be helpful.
+Then again, you shouldn't let unchecked harm run amok.
+Rules, laws, and codes of conduct exist for the purpose of harm reduction and good feeling maximizing (???)
 
 ---
 
@@ -201,6 +249,24 @@ I ended the group.
 Honestly, that was a pretty mild case of cognitive dissonance.
 I felt that didn't really want to support Hacker News, but I also didn't care that much.
 Mostly I found myself doing something I was no longer interested in.
+
+---
+
+Examples in Python, programming, etc.?
+
+- Code of conduct violation: what I'm being accused of is a bad thing, but I'm a good person.
+- I stopped running the Hacker News meetup because it felt inconsistent with my beliefs about it
+- I believe software maintainability is important and I also think clever and succinct coding solutions are better than less clever and verbose ones. I reconcile these two beliefs by also thinking that we should focus on hiring software developers who are "smart" enough to understand the clever solutions.
+- Code maintainability is paramount. And yet we cut corners when writing tests.
+- "Diverse teams are more effective". You just recommended your company hire your friend who has a very similar background to you.
+
+Nothing in black and white. There's always a trade-off. Sometimes it's a pretty trade-off, but often it's *not* so obvious... at least not at first.
+
+
+As humans, we tend to get very wrapped up in our sense of self.
+Our egos are a big part of how we experience existence.
+
+Making a conscious effort to think about and talk through your own actions as if you were another person can be really helpful for temporarily suspending our egos.
 
 ---
 
@@ -470,3 +536,17 @@ I am not:
 - A psychologist
 - A philosopher
 - An economist
+
+
+---
+
+Code of Conduct work group relations:
+
+- I didn't intend that
+- I did say/do that, but look at what they said/did
+
+Text communication is a low bandwidth medium. It's often challenging to convey our intended meaning and to understand someone's intended meaning through written words than it is by sitting face-to-face.
+
+I can't say this for sure, but I suspect that many issues that are presented to code of conduct teams wouldn't be CoC issues if at least some of the parties involved put in the effort to sincerely understand and appreciate the harm that was caused and attempt to make ammends.
+
+You don't really need to believe in free will or the ownership of one's actions to sincerely apologize. Acknowledging harm, expressing empathy, and signaling a desire to change your future actions for the better all fit pretty nicely into a world little to no free will.
