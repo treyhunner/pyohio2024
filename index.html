@@ -59,6 +59,14 @@
 
       <section>
 
+        <section data-background-color="#d28952" data-background-image="recursion4.webp">
+          <!-- TODO better recursive image here? -->
+          <aside class="notes" data-markdown>
+            - This talk is on a particular form of recursion
+            - This talk is about...
+          </aside>
+        </section>
+
         <section>
           <h1>Metacognition</h1>
           <h3 class="fragment" style="margin-top: 1em;" data-fragment-index=1>
@@ -70,47 +78,30 @@
             Thinking About Thinking
           </h3>
           <aside class="notes" data-markdown>
-            - This is a talk about metacognition
-            - Metacognition is all about learning about learning
-            - Or more broadly, thinking about thinking
-          </aside>
-        </section>
-
-        <section>
-          <h2>TODO recursive image here</h2>
-          <aside class="notes" data-markdown>
+            - metacognition
+            - Which is all about learning about learning
+            - Or more broadly... thinking about thinking
             - Why do we have the beliefs that we have?
-            - Why do I believe something now that I didn't used to? (TODO example?)
-            - What might I no longer believe in the future?
-            - I thinking about thinking very interesting
-            - But it can also be a bit alarming
+            - Why do I have different political beliefs now than I used to?
+            - How might I think differently in the future?
+            - Thinking about thinking can be *really* interesting
           </aside>
         </section>
 
         <section>
-          <h2>Python Teacher</h2>
-          <h2>Former PSF CoC WG Member</h2>
+          <h2>Where I'm coming from</h2>
+          <p class="fragment">I am a metacognition <strong>learner</strong><span class="fragment">, a <strong>dabbler</strong></span><span class="fragment">, and a <strong>hobbyist</strong></span></p>
+          <h4 class="fragment">Python Teacher</h4>
+          <h4 class="fragment">Former PSF CoC WG Member</h4>
           <aside class="notes" data-markdown>
-            - I'm interested in metacognition partly because it's related to what I do and related to what I've done
-            - I teach Python, which means thinking about thinking is useful for me
-            - But I was also one of the founding members of the Python Software Foundation's Code of Conduct work group...
-            - And one of the benefits of being in that work group is that you get to be an observer of human behavior
-          </aside>
-        </section>
-
-        <section>
-          <h2>Disclaimer</h2>
-          TODO add transitions to the paragraph
-          <p>I am a metacognition learner, a dabler, and a hobbyist.</p>
-          <p>I don't know what I'm talking about</p>
-          <aside class="notes" data-markdown>
-            - I should probably note at this point that...
+            - TODO need a better transition here?
             - When it comes to metacognition, I am
               - a learner
               - a dabbler
               - and a hobbyist
-              - I *have* done quite of thinking about these topics, but that doesn't mean I know what I'm talking about
-              - So consider yourself warned
+            - I listen to a *lot* of audiobooks and podcasts related to metacognition
+            - I also teach, which means thinking about thinking is important for for the sake of my learners
+            - And I volunteered on the Python Software Foundations Code of Conduct work group for 5 years, which means I've be observed quite a bit of human behavior... particularly related to communication
           </aside>
         </section>
 
@@ -118,10 +109,16 @@
       <section>
 
         <section>
-          <h2>TODO show an image of something that has a name</h2>
+          <h2 class="fragment">Imposter Syndrome</h2>
+          <br>
+          <h2 class="fragment">Flow State</h2>
+          <br>
+          <h2 class="fragment">Confirmation Bias</h2>
           <aside class="notes" data-markdown>
-            - Who knows what this is? (Shout it out)
-            - This is TODO what is it??
+            - Who has experienced imposter syndrome?
+            - Who has experienced a flow state while working?
+            - Who has experienced confirmation bias?
+            - Those of you who raised your hands knew all these by their names
           </aside>
         </section>
 
@@ -129,18 +126,8 @@
           <h1>Naming Things</h1>
           <aside class="notes" data-markdown>
             - If something is important, it deserves a name
-            - TODO real world example on why naming things is handy outside of code? maybe for learning's sake?
-          </aside>
-        </section>
-
-        <section>
-          <h2>TODO recursive image here</h2>
-          <aside class="notes" data-markdown>
-            - Why do we have the beliefs that we have?
-            - Why do I believe something now that I didn't used to? (TODO example?)
-            - What might I no longer believe in the future?
-            - I thinking about thinking very interesting
-            - But it can also be a bit alarming
+            - Having a name for something allows us to talk about it more easily...
+            - but it also allows us to *think* about it about it more easily
           </aside>
         </section>
 
@@ -152,6 +139,7 @@
             - But it's not just our language that shapes our perception of the world
             - The package that our words come in *also* shapes our perceptions
             - TODO example?
+            - TODO more... make a point in this section
           </aside>
         </section>
 
@@ -159,7 +147,45 @@
       <section>
 
         <section>
-          <h2>Mental Models</h2>
+          <!-- TODO make font size of code bigger -->
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+>>> x = []
+>>> <span class="fragment">x.append(x)
+>>> </span><span class="fragment">x</span><span class="fragment">
+[[...]]</span>
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - TODO
+          </aside>
+        </section>
+
+        <section>
+          <img src="ouroboros.png" style="height: 600px; border: 0; box-shadow: none;">
+          <!-- TODO better recursive image here? -->
+          <aside class="notes" data-markdown>
+            - This talk is on a particular form of recursion
+            - This talk is about...
+          </aside>
+        </section>
+
+        <section>
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+>>> numbers = [1, 2, 3]
+>>> <span class="fragment">def set_numbers(new_numbers):
+...     print("before:", numbers)
+...     numbers += new_numbers
+...     print("after:", numbers)
+...</span><span class="fragment">
+>>> set_numbers([4, 5, 6])
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    set_numbers([4, 5, 6])
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "<python-input-1>", line 2, in set_numbers
+    print("before:", numbers)
+                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'numbers' where it is not associated with a value</span>
+          </code></pre>
           <aside class="notes" data-markdown>
             - TODO
           </aside>
@@ -172,27 +198,169 @@
           </aside>
         </section>
 
-      </section>
-      <section>
-
         <section>
-          <h2>Improvement</h2>
+          <h1>Mental Models</h1>
           <aside class="notes" data-markdown>
-            - Every once in a while, I think about how I might improve the ways that I teach my students
-            - There is *always* some way that I could be teaching better than I am
-            - So I read books about teaching
+            - Every concept in our head has some sort of mental models attached to it
+            - Our brain forms mental models implicitly
+            - But it's often helpful to make our model models more explicit
+            - This can help us discover where our models of the world break down and where they don't
+            - We just saw a Python oddity that tested our mental models of Python's variables and data structures
           </aside>
         </section>
 
         <section>
-          <h2>TODO show some books</h2>
+          <h1>Mental Model 1: Buckets Containing Objects</h1>
           <aside class="notes" data-markdown>
-            - Among other books, I've read Make it Stick
-            - How we Learn
-            - Learn Better
-            - Learn Like a Pro
-            - Learning about a way to improve my abilities is exciting but it's also nerve-wracking
-            - Right after I've learned about a way I could improve, I feel a strong urge to immediately improve
+            - We could try to mentally model Python's variables and data structures as buckets that contain objects
+            - TODO show second = first and append to first
+            - TODO show diagram of two separate buckets
+            - If we assign a variable to an empty list, that variable contains that list
+            - Then when we assign another variable to the first one, the list is copied into a new bucket
+            - Which is why when we change the first list, the second list doesn't change...
+            - ... Except it *does* change!
+            - That mental model isn't going to work
+            - Let's try another one...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Mental Model 2: Sticky Notes on Objects</h1>
+          <aside class="notes" data-markdown>
+            - Let's mentally model variables as sticky notes on objects
+            - When we assign a variable to an empty list, we attach that variable name to the object
+            - Then when we assign another variable to the first one, we simply attach *another name* to the same object
+            - So when we change that first list, the second one would change also... because it's all just one list
+            - TODO show second = first and append to first
+            - TODO show diagram of two separate buckets
+            - If we assign a variable to an empty list, that variable contains that list
+            - If we set `a` to an empty list, then set `b` to a`, and append to `b`, `a` changes also
+            - This mental model works pretty well!
+            - TODO another slide...
+            - But what if we put that list inside another list?
+            - Do we add a sticky note that says which list it's in and which index it's at?
+            - What if we point another variable to the outer list? Do we need to add *another* sticky note on the object?
+            - This is getting complicated
+            - Let's give up on this mental model and try a third one...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Mental Model 3: Pointers or "References"</h1>
+          <aside class="notes" data-markdown>
+            - Let's mentally model variables and data structures as references or pointers
+            - When we assign a variable to an empty list, we *point* that variable to the object
+            - Then when we assign another variable to the first one, we point the second variable to the same object
+            - If we put our list inside another list, we simply point one of the indexes in that new list to *our* list
+            - TODO show second = first and append to first
+            - TODO show diagram of two separate buckets
+            - This mental model is a bit more complex than the sticky note model, but it stretches a bit further
+            - The indirection between variables and objects is tricky, but it makes it easier to understand how data structures work
+            - I'd argue that this mental model is the closest one to how Python actually models variables and objects
+            - But keep in mind that *every* mental model has its limits
+          </aside>
+        </section>
+
+        <section>
+          <blockquote>
+            “All <span class="fragment bold" data-fragment-index=1>models</span> are wrong,<br>but some <span class="fragment bold" data-fragment-index=1>models</span> are useful.”
+            <nobr>&mdash; George E. P. Box</nobr>
+          </blockquote>
+          <aside class="notes" data-markdown>
+            - Mental models are *wonderful* for anchoring your understanding of some small piece of the world within a metaphor.
+            - But mental model is just that... a *model*
+            - All models have their boundaries
+            - TODO maybe talk about real-world example of our brains being models and then loop back to Python and note identity of numbers and strings and such?
+          </aside>
+        </section>
+
+        <section data-background-color="#fff" data-transition="fade-in none-out">
+          <a href="https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html" target="_blank"><img src="marie-white-black.png" style="width: 1000px; margin: 0; border: 0; box-shadow: none;"></a>
+          <p>&copy; 2024 Akiyoshi Kitaoka, used with permission</p>
+          <p><small><a href="https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html" target="_blank">https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html</a></small></p>
+          <aside class="notes" data-markdown>
+            - One of these faces is white and one is black
+            - One has a dark background and one has a light background
+            - But there's a problem... **(click)**
+          </aside>
+        </section>
+
+        <section data-background-color="#fff" data-transition="none">
+          <video width="1200" data-autoplay style="width: 1000px; margin: 0; margin-top: 0.5px; margin-right: 1px;" disablePictureInPicture>
+            <source src="marie-white-black.mp4" type="video/mp4">
+          </video>
+          <p class="fragment" style="background-color: #7c7c7c; font-family: monospace; color: #fff">#7c7c7c</p>
+          <p><small><a href="https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html" target="_blank">https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html</a></small></p>
+          <aside class="notes" data-markdown>
+            - These faces are actually the same color
+            - Both faces use the RGB color #7c7c7c **(click)**
+            - that's a shade of gray that's pretty right in between white and black
+            - This optical illusion relies on a mental model that our brain uses automatically
+            - Our brain is trying to correct for what it perceives as a difference in the quality of light around these two faces
+            - This mental model is very useful most of the time but it confuses us when in cases like this one
+          </aside>
+        </section>
+
+        <section>
+          <blockquote class="fragment">
+            “All models are wrong,<br>but some models are useful.”
+            <nobr>&mdash; George E. P. Box</nobr>
+          </blockquote>
+          <blockquote class="fragment">
+            “Each model is more useful for some purposes than others”
+            <nobr>&mdash; me</nobr>
+          </blockquote>
+          <aside class="notes" data-markdown>
+            - We don't directly experience reality
+            - Everything that goes on inside our heads is a model of some part of our world
+            - **(click)** And there are often multiple useful models of the same thing
+            - Accept that your models are flawed
+            - But also acknowledge that incomplete models can *still* be useful **(click)**
+            - Our models of the world are always a work-in-progress
+            - When a more useful model comes along, we should try it out
+          </aside>
+        </section>
+
+        <section data-background-color="#fff" data-transition="fade">
+          <div style="box-shadow: none;">
+            If it <em>looks</em> like a duck,<br>
+            <em>quacks</em> like a duck,<br>
+            and <em>swims</em> like a duck,<br>
+            <span class="fragment">then it's <strong>not a duck</strong> &#8230;<br></span>
+            <span class="fragment">but it is <strong>arranged duck-wise</strong>.</span><br>
+            <span class="fragment"><nobr>&mdash; Michael Stevens of VSauce</nobr><br>
+              in “<a href="">Do Chairs Exist</a>”</span>
+          </div>
+          <aside class="notes" data-markdown>
+            - TODO
+          </aside>
+        </section>
+
+      </section>
+      <section>
+
+        <section>
+          <h1>Iterate</h1>
+          <!-- TODO show some image here instead? -->
+          <aside class="notes" data-markdown>
+            - Every once in a while, I think about how I might improve the ways that I teach my students
+            - There is *always* some way that I could be teaching better than I am
+            - So...
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: grid; grid-template-columns: 25% 25% 25% 25%;">
+          <img src="make it stick.jpg" class="no-style">
+          <img src="learn like a pro.jpg" class="no-style">
+          <img src="learn better.jpg" class="no-style">
+          <img src="how we learn.jpg" class="no-style">
+          </div>
+          <aside class="notes" data-markdown>
+            - I read books about teaching
+            - Learning about a way to improve my abilities is exciting...
+            - but it's also nerve-wracking
+            - Right after learning about a way that I could improve, I feel a strong urge to immediately improve
           </aside>
         </section>
 
@@ -215,10 +383,53 @@
         </section>
 
         <section>
-          <blockquote>
-            “The world can be both bad and better.”
-            <nobr>&mdash; Hans Rosling</nobr>
-          </blockquote>
+          <div>
+            <blockquote style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
+              “The world can be both bad and better.”
+            </blockquote>
+            <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
+          </div>
+          <aside class="notes" data-markdown>
+            - In the book Factfulness, Hans Rosling notes that the world can be both *bad* and *better* at the same time
+            - This is true of some of the most pressing problems in the world and it's true of many of my problems as well
+          </aside>
+        </section>
+
+        <section>
+          <div style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
+              I may not be where I imagine, but I'm making progress.
+          </div>
+          <aside class="notes" data-markdown>
+            - Progress is often gradual
+            - TODO
+          </aside>
+        </section>
+
+      </section>
+      <section>
+
+        <section>
+          <h1>Imagine You're Not You</h1>
+          <aside class="notes" data-markdown>
+            - TODO example of an individual in tech owning harm they caused?
+          </aside>
+        </section>
+
+        <section>
+          <h2>Admitting you don't know</h2>
+          <h2>Admitting you've failed</h2>
+          <h2>Admitting you were wrong</h2>
+          <h2>Admitting you caused harm</h2>
+          <h2>Admitting you are causing harm</h2>
+          <aside class="notes" data-markdown>
+            - TODO
+          </aside>
+        </section>
+
+        <section>
+          <h2>First Person is Typical</h2>
+          <h2>Third-Person is "Objective"</h2>
+          <h2>Second-Person feels Scary</h2>
           <aside class="notes" data-markdown>
             - TODO
           </aside>
@@ -228,22 +439,7 @@
       <section>
 
         <section>
-          <h2>Admitting you've failed</h2>
-          <h2>Admitting you don't know</h2>
-          <h2>Admitting you were wrong</h2>
-          <h2>Admitting you caused harm</h2>
-          <h2>Admitting you are causing harm</h2>
-          <aside class="notes" data-markdown>
-            - Every once in a while, I think about how I might improve the ways that I teach my students
-            - There is *always* some way that I could be teaching better than I am
-            - So I read books about teaching
-          </aside>
-        </section>
-
-        <section>
-          <h2>First Person is Typical</h2>
-          <h2>Third-Person is "Objective"</h2>
-          <h2>Second-Person feels Scary</h2>
+          <h2>Cognitive Dissonance</h2>
           <aside class="notes" data-markdown>
             - TODO
           </aside>
