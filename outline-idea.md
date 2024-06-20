@@ -489,6 +489,25 @@ TODO and who knows what else...
 
 ---
 
+Accept that your mental models are flawed
+
+Whether you're modeling Python, political philosophy, economics, or what I'm thinking rigtht now... your model is incorrect.
+
+But that doesn't mean it's *extremely* useful.
+
+Everything is is a flawed model, but hopefully it's (on average) *useful*.
+
+---
+
+Your models of the world are always a work-in-progress. Accept that and embrace it.
+
+When a more useful model comes along, try it on.
+
+Then play catch up.
+You need to change your mind before you change your actions.
+
+---
+
 TODO Do chairs exist?
 
 There is no objective experience of reality.
@@ -550,3 +569,30 @@ Text communication is a low bandwidth medium. It's often challenging to convey o
 I can't say this for sure, but I suspect that many issues that are presented to code of conduct teams wouldn't be CoC issues if at least some of the parties involved put in the effort to sincerely understand and appreciate the harm that was caused and attempt to make ammends.
 
 You don't really need to believe in free will or the ownership of one's actions to sincerely apologize. Acknowledging harm, expressing empathy, and signaling a desire to change your future actions for the better all fit pretty nicely into a world little to no free will.
+
+---
+
+300 years from now, which of my actions will look absurd?
+
+Which of my actions will look immoral or naive?
+
+---
+
+We mostly experience the world from a first-person perspective.
+
+Attempting to seek out or model a third-person perspective can be very helpful when seeking a resolution to a conflict.
+
+Taking on a second-person perspective is the hardest, that is thinking from the perspective of the person you're directly interacting with. Empathy.
+
+---
+
+So in summary:
+
+- Admit that you have a human brain
+- Give your beliefs names and shapes
+    - Naming things: give important ideas names
+    - Mental models: make your mental models explicit
+- Iterate, accepting discomfort
+- Note opportunities for improvement
+
+- Hold your identity lightly? - Julia Galef
