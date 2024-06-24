@@ -1,61 +1,3 @@
----
-
-Let's talk about metacognition.
-- Metacognition is all about learning about learning... or more broadly, thinking about thinking.
-
-I'm drawn to metacognition, which is probably what drew me to teaching.
-
-I love learning.
-But I also I really enjoy learning about learning.
-
----
-
-One of these faces is white and one is black.
-
-But they're actually both the same exact shade of gray.
-
-This illusion is due to the way our brain tries to correct for what it perceives as the quality of light within a given space.
-
-This mental model that our brain is making for us is very useful for some things but no so useful for others.
-
-https://www.psy.ritsumei.ac.jp/akitaoka/saishin72e.html
-
-The left and rigth eyes are the same color in these two faces.
-
-https://www.psy.ritsumei.ac.jp/akitaoka/color25e.html
-
-Email akitaoka@lt.ritsumei.ac.jp to ask if I can use the images on those two pages in a talk to programmers on their brains and I'll include links to those pages.
-
----
-
-I really enjoy thinking about thinking.
-I find in interesting to think about my own thinking process and the thinking processes of others.
-
-[Some sort of recursive image]
-
-Why do you think the way you do?
-
-Why do we have the beliefs that we have?
-
-Why do I believe something now that I didn't used to?
-TODO example?
-
-What might I no longer believe in the future that I do now?
-
----
-
-Disclaimer: I don't know what I'm talking about
-
-I do often learn about learning for the sake of improving my teaching style, but most of my interest in metacognition is as a hobby.
-
-I'm mostly a...
-
-- learner
-- dabbler
-- hobbyist
-
----
-
 Who has heard a word that describes a concept that you didn't know had a name?
 
 Sometimes having a word for a concept can help us think about a concept more easily.
@@ -293,7 +235,6 @@ One idea
 
 A bit of a warning: you may have a feeling of cognitive dissonance over3
 
-
 ---
 
 Admit your failings to yourself.
@@ -343,22 +284,6 @@ Admitting you were wrong with small things is important.
 
 ---
 
---I don't believe in free will.--
-
-Well... maybe.
-
-I know that I don't believe in a very strong form of free will.
-
-Was it someone's fault that they grew up an an environment that made it increasingly likely that they would be a certain way?
-
-Fault, ownership, responsibility... these are all social constructs.
-It's my understanding that we're all just that take actions because a number of things in the past caused the present to happen.
-
-But just because something is a social construct doesn't mean it's not real.
-
-
----
-
 This slide is deliberately blank because I don't want to put shine a light on any one person or event in particular...
 
 When harm happens, 
@@ -370,132 +295,6 @@ Express Remorse: Sincerely express regret for the harm caused.
 Make Amends: Take concrete steps to make things right, as best you can.
 Commit to Do Better: Demonstrate a commitment avoid repeating the same mistake in the future.
 Seek Forgiveness: Request forgiveness, understanding that forgiveness may take a long time or never come.
-
----
-
-(Maybe I open with this as a sort of cold open?)
-
-I'm about to lie to you.
-
-- In Python...
-
----
-
-Variables act like buckets that contain.
-
-[image of bucket]
-
-When we assign a variable to a list, it contains that list.
-
-When we assign another variable to that first one, the list is copied into a new bucket.
-
-Which is why when we change the first list, the second list doesn't change.
-
-Except that's all wrong.
-That second list *did* change.
-
-Something's gone wrong.
-
-This **mental model** of Python's variables and objects is wrong.
-
----
-
-Let's try another mental model...
-
-Variables are like sticky notes.
-
-[image of post-in note]
-
-When we assign a variable to a list, we put a sticky note on that list which notes to the variable name we've used.
-
-When we assign another variable to the first one, we place *another* sticky note on the same list object.
-
-This mental model is a *lot* better.
-
-But it doesn't seem *quite* right to me.
-
-This list has objects *inside* it which can also be referenced, not currently by variable names, but by list indexes.
-So maybe we should place a sticky note on each of those objects that includes the name of the list and the index we're storing that object at.
-
-This **mental model** of Python's variables and objects is a lot better... but it does have its limits.
-
----
-
-Let's make a list-of-lists.
-
-TODO show lists
-
-What does this look like in our model of sticky notes placed on objects?
-
-Well, we have our outer list which has a sticky note which contains its variable name.
-Then we have the 3 inner list objects which each have a sticky note that contains the name of that outer list and the index within that list.
-And we have the 6 strings inside those inner lists that each have a sticky note on them which notes the name of the outer list, the outer index, and their inner index.
-
-What would it look like if we pointed a new variable to the same list as our old variable?
-
-Do all of these objects need an additional sticky on them to note on them to note the new name for the outer list?
-
-That doesn't seem quite right.
-
----
-
-Let's try one more mental model...
-
-Objects are stored in object land and each object has a numeric ID that describes where it lives in object land.
-The ID of an object never changes.
-
-Variables are stored in variable land and every variable stores the ID of the object that it currently points to.
-That ID can change through assignment statements and multiple variables can point to the same object ID.
-
-List indexes store the IDs of objects, not the objects themselves.
-Attributes on modules, classes, and all other objects store object IDs.
-Anywhere that an object seems to *contain* another object, instead that object simply contains an ID that points to where an object lives.
-
-[Show arrows pointing between variable land and object land and object land back to itself]
-
-This mental model of Python's variables is a bit more complex than the sticky note model, but it stretches a bit further.
-
-It's arguably a bit closer to how Python *actually* models variables and objects itself.
-
----
-
-I took a computational statistics class in college and found it extremely difficult.
-The two things I remember from that class are the phrase "Markov chain" and the this quote that was written on chalk board one day:
-
-**Markov Chains?**
-
-> All models are wrong, but some models are useful. -- George E. P. Box
-
-Mental models are wonderful for anchoring your understanding of some small piece of the world within a metaphor.
-But not every mental models will improve our ability to reason about the world.
-
-TODO more...?
-
----
-
-> All models are wrong, but some models are useful. -- George E. P. Box
-
-We could extend this quote in various ways:
-
-> Some useful models are more useful than other useful models.
-
-> Some models are more useful than another for some purposes bet less useful for other purposes.
-
-(Quantum and Newtonian physics?)
-
-> Some models are less complete but simpler and to work with because edge cases are rare.
-
-TODO and who knows what else...
-
----
-
-Accept that your mental models are flawed
-
-Whether you're modeling Python, political philosophy, economics, or what I'm thinking rigtht now... your model is incorrect.
-
-But that doesn't mean it's *extremely* useful.
-
-Everything is is a flawed model, but hopefully it's (on average) *useful*.
 
 ---
 
@@ -546,32 +345,6 @@ your mental model of the various social constructs around us:
 
 ---
 
-Disclaimer:
-
-I am not:
-
-- A neurologist
-- A cognitive scientist
-- A psychologist
-- A philosopher
-- An economist
-
-
----
-
-Code of Conduct work group relations:
-
-- I didn't intend that
-- I did say/do that, but look at what they said/did
-
-Text communication is a low bandwidth medium. It's often challenging to convey our intended meaning and to understand someone's intended meaning through written words than it is by sitting face-to-face.
-
-I can't say this for sure, but I suspect that many issues that are presented to code of conduct teams wouldn't be CoC issues if at least some of the parties involved put in the effort to sincerely understand and appreciate the harm that was caused and attempt to make ammends.
-
-You don't really need to believe in free will or the ownership of one's actions to sincerely apologize. Acknowledging harm, expressing empathy, and signaling a desire to change your future actions for the better all fit pretty nicely into a world little to no free will.
-
----
-
 300 years from now, which of my actions will look absurd?
 
 Which of my actions will look immoral or naive?
@@ -593,6 +366,9 @@ So in summary:
     - Naming things: give important ideas names
     - Mental models: make your mental models explicit
 - Iterate, accepting discomfort
+- Think outside yourself
+    - Modeling your thinking 
+    - There are levels to this
 - Note opportunities for improvement
 
 - Hold your identity lightly? - Julia Galef
