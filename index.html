@@ -33,25 +33,63 @@
           <small><a href="https://treyhunner.com/" rel="author">Trey Hunner</a> / <a href="https://twitter.com/treyhunner">@treyhunner</a></small>
           </p>
           <aside class="notes" data-markdown>
-            - My name is Trey
-            - And I help developers level-up their Python skills
+            - Our brains are amazing
+            - But they're far from perfect
           </aside>
         </section>
 
         <section>
-          TODO remove this slide and introduce myself during?
-          <div class="aboutme-card fragment">
-            <a href="http://pythonmorsels.com"><img src="vertical-morsels-logo.svg" class="no-style aboutme-logos" alt="Python Morsels"></a>
-          </div>
-          <div class="aboutme-card fragment">
-            <a href="http://truthful.technology"><img src="vertical-training-logo.svg" class="no-style aboutme-logos" alt="Truthful Technology"></a>
-          </div>
+          <a href="http://pythonmorsels.com" class="fragment"><img src="vertical-morsels-logo.svg" class="no-style" style="height: 600px;"></a>
           <aside class="notes" data-markdown>
-            - I run Python Morsels **(click)**, which is a weekly exercise service that helps developers deepen their Python skills in ways that day-to-day coding doesn't
-            - I also run a training company, Truthful Technology **(click)**, which gives the me opportunity to help ye clients level-up their team's Python skills through hands-on training sessions
-            - I'm going to be talking about some of the things I've learned while teaching Python to teams
-            - I'll also be drawing on my experience organizing meetups and coaching at volunteer-run Python and Django workshops over the years
-            - **Disclaimer**: I don't have a background in teaching teachers, *but* I have learned a few things over the years about teaching, coaching, and mentoring that I feel qualified enough to share...
+            - First: I run a service called Python Morsels that help folks deeper their Python skills and **(click)** I have stickers that look like this
+            - Ask me for a sticker after my talk if you want one
+            - Second... a disclaimer:
+            - This is a very rough version of what *will* be a 45 minute keynote that I'm giving at a conference about a month from today
+            - I decided that the best way to trick myself into *not* procrastinating on this talk was to commit to giving it a month before I needed it to exist
+            - Spoilers: I still procrastinated and, as you will see, this talk is not yet done.
+          </aside>
+        </section>
+
+        <section data-transition="none">
+          <pre class="python" style="width: 40%;"><code data-trim data-noescape>
+>>> x = []
+>>> <span class="fragment">x.append(x)
+>>> </span><span class="fragment">x</span><span class="fragment">
+[[...]]</span><span style="opacity: 0;">
+>>> x in x
+True
+>>> x[0] is x
+True</span>
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - Let's say we have an empty Python list, called `x`
+            - **(click)** What do you think this might do?
+            - `x.append(x)`
+            - What's your guess?
+            - ...
+            - **(click)** Is `x` an empty list?
+            - A list with an empty list inside it?
+            - Something else?
+            - It turns out **(click)**... it's a list that contains itself...
+          </aside>
+        </section>
+
+        <section data-background-image="ouroboros-background.png" data-transition="none">
+          <pre class="python" style="width: 40%;"><code data-trim data-noescape>
+>>> x = []
+>>> x.append(x)
+>>> x
+[[...]]
+<span class="fragment">>>> x in x
+True</span>
+<span class="fragment">>>> x[0] is x
+True</span>
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - ...Because that's possible in Python
+            - **(click)** a list can *contain* itself
+            - Well... sort of **(click)**
+            - A list can at least contain a *reference* to itself
           </aside>
         </section>
 
@@ -59,15 +97,28 @@
 
       <section>
 
-        <section data-background-color="#d28952" data-background-image="recursion4.webp">
-          <!-- TODO better recursive image here? -->
+        <section data-background-color="#d28952" data-background-image="recursion4.webp" data-transition="fade">
+          <!--
+          <h1
+              class="r-fit-text"
+              style="color: white;
+                     text-shadow:
+                     0 0 3px rgba(0, 0, 0, 0.7),
+                     0 0 5px rgba(0, 0, 0, 0.6),
+                     0 0 10px rgba(0, 0, 0, 0.4),
+                     0 0 15px rgba(0, 0, 0, 0.3),
+                     0 0 30px rgba(0, 0, 0, 0.2);
+                     font-size: 4em;
+              "
+          >Metacognition</span></h1>
+          -->
           <aside class="notes" data-markdown>
-            - This talk is on a particular form of recursion
-            - This talk is about...
+            - I'd like to talk about a specific form of recursion
+            - Metacognition
           </aside>
         </section>
 
-        <section>
+        <section data-transition="none">
           <h1>Metacognition</h1>
           <h3 class="fragment" style="margin-top: 1em;" data-fragment-index=1>
             <span class="fragment fade-out" data-fragment-index=2>
@@ -75,33 +126,58 @@
             </span>
           </h3>
           <h3 class="fragment" data-fragment-index=2>
-            Thinking About Thinking
+              Thinking About Thinking
           </h3>
+          <p style="visibility: hidden;">Blank</p>
           <aside class="notes" data-markdown>
-            - metacognition
-            - Which is all about learning about learning
-            - Or more broadly... thinking about thinking
-            - Why do we have the beliefs that we have?
-            - Why do I have different political beliefs now than I used to?
-            - How might I think differently in the future?
-            - Thinking about thinking can be *really* interesting
+            - Metacognition
+            - is either **(click)** learning about learning
+            - Or... **(click)** thinking about thinking
+            - When it comes to metacognition...
+          </aside>
+        </section>
+
+        <section data-transition="none">
+          <h1>Metacognition</h2>
+          <p class="fragment">I am a <strong>learner</strong><span class="fragment">, a <strong>dabbler</strong></span><span class="fragment">, and a <strong>hobbyist</strong></span></p>
+          <p class="fragment">Python teacher<span class="fragment"> and PSF CoC WG alumnus</span></p>
+          <p class="fragment">Thinking about
+          <strong>teaching</strong>,
+          <strong>learning</strong></span><span class="fragment">,<br>
+            <strong>language</strong><span class="fragment">,
+            <strong>intent</strong></span><span class="fragment">,
+            and <strong>perspectives</strong></span>
+          </p>
+          <aside class="notes" data-markdown>
+            - I am...
+              - **(click)** a learner
+              - **(click)** a dabbler
+              - **(click)** and a hobbyist
+            - I listen to a *lot* of audiobooks and a lot of podcasts that are in someway related to thinking about thinking
+            - But this isn't *just* a hobby for me
+            - **(click)** I teach Python and for about 5 years, **(click)** I volunteered with the Python Software Foundation's Code of Conduct work group...
+            - while teaching, I need to think about **(click)** what's going on in the brain's of my students
+            - and during my time on the Code of Conduct work group I spent time reflecting about...
+            - **(click)** language, **(click)** people's intentions, **(click)** how behavior is perceived
           </aside>
         </section>
 
         <section>
-          <h2>Where I'm coming from</h2>
-          <p class="fragment">I am a metacognition <strong>learner</strong><span class="fragment">, a <strong>dabbler</strong></span><span class="fragment">, and a <strong>hobbyist</strong></span></p>
-          <h4 class="fragment">Python Teacher</h4>
-          <h4 class="fragment">Former PSF CoC WG Member</h4>
+          <h2 class="fragment" data-fragment-index=1>Naming things</h2>
+          <h2 class="fragment" data-fragment-index=2>Mental models</h2>
+          <h2 class="fragment" data-fragment-index=3>Cognitive biases</h2>
+          <h2 class="fragment" data-fragment-index=4>Iterating on your beliefs</h2>
+          <h2 class="fragment" data-fragment-index=5><span class="fragment bold" data-fragment-index=7>Cognitive dissonance</span></h2>
+          <h2 class="fragment" data-fragment-index=6>Admitting your flaws</h2>
           <aside class="notes" data-markdown>
-            - TODO need a better transition here?
-            - When it comes to metacognition, I am
-              - a learner
-              - a dabbler
-              - and a hobbyist
-            - I listen to a *lot* of audiobooks and podcasts related to metacognition
-            - I also teach, which means thinking about thinking is important for for the sake of my learners
-            - And I volunteered on the Python Software Foundations Code of Conduct work group for 5 years, which means I've be observed quite a bit of human behavior... particularly related to communication
+            - During this talk I'll talk about...
+            - Naming things **(click)**
+            - Mental models **(click)**
+            - Cognitive biases **(click)**
+            - Iterating on your beliefs **(click)**
+            - Cognitive dissonance **(click)**
+            - And admitting your flaws **(click)**
+            - There are a couple times that you *may* be tempted to throw vegetables at me... **(click)** specifically when I discuss cognitive dissonance
           </aside>
         </section>
 
@@ -113,12 +189,12 @@
           <br>
           <h2 class="fragment">Flow State</h2>
           <br>
-          <h2 class="fragment">Confirmation Bias</h2>
+          <h2 class="fragment">Mindfulness</h2>
           <aside class="notes" data-markdown>
-            - Who has experienced imposter syndrome?
-            - Who has experienced a flow state while working?
-            - Who has experienced confirmation bias?
-            - Those of you who raised your hands knew all these by their names
+            - Who has experienced imposter syndrome? **(click)**
+            - Who has experienced a flow state while working? **(click)**
+            - Who has attempted a mindfulness or another mindfulness practice? **(click)**
+            - Regardless of whether you raised your hand, you probably knew all these ideas simply **by their names**
           </aside>
         </section>
 
@@ -138,8 +214,13 @@
             - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
             - But it's not just our language that shapes our perception of the world
             - The package that our words come in *also* shapes our perceptions
-            - TODO example?
-            - TODO more... make a point in this section
+          </aside>
+        </section>
+
+        <section>
+          <h2>TODO</h2>
+          <aside class="notes" data-markdown>
+            - TODO I have more to cover in this section, but let's pretend that I said some useful things about the importance of naming ideas
           </aside>
         </section>
 
@@ -147,54 +228,50 @@
       <section>
 
         <section>
-          <!-- TODO make font size of code bigger -->
-          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
->>> x = []
->>> <span class="fragment">x.append(x)
->>> </span><span class="fragment">x</span><span class="fragment">
-[[...]]</span>
-          </code></pre>
-          <aside class="notes" data-markdown>
-            - TODO
-          </aside>
-        </section>
-
-        <section>
-          <img src="ouroboros.png" style="height: 600px; border: 0; box-shadow: none;">
-          <!-- TODO better recursive image here? -->
-          <aside class="notes" data-markdown>
-            - This talk is on a particular form of recursion
-            - This talk is about...
-          </aside>
-        </section>
-
-        <section>
           <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
 >>> numbers = [1, 2, 3]
->>> <span class="fragment">def set_numbers(new_numbers):
-...     print("before:", numbers)
-...     numbers += new_numbers
+>>> <span class="fragment" data-fragment-index=1>def set_numbers(new_numbers):
+...     <span class="fragment bold-current" data-fragment-index=6>print("before:", numbers)</span>
+...     <span class="fragment bold-current" data-fragment-index=5>numbers += new_numbers</span><span class="fragment" data-fragment-index=7></span>
 ...     print("after:", numbers)
-...</span><span class="fragment">
->>> set_numbers([4, 5, 6])
+...</span><span class="fragment" data-fragment-index=2>
+>>> set_numbers([4, 5, 6])</span><span class="fragment" data-fragment-index=3>
 Traceback (most recent call last):
   File "<python-input-2>", line 1, in <module>
     set_numbers([4, 5, 6])
     ~~~~~~~~~~~^^^^^^^^^^^
-  File "<python-input-1>", line 2, in set_numbers
+  <span class="fragment bold-current" data-fragment-index=4>File "<python-input-1>", line 2, in set_numbers
     print("before:", numbers)
-                     ^^^^^^^
+                     ^^^^^^^</span>
 UnboundLocalError: cannot access local variable 'numbers' where it is not associated with a value</span>
           </code></pre>
           <aside class="notes" data-markdown>
-            - TODO
+            - Let's say we have a list of numbers
+            - And we define a function **(click)** that uses the `+=` operator on that list of numbers
+            - If we pass a list to this function, **(click)** what do you think we might see?
+            - What will this code output?
+            - It might print before and after with different numbers
+            - They could be the same numbers
+            - Or maybe an exception is raised on that `+=` line
+            - **(click)** It turns out... this code does raises an exception...
+            - But it raises it **(click)** on the *first* line in this function
+            - So nothing prints at all
+            - This happens because each variable name within a function is tied to one *specific* scope and Python determines a variable's scope when it *parses* the function, not when the function is called
+            - Since we're **(click)** assigning to this `numbers` variable, it must be a local variable... but that means we're **(click)** trying to read from a local variable before we've even assigned to it **(click)**
+            - I collect snippets of code like this
+            - I call this kind of code a "Python Oddity"
           </aside>
         </section>
 
         <section>
-          <h1>#pythonoddity</h1>
+          <h1>#PythonOddity</h1>
+          <p class="fragment">Quirks within our mental model of Python</p>
+          <p class="fragment"><a href="https://github.com/treyhunner/python-oddities">github.com/treyhunner/python-oddities</a></p>
           <aside class="notes" data-markdown>
-            - TODO
+            - When I say "oddity" I don't mean a bug in Python
+            - I mean "something that might catch you by surprise, especially if you're newer to Python"
+            - A good oddity will help reveal that **(click)** the way you think about Python happens to differ from the way Python thinks about itself
+            - I collect Python oddities **(click)** because they help me and folks who come to me to learn Python, *challenge* our mental models of Python
           </aside>
         </section>
 
@@ -210,52 +287,112 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
         </section>
 
         <section>
-          <h1>Mental Model 1: Buckets Containing Objects</h1>
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> <span class="fragment" data-fragment-index=1>first = []
+>>> </span><span class="fragment" data-fragment-index=3>second = first
+>>> <span class="fragment" data-fragment-index=5>first.append(9)
+>>> </span><span class="fragment" data-fragment-index=6>first
+[9]
+>>> </span><span class="fragment" data-fragment-index=7>second</span><span class="fragment" data-fragment-index=8>
+[9]</span>
+            </code></pre>
+            <div>
+              <p>TODOs (use your imagination)</p>
+              <p class="fragment" data-fragment-index=2>["first" bucket diagram]</p>
+              <p class="fragment" data-fragment-index=4>["second" bucket diagram]</p>
+            </div>
+          </div>
           <aside class="notes" data-markdown>
             - We could try to mentally model Python's variables and data structures as buckets that contain objects
-            - TODO show second = first and append to first
-            - TODO show diagram of two separate buckets
-            - If we assign a variable to an empty list, that variable contains that list
-            - Then when we assign another variable to the first one, the list is copied into a new bucket
-            - Which is why when we change the first list, the second list doesn't change...
-            - ... Except it *does* change!
-            - That mental model isn't going to work
+            - If we assign a variable to an empty list **(click)**, that variable contains that list **(click)**
+            - Then when we assign another variable to the first one, **(click)** the list is copied into a new bucket **(click)**
+            - Which is why when we **(click)** change the first list, **(click)** the second list doesn't change... **(click)**
+            - ... Except it *does* change! **(click)**
+            - This mental model isn't going to work
             - Let's try another one...
           </aside>
         </section>
 
         <section>
-          <h1>Mental Model 2: Sticky Notes on Objects</h1>
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> <span class="fragment" data-fragment-index=1>first = []
+>>> </span><span class="fragment" data-fragment-index=3>second = first
+>>> <span class="fragment" data-fragment-index=5>first.append(9)
+>>> </span><span class="fragment" data-fragment-index=6>first
+[9]
+>>> </span><span class="fragment" data-fragment-index=7>second
+[9]
+>>> </span>
+            </code></pre>
+            <div>
+              <p>TODOs (use your imagination)</p>
+              <p class="fragment" data-fragment-index=2>["first" sticky on object diagram]</p>
+              <p class="fragment" data-fragment-index=4>["second" sticky on object diagram]</p>
+            </div>
+          </div>
           <aside class="notes" data-markdown>
             - Let's mentally model variables as sticky notes on objects
-            - When we assign a variable to an empty list, we attach that variable name to the object
-            - Then when we assign another variable to the first one, we simply attach *another name* to the same object
-            - So when we change that first list, the second one would change also... because it's all just one list
-            - TODO show second = first and append to first
-            - TODO show diagram of two separate buckets
-            - If we assign a variable to an empty list, that variable contains that list
-            - If we set `a` to an empty list, then set `b` to a`, and append to `b`, `a` changes also
+            - When we assign a variable to an empty list **(click)**, we attach that variable name to the object **(click)**
+            - Then when we assign **(click)** another variable to the first one, we simply **(click)** attach *another name* to the same object
+            - So when we change **(click)** that first list, the first one changes **(click)** but the second one changes also **(click)**... because it's all just one list
             - This mental model works pretty well!
-            - TODO another slide...
-            - But what if we put that list inside another list?
+            - But what if...
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> first = []
+>>> second = first
+>>> first.append(9)
+>>> first
+[9]
+>>> second
+[9]
+>>> <span class="fragment">rows = [first]
+>>> </span><span class="fragment">lists = rows
+>>> </span>
+            </code></pre>
+            <div>
+              <p>TODOs (use your imagination)</p>
+              <p>["rows[0]" sticky on same object]</p>
+              <p>["lists[0]" sticky on same object]</p>
+            </div>
+          </div>
+
+          <aside class="notes" data-markdown>
+            - ...we put that list **(click)** inside another list?
             - Do we add a sticky note that says which list it's in and which index it's at?
-            - What if we point another variable to the outer list? Do we need to add *another* sticky note on the object?
+            - What if we point **(click)** another variable to the outer list? Do we need to add *another* sticky note on the object?
             - This is getting complicated
             - Let's give up on this mental model and try a third one...
           </aside>
         </section>
 
         <section>
-          <h1>Mental Model 3: Pointers or "References"</h1>
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> <span class="fragment" data-fragment-index=1>first = []
+>>> </span><span class="fragment" data-fragment-index=3>second = first
+>>> <span class="fragment" data-fragment-index=4>rows = [first]
+>>> </span>
+            </code></pre>
+            <div>
+              <p>TODO: show the correct diagram(s)</p>
+              <img src="incorrect-diagram.png" class="fragment no-style" data-fragment-index=2 style="width: 500px;">
+            </div>
+          </div>
+
           <aside class="notes" data-markdown>
             - Let's mentally model variables and data structures as references or pointers
-            - When we assign a variable to an empty list, we *point* that variable to the object
-            - Then when we assign another variable to the first one, we point the second variable to the same object
-            - If we put our list inside another list, we simply point one of the indexes in that new list to *our* list
-            - TODO show second = first and append to first
-            - TODO show diagram of two separate buckets
+            - When we **(click)** assign a variable to an empty list, **(click)** we *point* that variable to the object
+            - Then when we assign **(click)** another variable to the first one, we point the second variable to the same object
+            - If we **(click)** put our list inside another list, we simply point one of the indexes in that new list to *our* list
             - This mental model is a bit more complex than the sticky note model, but it stretches a bit further
-            - The indirection between variables and objects is tricky, but it makes it easier to understand how data structures work
+            - The indirection between variables and objects is tricky, but it also makes it easier to understand how data structures work
             - I'd argue that this mental model is the closest one to how Python actually models variables and objects
             - But keep in mind that *every* mental model has its limits
           </aside>
@@ -268,9 +405,9 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           </blockquote>
           <aside class="notes" data-markdown>
             - Mental models are *wonderful* for anchoring your understanding of some small piece of the world within a metaphor.
-            - But mental model is just that... a *model*
+            - But a mental model is just that... a *model* **(click)**
             - All models have their boundaries
-            - TODO maybe talk about real-world example of our brains being models and then loop back to Python and note identity of numbers and strings and such?
+            - And not every model can even be *consciously* controlled
           </aside>
         </section>
 
@@ -321,6 +458,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           </aside>
         </section>
 
+        <!--
         <section data-background-color="#fff" data-transition="fade">
           <div style="box-shadow: none;">
             If it <em>looks</em> like a duck,<br>
@@ -332,7 +470,139 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
               in “<a href="">Do Chairs Exist</a>”</span>
           </div>
           <aside class="notes" data-markdown>
-            - TODO
+          </aside>
+        </section>
+        -->
+
+      </section>
+      <section>
+
+        <section>
+          <h1>Names are a shorthand</h1>
+          <aside class="notes" data-markdown>
+            - Mental models help us give shape to an idea
+            - Names help us more easily refer to an idea
+            - Mental model aren't complete and names will never fully encapsulate an idea
+            - TODO slide content?
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">Patterns are great</h1>
+          <h1 class="fragment">Shortcuts are great</h1>
+          <h1 class="fragment">Heuristics are great</h1>
+          <aside class="notes" data-markdown>
+            - Our brains love patterns **(click)**
+            - Patterns help us take shortcuts **(click)**
+            - Our brains are pretty adept at taking *reasonable* shortcuts *most* of the time **(click)**
+            - But all shortcuts are prone to systematic errors
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">Cognitive Biases</h1>
+          <h2 class="fragment">Amos Tversky & Daniel Kahneman</h2>
+          <aside class="notes" data-markdown>
+            - Cognitive biases **(click)** were invented by **(click)** Amos Tversky and Daniel Kahneman in 1972
+            - They are the reason *we think funny*
+            - Or at least, they're the ones that coined that phrase and named many biases
+            - Cognitive biases are shortcuts our brain takes that cause us to occasionally make errors in judgement
+            - For example...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Confirmation Bias</h1>
+          <p>(Googling "Why is Python the best language?")</p>
+          <p>Validating your current assumptions</p>
+          <aside class="notes" data-markdown>
+            - Confirmation bias involves seeking out information that confirms your existing assumptions or beliefs
+            - In programming, this can come up when we try to validate our assumptions instead of trying to invalidate them
+          </aside>
+        </section>
+
+        <section>
+          <h1>Anchoring Bias</h1>
+          <div style="display: grid; grid-auto-flow: column;">
+            <img src="999.png" style="" class="fragment">
+            <img src="499.png" style="" class="fragment">
+          </div>
+          <aside class="notes" data-markdown>
+            - An anchoring bias occurs when our brains inadvertently anchor our thinking on a specific piece of information, which can sometimes cloud our judgement
+            - For example, when Steve Jobs, announced the price of the iPad, **(click)** he displayed $999 on the screen for many seconds before eventually announcing that the price of an iPad would be $499 **(click)**
+            - That made the iPads *immediately* seem inexpensive
+            - This doesn't just apply to prices though...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Anchoring Bias</h1>
+          <p class="fragment">&ldquo;Can you get this done in 13 weeks?&rdquo;</p>
+          <p class="fragment">&ldquo;Yes. This should take about 8 weeks.&rdquo;</p>
+          <p class="fragment">&ldquo;I expect this to take 1 week. What do you think?&rdquo;</p>
+          <p class="fragment"p>&ldquo;No way. More like 4 weeks.&rdquo;</p>
+          <aside class="notes" data-markdown>
+            - Here's another example...
+            - Imagine your manager asks you how long a new project will take
+            - They say: **(click)** can you get this done in 13 weeks?
+            - And you say: **(click)** sure we can get it done in 8 weeks.
+            - What if instead, they had said: **(click)** can you do this in a week?
+            - You're likely to say something like: absolutely not.
+            - **(click)** This will take 4 weeks.
+            - The anchoring bias is real and it takes a lot of very deliberate and slow thinking to overcome
+          </aside>
+        </section>
+
+        <section>
+          <h1>Bandwagon Effect</h1>
+          <h2 class="fragment">bandwagon.js</h2>
+          <img class="fragment no-style" src="hype-driven-development.webp" style="height: 400px;">
+          <aside class="notes" data-markdown>
+            - In addition to confirmation bias, there's the bandwagon effect
+            - Which is the also the name of a new JavaScript framework **(click)**
+            - I heard it's great. **(click)** You should rewrite your entire code base to use it.
+          </aside>
+        </section>
+
+        <section>
+          <h1>etc.</h1>
+          <aside class="notes" data-markdown>
+            - I haven't finished writing this part of the talk...
+            - So now I'm going to ask you to pretend that I gave you a few more examples of cognitive biases and how they can affect us as Python programmers.
+            - Excellent...
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment" data-fragment-index=1>Thinking Fast and Slow</h1>
+          <h2 class="fragment" data-fragment-index=1>By Daniel Kahneman</h2>
+          <h1 class="fragment" data-fragment-index=2><strong>System 1</strong></h1>
+          <h2 class="fragment" data-fragment-index=4>(Fast Thinking)</h2>
+          <h1 class="fragment" data-fragment-index=3><strong>System 2</strong></h1>
+          <h2 class="fragment" data-fragment-index=5>(Slow Thinking)</h2>
+          <aside class="notes" data-markdown>
+            - We *cannot* possibly overcome all of our cognitive biases at all times. Most of our thinking involves mental shortcuts by necessity and shortcuts always have a risk an accidental bias.
+            - In the book **(click)** Thinking Fast and Slow, Daniel Kahneman talks about **(click)** System 1 and **(click)** System 2, which...
+            - (speaking of naming things)
+            - are *awful* names
+            - You can think of these as "fast thinking" **(click)** and "slow thinking" **(click)**
+            - Fast thinking involves fast and nearly effortless mental work
+            - Slow thinking involves slow and deliberate mental work
+            - It might seem like slow thinking is better...
+            - but slow thinking requires more energy and time than fast thinking and there's no way to force our brain to use it for all of our actions... and we wouldn't *really* want to
+            - Fast thinking *is* absolutely necessary, though it's also the cause of many our cognitive biases
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">Recognize Your Biases</h1>
+          <h1 class="fragment">Bias Bind Spot</h1>
+          <aside class="notes" data-markdown>
+            - You often can't *avoid* biases, but recognizing them can help us react to them and try to work around them **(click)**
+            - Though it's *a lot* easier to recognize a cognitive bias in someone else's thinking than in our own
+            - Which of course **(click)** is another kind of bias
+            - So try to focus on recognizing *your own* biases first
+            - You can't get rid of your own biases, but you *can* try to respond to them
           </aside>
         </section>
 
@@ -340,27 +610,44 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
       <section>
 
         <section>
-          <h1>Iterate</h1>
+          <h1>Iterating</h1>
           <!-- TODO show some image here instead? -->
           <aside class="notes" data-markdown>
-            - Every once in a while, I think about how I might improve the ways that I teach my students
-            - There is *always* some way that I could be teaching better than I am
-            - So...
+            - Whether you're improving a mental model or trying to more quickly recognize a cognitive bias
+            - You probably won't be able to immediately and completely change your thought patterns
           </aside>
         </section>
 
         <section>
-          <div style="display: grid; grid-template-columns: 25% 25% 25% 25%;">
+          <div style="display: grid; grid-template-columns: 25% 25% 25% 25%;" class="fragment">
           <img src="make it stick.jpg" class="no-style">
           <img src="learn like a pro.jpg" class="no-style">
           <img src="learn better.jpg" class="no-style">
           <img src="how we learn.jpg" class="no-style">
           </div>
           <aside class="notes" data-markdown>
+            - Every once in a while, I think about how I might improve the ways that I teach my students
+            - There is *always* some way that I could be teaching better than I am
+            - So... **(click)**
             - I read books about teaching
-            - Learning about a way to improve my abilities is exciting...
+            - Learning about a way to improve my teaching abilities is exciting...
             - but it's also nerve-wracking
             - Right after learning about a way that I could improve, I feel a strong urge to immediately improve
+          </aside>
+        </section>
+
+        <section>
+          <h2><span class="fragment bold-current">Blocked</span> Versus <span class="fragment bold-current">Interleaved</span> Practice</h2>
+          <p class="fragment"></p>
+          <p class="fragment">&ldquo;Now I must update <em>all</em> my curriculum&rdquo;</p>
+          <aside class="notes" data-markdown>
+            - Years ago I read about **blocked practice** and **interleaved practice**
+            - blocked practice **(click)** involves dedicating a block of time to practicing *one* specific topic
+            - interleaved practice **(click)** involves jumping back and forth between multiple topics within a single practice session
+            - **(click)** Many traditional forms of teaching often explicitly or implicitly *encourage blocked practice*
+            - But interleaved practice is often more effective than blocked practice
+            - After learning about this, I *immediately* wished that **(click)** I could change all of my curriculum...
+            - but I had team trainings coming up and not a lot of time to change everything
           </aside>
         </section>
 
@@ -369,16 +656,55 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <ol>
             <li class="fragment">Immediately fix the problem</li>
             <li class="fragment">Deny that there's a problem</li>
-            <li class="fragment">Appreciate the status quo while acknowledging the problem</li>
+            <li class="fragment">Appreciate the status quo while noting the problem</li>
           </ol>
           <aside class="notes" data-markdown>
-            - Once I've learned about a possible improvement, I have two options:
-            - I can **drop everything** I'm doing and pour all of my energy into fixing the problem that I didn't even know was a problem just days before
-            - Or I can **ignore the new information**, deny that there's any problem, and decide that everything is as good as it can possibly be
-            - Those are pretty much the only options...
-            - At least that's the way it feels right after I've learned something new
-            - But there's, of course, an in-between...
-            - I could try to both appreciate what I have so far *and* gradually improve what I have to make it cloner to the idealizer version of my curriculum that I imagine might one day exist
+            - So I pretty much had 2 options...
+            - I could **drop everything** I'm doing **(click)** and pour all of my energy into fixing the problem that I didn't even know was a problem just days before
+            - Or I could **ignore this new information**, **(click)** deny that there was a problem, and decide that everything was as good as it can possibly be
+            - Of course... those weren't the only 2 options
+            - but it did *feel* that way
+            - I ended up eventually choosing a third option...
+            - I tried to both **(click)** appreciate what I had so far *and* gradually improve what I had done...
+            - to make it closer to the idealized version of my curriculum that I *imagine* might one day exist
+            - It has been years, and I am *still* working on that ideal version of my curriculum
+            - But I haven't given up
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+            I may not be where I imagine,<br>but I am making progress.
+          </h2>
+          <aside class="notes" data-markdown>
+            - Progress is often gradual
+            - And it's hard to *see* progress *while it's happening*
+          </aside>
+        </section>
+
+        <section>
+          <div style="width: auto; max-width: max-content; margin: auto;">
+          <h3>The Python Software Foundation</h3>
+            <div style="text-align: left;">
+            <p class="fragment"><a href="https://en.wikipedia.org/wiki/Python_Software_Foundation">2001</a>: PSF was Founded</p>
+            <p class="fragment"><a href="https://pyfound.blogspot.com/2013/06/announcing-code-of-conduct-for-use-by.html">2013</a>: PSF adopts a Code of Conduct</p>
+            <p class="fragment"><a href="https://web.archive.org/web/20160409002306/https://www.python.org/psf/codeofconduct/">2016</a>: PSF notes email for reports</p>
+            <p class="fragment"><a href="https://wiki.python.org/psf/ConductWG/Charter?action=info">2017</a>: PSF forms a CoC workgroup</p>
+            <p class="fragment"><a href="https://pyfound.blogspot.com/2019/09/the-python-software-foundation-has_24.html">2019</a>: PSF adopts new Code of Conduct</p>
+            </div>
+          </div>
+          <aside class="notes" data-markdown>
+            - The Python Software Foundation was formed in 2001  **(click)**
+            - And the foundation didn't have a Code of Conduct **(click)** for its first decade of existence
+            - But even after a code of conduct was written...
+            - **(click)** There wasn't any official contact information to use use for reporting conduct issues in online PSF spaces for the next 3 years
+            - And until a year after that, **(click)** there wasn't actually a group of individuals dedicated to handling Code of Conduct issues... everything was handled directly by the board of directors
+            - But at that point the code of conduct was only about 10 sentences long and it wasn't actually enforceable...
+            - **(click)** Until a couple years later...
+            - Today the PSF has an actionable Code of Conduct with publicly documented reporting and enforcement processes and Code of Conduct issues are handled by a dedicated group of volunteers
+            - ...
+            - It's sometimes hard not to get discouraged by an exceptionally imperfect situation...
+            - I often think of a quote from Hans Rosling...
           </aside>
         </section>
 
@@ -390,18 +716,41 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
             <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
           </div>
           <aside class="notes" data-markdown>
-            - In the book Factfulness, Hans Rosling notes that the world can be both *bad* and *better* at the same time
+            - The world can be both *bad* and *better* at the same time
             - This is true of some of the most pressing problems in the world and it's true of many of my problems as well
+            - This quote is about acknowledging that we often *feel* like there's a contradiction between a something being **less than ideal** but also **better than it used to be**
+            - Logically, there's no contradiction here... but it can be really challenging to hold both of these ideas in your head at the same time
+            - This is called a false dichotomy, a false binary, or...
           </aside>
         </section>
 
         <section>
-          <div style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
-              I may not be where I imagine, but I'm making progress.
+          <div>
+            <h2>False Dilemma</h2>
+            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
+              “My abilities can be both <strong>improving</strong> and <strong>have room for improvement</strong>”
+            </blockquote>
+            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
+              “A scenario can be both <strong>okay</strong> and <strong>unideal</strong>”
+            </blockquote>
           </div>
           <aside class="notes" data-markdown>
-            - Progress is often gradual
-            - TODO
+            - It's really hard to acknowledge that..
+            - **(click)** I can be **making progress** but still not be **where I want to be**
+            - Or...
+            - **(click)** I may not be where I *want* to be, but I might still be in a pretty okay place
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+            I may not be where I <span class="fragment bold">imagine</span>,<br>but I am making <span class="fragment bold">progress</span>.
+          </h2>
+          <aside class="notes" data-markdown>
+            - It's often easier to see what *could be* than it is to appreciate what *is*
+            - This might bias our brains toward striving for more **(click)**
+            - Which is great...
+            - But if we don't also take a step back and **(click)** appreciate where we're at, we risk discouraging ourselves to the point of giving up
           </aside>
         </section>
 
@@ -409,12 +758,214 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
       <section>
 
         <section>
-          <h1>Imagine You're Not You</h1>
+          <h1>Django Settings Module</h1>
+          <!-- <p>TODO show some settings</p> -->
           <aside class="notes" data-markdown>
-            - TODO example of an individual in tech owning harm they caused?
+            - If you've used the Django web framework, you know that Django's settings module is a very big deal
+            - The settings module allows you to customize how Django works
+            - Django's default settings are pretty sensible
+            - Outside of Django, defaults are *also* **usually** pretty sensible...
           </aside>
         </section>
 
+        <section data-background-image="fence2.jpg" data-transition="none">
+          <h2 class="fragment" style="margin-top: -4.5em; margin-left: 3em;">Chesterton's Fence</h2>
+          <aside class="notes" data-markdown>
+            - Let's say you acquire some land and on that land you find a fence
+            - You don't like fence. Should you tear it down?
+            - **(click)** Chesterton's Fence is the idea that you shouldn't take down a fence unless you understand the reason the fence is there
+            - This often comes up in legacy codebases...
+          </aside>
+        </section>
+
+        <section>
+          <h2>&ldquo;This code is too complex&rdquo;</h2>
+          <p class="fragment">&ldquo;This shouldn't be necessary&rdquo;</p>
+          <aside class="notes" data-markdown>
+            - If you find some code that *seems* unnecessarily complex, it might be wrong... or there might be a good reason for that complexity
+            - Sometimes **(click)** something seemingly unnecessary as actually necessary
+            - So... if you don't understand a default...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Defaults: Often Sensible</h1>
+          <p><span class="fragment">Custom</span><span class="fragment">, Cultural Norm</span><span class="fragment">, Personal Habit</span></p>
+          <aside class="notes" data-markdown>
+            - Keeping it in-place is often a good idea
+            - Regardless of whether a default comes from a **(click)** social custom, a **(click)** cultural norm, or **(click)** a personal habit...
+            - Keeping that default in-place is often a decent idea
+            - But defaults aren't *always* a good idea...
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">⚠️ Implicit Judgement</h1>
+          <h1 class="fragment">🤔 <span class="fragment strike">Explicit Judgement</span></h1>
+          <h1 class="fragment">💡 Living In The Default</h1>
+          <aside class="notes" data-markdown>
+            - A quick warning: **(click)** I'm about to share a story that may make you feel like I'm judging you and that you should be judging yourself
+            - But it's not that I'm judging you... **(click)** I just think that each and every one of you is a bad person
+            - ...
+            - (Just to be explicit / no one laughed at that)...
+            -  **(click)** that *was* a joke. I don't think you're bad people.
+            - I think that **(click)** like all of us in most areas of our life, you happen to be experiencing a default state
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment" data-fragment-index=3 style="margin-top: -1.5em;">🎠</h1>
+          <h1 class="fragment" data-fragment-index=1>Meat is delicious</h1>
+          <h1 class="fragment" data-fragment-index=2>Suffering is bad</h1>
+          <aside class="notes" data-markdown>
+            - In 2020, I listened to some podcast interviews that started me down a path of questioning some of my actions and my beliefs
+            - I realized that I had (and *still* have) some implicit mental models that are both incomplete and inconsistent
+            - I believed that **(click)** meat tastes really good
+            - And **(click)** suffering is bad
+            - Even if suffering experienced by animals is at least *a little bit* bad
+            - These two ideas aren't *actually* contradictory... both of these statements are true
+            - But there is a *possible* problem caused by these two beliefs...
+            - You might be wondering whether I'm purposely trying to **(click)** get on a high horse and paint myself as somehow better than you are
+            - I'm not... but I *do* want to talk about morality...
+          </aside>
+        </section>
+
+        <section>
+          <h1>Moral Frameworks</h1>
+          <p class="fragment"><strong>Deontology</strong>: Good Actions and Bad Actions</p>
+          <p class="fragment"><strong>Consequentialism</strong>: Good Outcomes and Bad Outcomes</p>
+          <p class="fragment">All Actions Bundle Good and Bad</p>
+          <aside class="notes" data-markdown>
+            - There are 2 primary moral frameworks that I've heard philosophers talk about
+            - Deontology, **(click)** which is a belief that each action is either right or wrong and we should try to perform only right actions.
+            - and Consequentialism, **(click)** which is a belief that actions should be judged based on their outcomes
+            - Both of these moral frameworks have problems, but I'm *mostly* a consequentialist.
+            - Meaning I believe that most of the time **(click)** we should try to weigh the good and the bad and maximize the outcome as much as we can
+            - I think the outcomes of an action are a bit more important than the intent behind the action
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment" data-fragment-index=3>Weighing The Outcomes</h1>
+          <h2 class="fragment" data-fragment-index=1>Consuming meat causes suffering</h2>
+          <h2 class="fragment" data-fragment-index=2>Consuming meat causes pleasure</h2>
+          <aside class="notes" data-markdown>
+            - So back in 2020, I came to the conclusion that, the production of most pieces of meat involved suffering **(click)**
+            - I can't say that I *didn't* know this before 2020, but I do know that I didn't think about very much
+            - And I don't think I'm incredible at compartmentalizing, but even after I started thinking about this... **(click)**
+            - I still found that meat tastes great
+            - Which means **(click)** I'd need to take a guess at whether the enjoyment that each bite of meat brought me was worth the suffering that average suffering that it caused
+          </aside>
+        </section>
+
+        <section>
+          <h1><span class="fragment">Net 😋</span> <span class="fragment"><strong>&nbsp; &lt; &nbsp;</strong></span> <span class="fragment">Net ☹️</span></h1>
+          <h2 class="fragment">Individual Change <strong>&lt;</strong> System Change</h2>
+          <aside class="notes" data-markdown>
+            - I'll spare you the details, but I eventually came to the conclusion that...
+            - The **(click)** pleasure I experience from meat, **(click)** on average, probably **(click)** less than the suffering
+            - Now, I know that **(click)** systemic change is often more important than individual change, but that's more of an argument *for* changing a system than it is an argument *against* changing my own behavior
+          </aside>
+        </section>
+
+        <section>
+          <h1>Cognitive Dissonance</h1>
+          <p class="fragment">Holding conflicting beliefs, values, or attitudes</p>
+          <p class="fragment">Especially when values and actions are misaligned</p>
+          <p class="fragment">Let's blame my default state</p>
+          <aside class="notes" data-markdown>
+            - At this point I was experiencing cognitive consonance
+            - That's discomfort that occurs when we find that our brain contains **(click)** conflicting beliefs, values, or attitudes
+            - It's acute when we realize **(click)** that our values and our actions are misaligned
+            - My actions and values weren't *deliberately* misaligned, they just *happened* to be misaligned **(click)** because of my own default states
+            - Cognitive dissonance feels unsettling. It's not a very comfortable state to sit in.
+            - But it *can* be resolved..
+          </aside>
+        </section>
+
+        <section>
+          <h2>Remedying Cognitive Dissonance</h2>
+          <p class="fragment"><strong>Deny the inconsistency</strong>: "everything is fine"</p>
+          <p class="fragment"><strong>Avoid the inconsistency</strong>: "Out of sight, out of mind"</p>
+          <p class="fragment"><strong>Change your beliefs</strong>: downplay or add layers</p>
+          <p class="fragment"><strong>Change your behavior</strong>: easier said than done</p>
+          <aside class="notes" data-markdown>
+            - In a few different ways.
+            - We can **(click)** practice **denial** because if we deny that there's an inconsistency, then discomfort dissipates
+            - Or we can **(click)** use **avoidance**: if we avoid shining a light on the dissonance, then the discomfort will only happens rarely
+            - Alternatively... **(click)** we can **change our beliefs** to be more consistent with our behavior...
+              - Either by deciding that the inconsistency isn't very significant
+              - Or by adopting new beliefs that bridge the gap between our beliefs and our actions
+            - Lastly, **(click)** we can **change our behavior** to be more consistent with our beliefs.
+            - Sometimes that's easy, but the more engrained our behavior is, the harder it is to change
+          </aside>
+        </section>
+
+        <section>
+          <h1>I'm Not Vegan</h1>
+          <h2 class="fragment">(yet?)</h2>
+          <h2 class="fragment">Gradual Change</h2>
+          <aside class="notes" data-markdown>
+            - I still consume food that I believe caused more harm than good
+            - So I am still living with cognitive dissonance.
+            - Sometimes I avoid it. Sometimes I deny it.
+            - But it is **(click)** *slowly* decreasing because I am **(click)** *very gradually* changing my behavior.
+            - My actions and my beliefs are still less *aligned* than I would like... but I *am* making progress
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">No thrown vegetables?</h1>
+          <h2 class="fragment">🍅 I would have eaten them. 🥦</h2>
+          <aside class="notes" data-markdown>
+            - So that part of this talk may have felt a bit uncomfortable, **(click)** but none of you threw vegetables at me... which is actually **(click)** a bit of a shame.
+            - Because I *do* eat a lot more vegetables now.
+          </aside>
+        </section>
+
+      </section>
+      <section>
+
+        <section>
+          <h1 class="fragment" style="margin-top: -2em;" data-fragment-index=3><code>self</code></h1>
+          <pre class="python fragment" data-fragment-index=1><code data-noescape>    def __eq__(<span class="fragment bold" data-fragment-index=2>self</span>, other):
+        if not isinstance(other, type(<span class="fragment bold" data-fragment-index=2>self</span>)):
+            return NotImplemented
+        return <span class="fragment bold" data-fragment-index=2>self</span>.value  == other.value</code></pre>
+          <aside class="notes" data-markdown>
+            - I sometimes tell my students that unlike **(click)** most other object-oriented programming languages
+            - In Python, we're deliberately **egocentric**... **(click)**
+            - A class instance isn't a separate object because we *are* **(click)** the object
+            - Real life is a little bit different from Python...
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="fragment"><strong>The Default</strong>: First Person (me)</h2>
+          <h2 class="fragment"><strong>&ldquo;Objective&rdquo;</strong>: Third-Person (Trey)</h2>
+          <h2 class="fragment"><strong>Challenging</strong>: Second-Person (you)</h2>
+          <aside class="notes" data-markdown>
+            - By default, our brains think **(click)** from *our* own perspective
+            - That's usually a very helpful way to experience the world
+            - But we *can* also attempt to model the world **(click)** from an outside perspective
+            - To imagine what an objective third-party might think of our actions
+            - But the most challenging perspective isn't the first-person or the third-person but the **(click)** second-person...
+            - This requires us to think from someone else's perspective who *isn't* objective and who *isn't* you, but who takes your actions and words as personally relevant
+            - TODO some sort of wrap up thought here...
+          </aside>
+        </section>
+
+        <section>
+          <h2>TODO</h2>
+          <aside class="notes" data-markdown>
+            - TODO this is yet another section of my talk that I have not finished writing
+            - so pretend I said something useful that has to do with empathizing, recognizing that you've made a mistake, and apologizing
+            - And whatever I said hopefully was hopefully useful
+            - TODO ...Ego-centric and apologizing and such
+          </aside>
+        </section>
+
+        <!--
         <section>
           <h2>Admitting you don't know</h2>
           <h2>Admitting you've failed</h2>
@@ -425,27 +976,47 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
             - TODO
           </aside>
         </section>
+        -->
 
+        <!--
         <section>
-          <h2>First Person is Typical</h2>
-          <h2>Third-Person is "Objective"</h2>
-          <h2>Second-Person feels Scary</h2>
+          <h1>Underrated Progress</h1>
+          <p class="fragment">Changing your beliefs</p>
+          <p class="fragment"><strong>Acknowledging a change in your beliefs</strong></p>
+          <p class="fragment">Changing your actions</p>
+          <p class="fragment"><strong>Acknowledging a change in your actions</strong></p>
           <aside class="notes" data-markdown>
-            - TODO talk about CoC before this?
-            - By default, our brains think from *our* own perspective
-            - That's usually a very helpful way to experience the world
-            - But we can also attempt to model the world from an outside perspective
-            - To imagine what an objective third-party might think of our actions
+            - Changing what you believe **(click)** is *not* easy, especially when your beliefs might contradict your current actions
+            - Admitting that **(click)** your beliefs today are different from your beliefs yesterday is even harder
+            - Deliberately changing your behavior **(click)** is also hard
+            - Acknowledging that you *are*, *did*, or *want to* **(click)** change your behavior is even harder
+            - Especially when we feel that our actions *today* might be causing harm to others
           </aside>
         </section>
+        -->
 
       </section>
       <section>
 
         <section>
-          <h2>Cognitive Dissonance</h2>
+          <h1 class="fragment" data-fragment-index=7>The Obvious</h1>
+          <p class="fragment" data-fragment-index=1>Admit you have a human brain</p>
+          <p class="fragment" data-fragment-index=2>Give your beliefs names</p>
+          <p class="fragment" data-fragment-index=3>Make your mental models explicit</p>
+          <p class="fragment" data-fragment-index=4>Iterate on your beliefs</p>
+          <p class="fragment" data-fragment-index=5>Embrace discomfort</p>
+          <p class="fragment" data-fragment-index=6>Think outside yourself</p>
+          <h2 class="fragment" data-fragment-index=8>&ldquo;Explicit is better than implicit&rdquo;</h2>
           <aside class="notes" data-markdown>
-            - TODO
+            - So...
+            - Accept that you have a beautiful but flawed human brain
+            - Give your beliefs names and shapes
+            - Try to make your mental models explicit, rather than implicit
+            - Iterate on your beliefs and your actions
+            - And accept that if you're making progress, then you will sometimes experience cognitive dissonance
+            - Sit with that discomfort
+            - And try to respond to it...
+            - And try to imagine what someone else might be experiencing and you might want to change your own thinking and behavior based on the experiences of others
           </aside>
         </section>
 
