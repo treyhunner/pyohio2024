@@ -47,7 +47,7 @@
     - We all cause harm
         - You did someting that caused harm. Maybe it was a "bad" thing or maybe a "good" thing that had some sort of negative outcome.
         - Doing a "bad" thing or simply causing harm does not mean you're "bad".
-        - Your moral worth doesn't matter.
+        - Your moral worth doesn't matter... at least it doesn't matter to anyone else.
     - Apologizing is hard. It's a learned skill and it's not trivial.
 - Work toward improvement
     - Improve your understanding of the world

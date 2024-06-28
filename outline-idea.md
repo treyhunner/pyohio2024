@@ -1,52 +1,111 @@
-Who has heard a word that describes a concept that you didn't know had a name?
-
-Sometimes having a word for a concept can help us think about a concept more easily.
-
-TODO examples
-
-Why?
-
-A word or phrase can act as a shorthand to describe something bigger than itself.
-
-Our brains love shorthands.
-It makes things easier to remember and easier to reason about.
+We often think of mental models are as something we consciously form, but some mental models are unconscious...
 
 ---
 
-TODO linguistic determinism is false. Our language does not strongly determine our thoughts. In other words, (TODO is this right?) there exist categories of ideas that we can conceptualize even though we don't have words for them. Linguistic determinists believe that language we use can limit our thinking.
+Patterns are great
 
-TODO Linguistic relativity does exist though. (That's the weak version of Sapir-Worf)... that the language we use influences our perceptions. TODO mention examples involving color and other things.
+Shortcuts are great
 
-It's not just language that influences our perception though.
-When we convey information to others, the way we phrase our words affects the perception.
-We all know this.
+Heuristics are great
 
-"The medium *is* the message."
+Our brains love patterns, mostly because we love shortcuts and patterns help us more effectively take shortcuts.
 
----
+And our brain is pretty adept at taking the *right* shortcuts *most* of the time.
 
-I really enjoy chatting about Python oddities.
-
-When I say "oddity", I don't mean bug.
-I mean "something that might catch you by surprise, especially if you're new".
-
-More specifically, I think of a Python oddity as a bit of code that's surprising when the way you think about Python happens to differ from the way Python thinks about itself.
-In other words... when your mental model of Python is different from Python's mental model of itself then you've found a Python oddity.
-
-TODO a few example Python oddities
+But all shortcuts are prone to systematic errors
 
 ---
 
-TODO Our brain forms mental models implicitly, but it's often helpful to make our mental models more explicit
+Cognitive Biases
 
-For example... depending on how you use Python and what programming languages you've used before Python, you might not realize that you have a mental model of how variables and data structures work in Python.
-That mental model might not closely align with Python's own model of itself.
-Or even if your mental model is pretty much right, it may still be a bit fuzzy in some areas.
-Making it explicit can help shine a light on those areas, so you can flesh them out more thoroughly.
+Cognitive Biases were invented by Amos Tversky and Daniel Kahneman in 1972.
+They're the reason we think funny.
 
-Let's use Python's variables and objects as an example mental model.
+Or at least, they're the ones that coined that phrase.
 
-TODO put mental model about variables and objects after this?
+There are lots of common cognitive biases that occasionally cause us to make errors in judgement.
+
+
+---
+
+Confirmation Bias
+
+[Googling "What is Python the best programming language?"]
+
+---
+
+Anchoring Bias
+
+When Steve Jobs' announced the price of the iPad, he displayed $999 on the screen for many seconds before eventually announcing that the price would be $499.
+That made the iPad seem inexpensive when it was announced.
+
+This doesn't just apply to prices though.
+If I generate a random number, and then ask you to guess the percentage of countries that are in the UN, you'll be more likely to guess a higher percentage when the random number was higher.
+
+---
+
+Availability Bias? Shark attacks.
+
+A bit similar to the anchoring bias in some ways.
+
+---
+
+Attribution Bias?
+
+---
+
+Halo Effect? A well-designed website leads us to assume that the products are good...? Attractiveness and intelligence.
+
+---
+
+Ostrich Effect? 
+
+---
+
+Note that we can't possible overcome all of our cognitive biases at all times. Most of life involves mental shortcuts.
+
+In Thinking Fast and Slow, Daniel Kahneman talks about System 1 and System 2... which, speaking of naming things, are awful names. I'm not going to use those terms because they're so confusing.
+
+Instead I'll summarize his work, by saying that...
+
+Fast thinking involves fast mental work that appears nearly effortless
+
+Slow thinking in effortful and involves slow and deliberate mental work
+
+Slow thinking requires more energy and time than fast thinking and we can't possibly use slow thinking for all of our actions.
+
+Fast thinking *is* necessary, though it is also the cause of many of our cognitive biases.
+
+---
+
+A lot of my brain machinery is pretty similar to yours.
+Sometimes our unconscious mental models have patterns
+
+---
+
+The past is immutable, but the future isn't.
+
+You can't change the actions you've already taken.
+
+You *can* affect the actions you haven't *yet* taken.
+
+---
+
+Deliberately acting differently today than you did yesterday.
+
+Our brains are constantly changing, whether we like it or not. We may as well embrace that change and try to steer it in a positive direction for ourselves and for everyone else.
+
+Progress requires change and progress is nothing to be ashamed of.
+
+---
+
+Our lives span decades, not centuries.
+
+Life is short.
+
+Enjoy the time you're given.
+
+Try to effect positive change as much as you can.
 
 ---
 
@@ -68,129 +127,21 @@ Rules, laws, and codes of conduct exist for the purpose of harm reduction and go
 
 ---
 
-As I read and re-read books about effective and ineffective learning strategies, I often find myself feeling a bit of discomfort over a few competing thoughts:
-
-1. I want to learn how to teach more effectively
-2. Every time I teach, I want to teach as effectively as I know how
-3. It takes me a lot of time to change my teaching style
-
-Of course I want to learn how to do what I do better.
-Once I've learned how to be better, I then feel a strong urge to actually *be* better.
-But I can't just suddenly put it all into practice!
-
-I have trainings scheduled.
-I have tons and tons of existing curriculum that I've poured hundreds of hours of time into creating.
-I have a learning-oriented web app based around ideas that I now believe to be slightly flawed.
-
-I can either:
-
-1. Drop everything I'm doing and pour all of my energy into fixing the problem that until days ago I didn't even know was a problem
-2. Decide to ignore this new information, deny that there's a problem, and decide that everything is currently as good as could be
-
-As I learn new things, those often *feel* like the only two options I have.
-But there is (of course) an in-between
-
-3. Appreciate what I have and gradually work to make it better
-
-I *could* try to both appreciate what I have so far *and* gradually improve what I have to make it closer to the idealized version of my curriculum that I imagine might one day exist.
-
----
-
-I sometimes find comfort in a quote by Hans Rosling from his book Factfulness:
-
-> "The world can be both bad and better. Better is not good enough. It is possible for things to be bad and better."
-
-This is true of some of the most pressing problems in the world and it's true of many parts of my own live.
-This is true of:
-
-1. Python skills: they're not as good as they could be, but they're better than they were
-2. Teaching skills: I'm a decent teacher, but I can see so much more that I need to improve on
-3. Writing skills: I write decently and definitely better than I used to write
-
-Okay, I kind of cheated with that list.
-I *am* getter better at those skills, but I'm also pretty decent at them already.
-
-These are things I'm *actually* not very good at, despite being on a mostly positive trajectory:
-
-1. Marketing skills
-2. ... TODO
-
----
-
-Some examples of how my teaching has changed:
-
-I used to make statements much more often when teaching, but now I try to phrase things as questions as much as possible.
-
-Why: the testing effect. It might work simply because our brains focus on things that surprise us. So if we guess incorrectly we've solidified that surprise. If you say your guess out loud you've made that eventual surprise even more real because you committed a bit more fully to an incorrect guess that your brain now wants to think about.
-
-I also have a habit of explaining a new topic with a bit of telling and a bit interactive questioning, guessing, and quizzing, followed by hands-on exercises.
-I eventually learned that this teaching style could be improved upon and it took me years to finally work toward this particular improvement and I *still* haven't fully embraced it.
-
-Why: When learning something new, instead of learning about it and then trying it out, I now try to have students try it out before we've talked about it at all.
-We attempt something brand new with the expectation that failure will likely happen.
-Then learn about what we were doing and then we do it again, with a slightly more challenging problem.
-I think of this as an expected failure, learning, trying again approach.
-It takes time for me to rearrange my curriculum toward small pieces of a topic that we can *fail at* before we dive in so I still haven't embraced this as much as I'd like.
-
-I also spent my first couple years while creating Python Morsels thinking in terms of forward motion.
-I would recommend an exercise, you'd attempt it, reflect on my solutions and find out new techniques and tools you didn't know about or you hadn't thought to use, and then you were done with the problem... never to see it again.
-That last bit of reflection was helpful, but it didn't stick nearly as effectively as it *could* have.
-
-That learning reflection contained useful information.
-But we don't learn by reading, right.
-It's not putting the information *in* that's most important.
-For the sake of memory, it's practicing *retrieval* that matters most.
-
-Revisiting the same exercise a few days later, a few weeks later, or a few months later would have allowed for the opportunity to practice *recall*.
-But that's not how Python Morsels was setup.
-Revisiting wasn't part of the plan.
-
-My students always wanted to move onto the next topic and I usually do too.
-That urge to move onto the next thing does us a disservice when it comes to effective learning.
-
----
-
-I still wish I taught differently.
-
-I don't embrace interleaved practice as much as I'd like.
-Text books tend to teach one topic, and then another, and then another.
-Most curriculum works the same way.
-
-TODO more on that
-
-I also know that spaced repetition is incredibly effective... think of flash cards as an example.
-Short sessions of practicing active recall, spaced out over days and weeks.
-Very few learning systems embrace this learning technique and Python Morsels isn't currently one of them.
-
 It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
 It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
 Hopefully I'll improve, but it's never going to be as much as I'd like.
 
 ---
 
-**Cognitive dissonance**
+System 1 and System 2
 
-- Cognitive dissonance is discomfort that occurs when we find that our brain contains conflicting beliefs, values, or attitudes.
-- Cognitive dissonance can be quite acute when you realize that your values and your actions are misaligned.
+Fast thinking
 
-Years ago, I organized a group called the San Diego Hacker News meetup.
-I originally joined the group years before I was the organizer.
-The original organizer moved to the Bay Area, and then the next one moved to the Bay Area, and then the next one did.
-So eventually I became the organizer.
-I was not going to move to the Bay Area.
+Slow thinking
 
-But at some point I stopped regularly reading Hacker News.
-Partly I didn't have the time and partly I felt that the comments on Hacker News were too often contentious.
-I found much of the discussions on Hacker News were overly aggressive and mostly unconstructive.
+---
 
-**cesspool** (shown on the screen while talking about Hacker News comments)
-
-After months of running a meetup for an online space that I didn't care about anymore, I experienced enough cognitive dissonance to change my actions.
-I ended the group.
-
-Honestly, that was a pretty mild case of cognitive dissonance.
-I felt that didn't really want to support Hacker News, but I also didn't care that much.
-Mostly I found myself doing something I was no longer interested in.
+Purposely incurring technical debt. It requires slowing down your thinking. It requires deliberacy.
 
 ---
 
@@ -202,8 +153,7 @@ Examples in Python, programming, etc.?
 - Code maintainability is paramount. And yet we cut corners when writing tests.
 - "Diverse teams are more effective". You just recommended your company hire your friend who has a very similar background to you.
 
-Nothing in black and white. There's always a trade-off. Sometimes it's a pretty trade-off, but often it's *not* so obvious... at least not at first.
-
+Nothing in black and white. There's always a trade-off. Sometimes it's a pretty clear cut trade-off, but often the balance is *not* so obvious... at least not at first.
 
 As humans, we tend to get very wrapped up in our sense of self.
 Our egos are a big part of how we experience existence.
@@ -211,15 +161,6 @@ Our egos are a big part of how we experience existence.
 Making a conscious effort to think about and talk through your own actions as if you were another person can be really helpful for temporarily suspending our egos.
 
 ---
-
-Years later, I experienced much more acute cognitive dissonance.
-
-In 2020 I listened to some podcast interviews that started me down a path of questioning some of my actions and beliefs.
-
-I realized that had and still have a few related mental models in my head that are both incomplete and inconsistent.
-
-I love eating all the types of meat....
-
 
 Who has attempted to meditate before?
 Who has found meditating challenging because the thinking just keeps happening?
@@ -372,3 +313,34 @@ So in summary:
 - Note opportunities for improvement
 
 - Hold your identity lightly? - Julia Galef
+
+
+---
+
+I'm going to talk about:
+
+- Naming Things
+- Mental Models
+- Iterating on Your Beliefs
+- Cognitive Dissonance
+- Admitting Your Flaws
+
+That third idea might be a little uncomfortable, but it's the last two ideas that where I'll be hoping you don't throw vegetables at me.
+
+
+---
+
+Tonight:
+
+Add actual code and [TODO imagine a bucket image]
+
+
+Notes from Melanie:
+
+Consider changing the language of my students from people that come to me to learn Python
+
+Melanie thinks I should mention and screenshot my spreadsheet of suffering and mention that I'm a nerd
+
+Let's look at some pictures of cute animals to cleanse our pallat (sad chicken)... oh wait that wasn't the right one... here's an actually happy animal
+
+Change the Python oddity example because it's confusing
