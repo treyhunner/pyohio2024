@@ -185,49 +185,6 @@ True</span>
       <section>
 
         <section>
-          <h2 class="fragment">Imposter Syndrome</h2>
-          <br>
-          <h2 class="fragment">Flow State</h2>
-          <br>
-          <h2 class="fragment">Mindfulness</h2>
-          <aside class="notes" data-markdown>
-            - Who has experienced imposter syndrome? **(click)**
-            - Who has experienced a flow state while working? **(click)**
-            - Who has attempted a mindfulness or another mindfulness practice? **(click)**
-            - Regardless of whether you raised your hand, you probably knew all these ideas simply **by their names**
-          </aside>
-        </section>
-
-        <section>
-          <h1>Naming Things</h1>
-          <aside class="notes" data-markdown>
-            - If something is important, it deserves a name
-            - Having a name for something allows us to talk about it more easily...
-            - but it also allows us to *think* about it about it more easily
-          </aside>
-        </section>
-
-        <section>
-          <h2>Linguistic Relativism</h2>
-          <aside class="notes" data-markdown>
-            - Linguistic relativism is the idea that our language shapes our thoughts
-            - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
-            - But it's not just our language that shapes our perception of the world
-            - The package that our words come in *also* shapes our perceptions
-          </aside>
-        </section>
-
-        <section>
-          <h2>TODO</h2>
-          <aside class="notes" data-markdown>
-            - TODO I have more to cover in this section, but let's pretend that I said some useful things about the importance of naming ideas
-          </aside>
-        </section>
-
-      </section>
-      <section>
-
-        <section>
           <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
 >>> numbers = [1, 2, 3]
 >>> <span class="fragment" data-fragment-index=1>def set_numbers(new_numbers):
@@ -288,33 +245,52 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
         <section>
           <div style="display: grid; grid-auto-flow: column;">
-            <pre class="python"><code data-trim data-noescape>
+            <pre class="python"><code data-trim data-noescape style="font-size: 25px; line-height: 30px;">
 >>> <span class="fragment" data-fragment-index=1>first = []
 >>> </span><span class="fragment" data-fragment-index=3>second = first
 >>> <span class="fragment" data-fragment-index=5>first.append(9)
 >>> </span><span class="fragment" data-fragment-index=6>first
 [9]
 >>> </span><span class="fragment" data-fragment-index=7>second</span><span class="fragment" data-fragment-index=8>
-[9]</span>
-            </code></pre>
-            <div>
-              <p>TODOs (use your imagination)</p>
-              <p class="fragment" data-fragment-index=2>["first" bucket diagram]</p>
-              <p class="fragment" data-fragment-index=4>["second" bucket diagram]</p>
+[9]</span></code></pre>
+            <div style="display: grid; grid-auto-flow: column;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" class="fragment" data-fragment-index=2 style="height: 250px;">
+                <!-- Bucket -->
+                <path d="M10 30 L110 30 L100 120 L20 120 Z" fill="none" stroke="black" stroke-width="2"/>
+
+                <!-- Variable name -->
+                <text x="60" y="20" font-size="16" text-anchor="middle">first</text>
+
+                <!-- Empty list representation -->
+                <text x="60" y="80" font-size="24" text-anchor="middle">[<tspan class="fragment" data-fragment-index=5>9</tspan>]</text>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" class="fragment" data-fragment-index=4 style="height: 250px;">
+                <!-- Bucket -->
+                <path d="M10 30 L110 30 L100 120 L20 120 Z" fill="none" stroke="black" stroke-width="2"/>
+
+                <!-- Variable name -->
+                <text x="60" y="20" font-size="16" text-anchor="middle">second</text>
+
+                <!-- Empty list representation -->
+                <text x="60" y="80" font-size="24" text-anchor="middle">[<tspan class="fragment" data-fragment-index=8 fill="#d00">9</tspan>]</text>
+              </svg>
             </div>
           </div>
+          <h2 style="color: #d00;" class="fragment" data-fragment-index=9>This mental model breaks down</h2>
           <aside class="notes" data-markdown>
             - We could try to mentally model Python's variables and data structures as buckets that contain objects
             - If we assign a variable to an empty list **(click)**, that variable contains that list **(click)**
             - Then when we assign another variable to the first one, **(click)** the list is copied into a new bucket **(click)**
-            - Which is why when we **(click)** change the first list, **(click)** the second list doesn't change... **(click)**
-            - ... Except it *does* change! **(click)**
-            - This mental model isn't going to work
+            - Let's say we then append `9` to that first list **(click)**, which would **(click)** mutate the first list
+            - But the second list shouldn't change... **(click)**
+            - ... Except it *does* **(click)** change!
+            - This mental model **(click)** isn't going to work
+            - Variables in Python are *not* like buckets that contain objects
             - Let's try another one...
           </aside>
         </section>
 
-        <section>
+        <section data-transition="fade-in none-out">
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape>
 >>> <span class="fragment" data-fragment-index=1>first = []
@@ -325,11 +301,28 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 >>> </span><span class="fragment" data-fragment-index=7>second
 [9]
 >>> </span>
+
             </code></pre>
             <div>
-              <p>TODOs (use your imagination)</p>
-              <p class="fragment" data-fragment-index=2>["first" sticky on object diagram]</p>
-              <p class="fragment" data-fragment-index=4>["second" sticky on object diagram]</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" style="overflow: visible;" class="fragment" data-fragment-index=2>
+                <!-- Empty list object -->
+                <rect x="20" y="20" width="160" height="80" fill="white" stroke="black" stroke-width="2" rx="5" ry="5"/>
+                <text x="100" y="70" font-size="24" text-anchor="middle" fill="black">[<tspan class="fragment" data-fragment-index=5>9</tspan>]</text>
+
+                <!-- First sticky note -->
+                <g transform="rotate(-15 30 30)">
+                <rect x="10" y="0" width="60" height="60" fill="#FFFF88" stroke="#E6E600" stroke-width="1"/>
+                <path d="M10 0 L70 0 L70 10 Q60 5 50 10 Q40 15 30 10 Q20 5 10 10 Z" fill="#FFFF66"/>
+                <text x="40" y="35" font-size="12" text-anchor="middle" fill="black">first</text>
+                </g>
+
+                <!-- Second sticky note -->
+                <g transform="rotate(15 170 30)" class="fragment" data-fragment-index=4>
+                <rect x="130" y="0" width="60" height="60" fill="#FF9999" stroke="#FF6666" stroke-width="1"/>
+                <path d="M130 0 L190 0 L190 10 Q180 5 170 10 Q160 15 150 10 Q140 5 130 10 Z" fill="#FF8888"/>
+                <text x="160" y="35" font-size="12" text-anchor="middle" fill="black">second</text>
+                </g>
+              </svg>
             </div>
           </div>
           <aside class="notes" data-markdown>
@@ -342,7 +335,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           </aside>
         </section>
 
-        <section>
+        <section data-transition="none-in fade-out">
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape>
 >>> first = []
@@ -352,14 +345,45 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 [9]
 >>> second
 [9]
->>> <span class="fragment">rows = [first]
->>> </span><span class="fragment">lists = rows
+>>> <span class="fragment" data-fragment-index=1>rows = [first]
+>>> </span><span class="fragment" data-fragment-index=3>lists = rows
 >>> </span>
             </code></pre>
             <div>
-              <p>TODOs (use your imagination)</p>
-              <p>["rows[0]" sticky on same object]</p>
-              <p>["lists[0]" sticky on same object]</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" style="overflow: visible;">
+                <!-- Empty list object -->
+                <rect x="20" y="20" width="160" height="80" fill="white" stroke="black" stroke-width="2" rx="5" ry="5"/>
+                <text x="100" y="70" font-size="24" text-anchor="middle" fill="black">[<tspan>9</tspan>]</text>
+
+                <!-- First sticky note -->
+                <g transform="rotate(-15 30 30)">
+                <rect x="10" y="0" width="60" height="60" fill="#FFFF88" stroke="#E6E600" stroke-width="1"/>
+                <path d="M10 0 L70 0 L70 10 Q60 5 50 10 Q40 15 30 10 Q20 5 10 10 Z" fill="#FFFF66"/>
+                <text x="40" y="35" font-size="12" text-anchor="middle" fill="black">first</text>
+                </g>
+
+                <!-- Second sticky note -->
+                <g transform="rotate(15 170 30)">
+                <rect x="130" y="0" width="60" height="60" fill="#FF9999" stroke="#FF6666" stroke-width="1"/>
+                <path d="M130 0 L190 0 L190 10 Q180 5 170 10 Q160 15 150 10 Q140 5 130 10 Z" fill="#FF8888"/>
+                <text x="160" y="35" font-size="12" text-anchor="middle" fill="black">second</text>
+                </g>
+
+                <!-- Third sticky note -->
+                <g transform="rotate(-15 30 90)" class="fragment" data-fragment-index=2>
+                <rect x="10" y="60" width="60" height="60" fill="#88FF88" stroke="#66E666" stroke-width="1"/>
+                <path d="M10 60 L70 60 L70 70 Q60 65 50 70 Q40 75 30 70 Q20 65 10 70 Z" fill="#88FF66"/>
+                <text x="40" y="95" font-size="12" text-anchor="middle" fill="black">rows[0]</text>
+                </g>
+
+                <!-- Fourth sticky note -->
+                <g transform="rotate(5 170 80)" class="fragment" data-fragment-index=4>
+                <rect x="150" y="60" width="60" height="60" fill="#9966FF" stroke="#6666FF" stroke-width="1"/>
+                <path d="M150 60 L210 60 L210 70 Q200 65 190 70 Q180 75 170 70 Q160 65 150 70 Z" fill="#8888FF"/>
+                <text x="180" y="95" font-size="12" text-anchor="middle" fill="black">lists[0]</text>
+                </g>
+              </svg>
+
             </div>
           </div>
 
@@ -473,6 +497,66 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           </aside>
         </section>
         -->
+
+      </section>
+      <section>
+
+        <section>
+          <h2 class="fragment">Imposter Syndrome</h2>
+          <br>
+          <h2 class="fragment">Flow State</h2>
+          <br>
+          <h2 class="fragment">Mindfulness</h2>
+          <aside class="notes" data-markdown>
+            - Who has experienced imposter syndrome? **(click)**
+            - Who has experienced a flow state while working? **(click)**
+            - Who has attempted a mindfulness or another mindfulness practice? **(click)**
+            - Regardless of whether you raised your hand, you probably knew all these ideas simply **by their names**
+          </aside>
+        </section>
+
+        <section>
+          <h1>Naming Things</h1>
+          <aside class="notes" data-markdown>
+            - If something is important, it deserves a name
+            - Having a name for something allows us to talk about it more easily...
+            - but it also allows us to *think* about it about it more easily
+          </aside>
+        </section>
+
+        <section>
+          <h2>Linguistic Relativism</h2>
+          <aside class="notes" data-markdown>
+            - Linguistic relativism is the idea that our language shapes our thoughts
+            - The language we use can implicitly shape our perception of the world
+            - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
+            - TODO speaking of which...
+            - What is the name for this operator? `print(*words)`
+            - What about this one? `["start", *words, "end"]`
+            - What about this one? `first, *rest = words`
+            - And this one? `def my_func(*args): pass`
+            - Concepts are a lot easier to talk about when they have a name
+            - This feature doesn't have an official name
+            - Specific uses of this feature have a name... but most aren't well known and there isn't one unifying name
+          </aside>
+        </section>
+
+        <section>
+          <h2>Words Matter</h2>
+          <aside class="notes" data-markdown>
+            - TODO when describing Python's variables, don't use the terms "contains", "holds", or even "is". Those words might implicitly lead someone new to Python to assume an incorrect mental model
+            - TODO words matter only so much...
+              - variables in Python aren't pointers because they can't be dereferenced
+              - If someone says the phrase "generator comprehension", I know they mean "generator expression" and in fact every time I hear generator comprehension I *wish* that was the official term
+              - The phrase "the `reversed` function" is technically incorrect because `reversed` is actually a class... but that phrase is also perfectly acceptable because we thanks to duck typing in Python, the word "function" is often used to mean "an object you can call" rather than an actual function object
+              - The phrases `print` method and `print` statement are technically incorrect and I try to avoid those as a teacher, but I also try to only gently nudge my students toward talking about `print` as a function.
+              - The term "argument" can be confusing... function argument, command-line argument, or are we talking about a variable name in a function definition... which is technically a parameter but the words "variable" or "argument" are often used instead
+              - "We call the `append` function on the list" might paint a slightly different picture than "we call the `append` method on the list" even thuogh methods are technically functions
+              - Using phrases like instatiate, declare, etc... can be confusing
+              - When we talk about a generator, do we mean a generator object or a generator function?
+              - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
+          </aside>
+        </section>
 
       </section>
       <section>
@@ -596,7 +680,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
         <section>
           <h1 class="fragment">Recognize Your Biases</h1>
-          <h1 class="fragment">Bias Bind Spot</h1>
+          <h1 class="fragment">Bias Blind Spot</h1>
           <aside class="notes" data-markdown>
             - You often can't *avoid* biases, but recognizing them can help us react to them and try to work around them **(click)**
             - Though it's *a lot* easier to recognize a cognitive bias in someone else's thinking than in our own
@@ -839,9 +923,12 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
             - There are 2 primary moral frameworks that I've heard philosophers talk about
             - Deontology, **(click)** which is a belief that each action is either right or wrong and we should try to perform only right actions.
             - and Consequentialism, **(click)** which is a belief that actions should be judged based on their outcomes
-            - Both of these moral frameworks have problems, but I'm *mostly* a consequentialist.
-            - Meaning I believe that most of the time **(click)** we should try to weigh the good and the bad and maximize the outcome as much as we can
-            - I think the outcomes of an action are a bit more important than the intent behind the action
+            - Both of these moral frameworks have problems
+            - Deontology focuses on the intent of an action and can lead to a fixation on minimizing bad actions while ignoring the outcomes of our actions
+            - But consequentialism requires guessing about the outcomes of our actions and guesses are *bound* to be faulty
+            - Problems aside, at heart, I am *mostly* a consequentialist
+            - Meaning I believe that most of the time **(click)** we should try to weigh the good and the bad and maximize the outcome as best as we can
+            - This *does* require guesswork... but I sincerely think the outcomes of an action are at least a bit more important than the intent behind the action
           </aside>
         </section>
 
@@ -919,7 +1006,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <h2 class="fragment">🍅 I would have eaten them. 🥦</h2>
           <aside class="notes" data-markdown>
             - So that part of this talk may have felt a bit uncomfortable, **(click)** but none of you threw vegetables at me... which is actually **(click)** a bit of a shame.
-            - Because I *do* eat a lot more vegetables now.
+            - Because I *do* eat a lot of vegetables now.
           </aside>
         </section>
 

@@ -1,3 +1,17 @@
+- Lists can contain lists... what?
+- This is the meta portion of the talk, where I tell you what this talk is about... it's about metacognition
+- Learning about learning is probably the thing that initially got my interested in metacognition
+    - What's effective for learning isn't always aligned with what we *think* is effective
+- Mental models
+- Mistakes happen... introduce moral philosophy here?
+- Cognitive biases (sometimes our mental models are hard to control)
+- Naming things... a shortcut to a mental model, sometimes accidentally
+- Living with the status quo and occasionally questioning it
+- Making progress
+- Be kind to yourself, be kind to others
+    - Being a human isn't easy. We hold ourselves to high standards... standards that are a bit higher than just "let's not kill each other".
+
+
 - Metacognition
     - What's metacognition?
     - I enjoy metacognition
