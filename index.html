@@ -565,83 +565,14 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
       <section>
 
         <section>
-          <h2 class="fragment">Imposter Syndrome</h2>
-          <br>
-          <h2 class="fragment">Flow State</h2>
-          <br>
-          <h2 class="fragment">Mindfulness</h2>
-          <aside class="notes" data-markdown>
-            - Who has experienced imposter syndrome? **(click)**
-            - Who has experienced a flow state while working? **(click)**
-            - Who has attempted a mindfulness or another mindfulness practice? **(click)**
-            - Regardless of whether you raised your hand, you probably knew all these ideas simply **by their names**
-          </aside>
-        </section>
-
-        <section>
-          <h1>Naming Things</h1>
-          <aside class="notes" data-markdown>
-            - If something is important, it deserves a name
-            - Having a name for something allows us to talk about it more easily...
-            - but it also allows us to *think* about it about it more easily
-          </aside>
-        </section>
-
-        <section>
-          <h2>Linguistic Relativism</h2>
-          <aside class="notes" data-markdown>
-            - Linguistic relativism is the idea that our language shapes our thoughts
-            - The language we use can implicitly shape our perception of the world
-            - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
-            - TODO speaking of which...
-            - What is the name for this operator? `print(*words)`
-            - What about this one? `["start", *words, "end"]`
-            - What about this one? `first, *rest = words`
-            - And this one? `def my_func(*args): pass`
-            - Concepts are a lot easier to talk about when they have a name
-            - This feature doesn't have an official name
-            - Specific uses of this feature have a name... but most aren't well known and there isn't one unifying name
-          </aside>
-        </section>
-
-        <section>
-          <h2>Words Matter</h2>
-          <aside class="notes" data-markdown>
-            - TODO when describing Python's variables, don't use the terms "contains", "holds", or even "is". Those words might implicitly lead someone new to Python to assume an incorrect mental model
-            - TODO words matter only so much...
-              - variables in Python aren't pointers because they can't be dereferenced
-              - If someone says the phrase "generator comprehension", I know they mean "generator expression" and in fact every time I hear generator comprehension I *wish* that was the official term
-              - The phrase "the `reversed` function" is technically incorrect because `reversed` is actually a class... but that phrase is also perfectly acceptable because we thanks to duck typing in Python, the word "function" is often used to mean "an object you can call" rather than an actual function object
-              - The phrases `print` method and `print` statement are technically incorrect and I try to avoid those as a teacher, but I also try to only gently nudge my students toward talking about `print` as a function.
-              - The term "argument" can be confusing... function argument, command-line argument, or are we talking about a variable name in a function definition... which is technically a parameter but the words "variable" or "argument" are often used instead
-              - "We call the `append` function on the list" might paint a slightly different picture than "we call the `append` method on the list" even thuogh methods are technically functions
-              - Using phrases like instatiate, declare, etc... can be confusing
-              - When we talk about a generator, do we mean a generator object or a generator function?
-              - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
-          </aside>
-        </section>
-
-      </section>
-      <section>
-
-        <section>
-          <h1>Names are a shorthand</h1>
-          <aside class="notes" data-markdown>
-            - Mental models help us give shape to an idea
-            - Names help us more easily refer to an idea
-            - Mental model aren't complete and names will never fully encapsulate an idea
-            - TODO slide content?
-          </aside>
-        </section>
-
-        <section>
-          <h1 class="fragment">Patterns are great</h1>
+          <h1>Pattern<span class="fragment">s are great</span></h1>
           <h1 class="fragment">Shortcuts are great</h1>
           <h1 class="fragment">Heuristics are great</h1>
           <aside class="notes" data-markdown>
-            - Our brains love patterns **(click)**
-            - Patterns help us take shortcuts **(click)**
-            - Our brains are pretty adept at taking *reasonable* shortcuts *most* of the time **(click)**
+            - Mental models are a kind of pattern
+            - Our brains **(click)** love patterns
+            - Patterns help us take **(click)** shortcuts
+            - Our brains are pretty adept at taking *reasonable* shortcuts **(click)** *most* of the time
             - But all shortcuts are prone to systematic errors
           </aside>
         </section>
@@ -755,6 +686,66 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
       </section>
       <section>
+
+      </section>
+      <section>
+
+        <section>
+          <h2 class="fragment">Imposter Syndrome</h2>
+          <br>
+          <h2 class="fragment">Flow State</h2>
+          <br>
+          <h2 class="fragment">Mindfulness</h2>
+          <aside class="notes" data-markdown>
+            - Who has experienced imposter syndrome? **(click)**
+            - Who has experienced a flow state while working? **(click)**
+            - Who has attempted a mindfulness or another mindfulness practice? **(click)**
+            - Regardless of whether you raised your hand, you probably knew all these ideas simply **by their names**
+          </aside>
+        </section>
+
+        <section>
+          <h1>Naming Things</h1>
+          <aside class="notes" data-markdown>
+            - If something is important, it deserves a name
+            - Having a name for something allows us to talk about it more easily...
+            - but it also allows us to *think* about it about it more easily
+          </aside>
+        </section>
+
+        <section>
+          <h2>Linguistic Relativism</h2>
+          <aside class="notes" data-markdown>
+            - Linguistic relativism is the idea that our language shapes our thoughts
+            - The language we use can implicitly shape our perception of the world
+            - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
+            - TODO speaking of which...
+            - What is the name for this operator? `print(*words)`
+            - What about this one? `["start", *words, "end"]`
+            - What about this one? `first, *rest = words`
+            - And this one? `def my_func(*args): pass`
+            - Concepts are a lot easier to talk about when they have a name
+            - This feature doesn't have an official name
+            - Specific uses of this feature have a name... but most aren't well known and there isn't one unifying name
+          </aside>
+        </section>
+
+        <section>
+          <h2>Words Matter</h2>
+          <aside class="notes" data-markdown>
+            - TODO when describing Python's variables, don't use the terms "contains", "holds", or even "is". Those words might implicitly lead someone new to Python to assume an incorrect mental model
+            - TODO words matter only so much...
+              - variables in Python aren't pointers because they can't be dereferenced
+              - If someone says the phrase "generator comprehension", I know they mean "generator expression" and in fact every time I hear generator comprehension I *wish* that was the official term
+              - The phrase "the `reversed` function" is technically incorrect because `reversed` is actually a class... but that phrase is also perfectly acceptable because we thanks to duck typing in Python, the word "function" is often used to mean "an object you can call" rather than an actual function object
+              - The phrases `print` method and `print` statement are technically incorrect and I try to avoid those as a teacher, but I also try to only gently nudge my students toward talking about `print` as a function.
+              - The term "argument" can be confusing... function argument, command-line argument, or are we talking about a variable name in a function definition... which is technically a parameter but the words "variable" or "argument" are often used instead
+              - "We call the `append` function on the list" might paint a slightly different picture than "we call the `append` method on the list" even thuogh methods are technically functions
+              - Using phrases like instatiate, declare, etc... can be confusing
+              - When we talk about a generator, do we mean a generator object or a generator function?
+              - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
+          </aside>
+        </section>
 
         <section>
           <h1>Iterating</h1>
