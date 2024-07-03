@@ -344,3 +344,27 @@ Melanie thinks I should mention and screenshot my spreadsheet of suffering and m
 Let's look at some pictures of cute animals to cleanse our pallat (sad chicken)... oh wait that wasn't the right one... here's an actually happy animal
 
 Change the Python oddity example because it's confusing
+
+
+---
+
+You said something in a code review that your coworker was offended by.
+
+How did they experience what you said as offensive?
+What were you feeling when you said that?
+Why did you feel that?
+Why did you say what you did?
+Was there another way you *could* have said what you did?
+
+This sort of deliberate reflection takes energy and time.
+It can also be emotionally taxing.
+
+The goal isn't to do this for every negative interaction we have... the goal is to help us recognize a pattern so that we can occasionally slow down and act more deliberately until our new thinking patterns and actions become our new habit.
+
+---
+
+I teach Python to groups through team trainings and to individuals through Python Morsels.
+
+I know that 
+
+

@@ -38,18 +38,6 @@
           </aside>
         </section>
 
-        <section>
-          <a href="http://pythonmorsels.com" class="fragment"><img src="vertical-morsels-logo.svg" class="no-style" style="height: 600px;"></a>
-          <aside class="notes" data-markdown>
-            - First: I run a service called Python Morsels that help folks deeper their Python skills and **(click)** I have stickers that look like this
-            - Ask me for a sticker after my talk if you want one
-            - Second... a disclaimer:
-            - This is a very rough version of what *will* be a 45 minute keynote that I'm giving at a conference about a month from today
-            - I decided that the best way to trick myself into *not* procrastinating on this talk was to commit to giving it a month before I needed it to exist
-            - Spoilers: I still procrastinated and, as you will see, this talk is not yet done.
-          </aside>
-        </section>
-
         <section data-transition="none">
           <pre class="python" style="width: 40%;"><code data-trim data-noescape>
 >>> x = []
@@ -94,7 +82,34 @@ True</span>
         </section>
 
       </section>
+      <section>
 
+        <section>
+          <h1 class="fragment">Learning</h1>
+          <ul>
+            <li class="fragment"><strong>Retrieval practice</strong>: re-reading is overvalued while <nobr>self-quizzing</nobr> is undervalued</li>
+            <li class="fragment"><strong>Deliberate practice</strong>: goal-oriented, focused, <nobr>feedback-driven</nobr> practice (<em>not</em> productive coding)</li>
+            <li class="fragment"><strong>Interleaving</strong>: blending topics is more effective than allocating separate time blocks for each topic</li>
+            <li class="fragment"><strong>Spaced repetition</strong>: spacing learning over many days allows for forgetting and remembering</li>
+            <li class="fragment"><strong>Elaboration</strong>: explaining a new idea by connecting it to existing knowledge</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            - When deciding what I want to talk to you all about...
+            - I initially thought that I was going to talk to about how to **(click)** learn more effectively
+            - I would have talked about...
+              - How **(click)** we don't learn by putting information *into* our heads but by trying to retrieve information *from* our heads
+              - We often overvalue books and videos and undervalue all forms of quizzing, including writing code
+              - I also would have talked the fact that importance of **(click)** *deliberate* practice, meaning writing code for the *sake* of learning rather than for productivity's sake
+              - And that, counter-intuitively, **(click)** spending a practice sessions bouncing between different topics is often a more effective learning strategy than dedicating a study session to just *one* topic
+              - Also **(click)** short daily study sessions are often more effective than longer study sessions once a week
+              - And **(click)** explaining an idea in your own words by making connections to existing knowledge is both helpful and fun
+              - These are all important learning techniques...
+              - But this talk is *not* about learning
+              - This talk is a little bit...
+          </aside>
+        </section>
+
+      </section>
       <section>
 
         <section data-background-color="#d28952" data-background-image="recursion4.webp" data-transition="fade">
@@ -113,8 +128,39 @@ True</span>
           >Metacognition</span></h1>
           -->
           <aside class="notes" data-markdown>
-            - I'd like to talk about a specific form of recursion
-            - Metacognition
+            - Recursive
+            - Which, by the way, is a topic I find really enjoyable
+            - Recursion always seems fascinating to me
+            - I don't mean...
+          </aside>
+        </section>
+
+        <section>
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+          TODO recursive function
+>>> word = "octothorpe"
+>>> word[0][0][0][0]
+'o'
+>>> type(type(type)
+<class 'type'>
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - Recursive functions
+            - I mean recursion more generally...
+            - Did you know that Python's strings are an infinitely recursive data structure?
+            - Strings can be indexed and they return new strings, which can also be indexed, and so on and so on...
+            - Also the type of the type of type is type
+          </aside>
+        </section>
+
+        <section>
+          TODO image of my talk
+          <aside class="notes" data-markdown>
+            - The recursion in this talk won't be quite as *deep* as that recursion though
+            - This will be a bit more like a lightning talk I gave at PyCon this year
+            - ... on how to give a lightning talk
+            - This is a *shallow* form of recursion
+            - We're going to talk about...
           </aside>
         </section>
 
@@ -131,7 +177,7 @@ True</span>
           <p style="visibility: hidden;">Blank</p>
           <aside class="notes" data-markdown>
             - Metacognition
-            - is either **(click)** learning about learning
+            - which is either **(click)** learning about learning
             - Or... **(click)** thinking about thinking
             - When it comes to metacognition...
           </aside>
@@ -155,13 +201,34 @@ True</span>
               - **(click)** and a hobbyist
             - I listen to a *lot* of audiobooks and a lot of podcasts that are in someway related to thinking about thinking
             - But this isn't *just* a hobby for me
-            - **(click)** I teach Python and for about 5 years, **(click)** I volunteered with the Python Software Foundation's Code of Conduct work group...
-            - while teaching, I need to think about **(click)** what's going on in the brain's of my students
-            - and during my time on the Code of Conduct work group I spent time reflecting about...
+            - **(click)** I teach Python and I've volunteered, **(click)** with the Python Software Foundation's Code of Conduct work group...
+            - learning about learning **(click)** helps me teach better
+            - and in the Code of Conduct work group I also spent time reflecting on...
             - **(click)** language, **(click)** people's intentions, **(click)** how behavior is perceived
           </aside>
         </section>
 
+        <section data-transition="none">
+          TODO
+          <aside class="notes" data-markdown>
+            - I'm giving this talk, partly for selfish reasons
+            - I am a nerd, which means I *love* interactions that involve shared interests
+            - So I figured that if I share something *I'm* interested in, maybe you'll realize that you're interested in it also
+            - And we can all nerd out about metacognition together
+          </aside>
+        </section>
+
+        <section data-transition="none">
+          TODO
+          <aside class="notes" data-markdown>
+            - I'm also giving this talk because I think metacognition has helped me improve my teaching
+            - But it's also occasionally helped me thinking and occasionally my actions
+            - And I don't think that's *unique* to me
+            - I think we could benefit from thinking and talking about metacognition
+          </aside>
+        </section>
+
+        <!--
         <section>
           <h2 class="fragment" data-fragment-index=1>Naming things</h2>
           <h2 class="fragment" data-fragment-index=2>Mental models</h2>
@@ -180,11 +247,13 @@ True</span>
             - There are a couple times that you *may* be tempted to throw vegetables at me... **(click)** specifically when I discuss cognitive dissonance
           </aside>
         </section>
+        -->
 
       </section>
       <section>
 
         <section>
+          TODO better and shorter Python oddity... maybe just revisit the one from earlier in the talk?
           <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
 >>> numbers = [1, 2, 3]
 >>> <span class="fragment" data-fragment-index=1>def set_numbers(new_numbers):
@@ -581,10 +650,8 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <h1 class="fragment">Cognitive Biases</h1>
           <h2 class="fragment">Amos Tversky & Daniel Kahneman</h2>
           <aside class="notes" data-markdown>
-            - Cognitive biases **(click)** were invented by **(click)** Amos Tversky and Daniel Kahneman in 1972
-            - They are the reason *we think funny*
-            - Or at least, they're the ones that coined that phrase and named many biases
-            - Cognitive biases are shortcuts our brain takes that cause us to occasionally make errors in judgement
+            - The idea of cognitive biases **(click)** was invented by **(click)** Amos Tversky and Daniel Kahneman in 1972
+            - Cognitive biases are shortcuts that our brain takes which cause us to occasionally make errors in judgement
             - For example...
           </aside>
         </section>
@@ -597,7 +664,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           </video>
           <aside class="notes" data-markdown>
             - Confirmation bias involves seeking out information that confirms your existing assumptions or beliefs
-            - In programming, this can come up when we try to validate our assumptions instead of trying to invalidate them
+            - This often happens when we try to validate our assumptions instead of trying to invalidate them
           </aside>
         </section>
 
@@ -638,18 +705,17 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <h2 class="fragment">bandwagon.js</h2>
           <img class="fragment no-style" src="hype-driven-development.webp" style="height: 400px;">
           <aside class="notes" data-markdown>
-            - In addition to confirmation bias, there's the bandwagon effect
-            - Which is the also the name of a new JavaScript framework **(click)**
-            - I heard it's great. **(click)** You should rewrite your entire code base to use it.
+            - There's also the bandwagon effect
+            - Which is the also the name of a front-end web framework **(click)** that was released last week
+            - I heard it's great. **(click)**
+            - Maybe after the conference, you should rewrite your entire code base to use it.
           </aside>
         </section>
 
         <section>
           <h1>etc.</h1>
           <aside class="notes" data-markdown>
-            - I haven't finished writing this part of the talk...
-            - So now I'm going to ask you to pretend that I gave you a few more examples of cognitive biases and how they can affect us as Python programmers.
-            - Excellent...
+            - TODO
           </aside>
         </section>
 
@@ -680,14 +746,11 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <aside class="notes" data-markdown>
             - You often can't *avoid* biases, but recognizing them can help us react to them and try to work around them **(click)**
             - Though it's *a lot* easier to recognize a cognitive bias in someone else's thinking than in our own
-            - Which of course **(click)** is another kind of bias
+            - Which of course **(click)** is another kind of cognitive bias
             - So try to focus on recognizing *your own* biases first
             - You can't get rid of your own biases, but you *can* try to respond to them
           </aside>
         </section>
-
-      </section>
-      <section>
 
       </section>
       <section>
@@ -708,27 +771,56 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
         <section>
           <h1>Naming Things</h1>
+          <h2 class="fragment">Thinking About Metacognition</h2>
+          <h2 class="fragment">Thinking About Thinking about Thinking</h2>
           <aside class="notes" data-markdown>
-            - If something is important, it deserves a name
+            - TODO
+            - I often talk to my students about the importance of naming variables well
+            - And also naming variables that might otherwise go unnamed... for example tuple unpacking can give a name to an object when it otherwise would only have an index
+            - If a bit of code is important, it deserves a name
+            - Names are a shortcut to a mental model
             - Having a name for something allows us to talk about it more easily...
-            - but it also allows us to *think* about it about it more easily
+            - Imagine if we hadn't yet invented the word metacognition **(click)**
+            - Instead of asking you to think about metacognition
+            - I'd need to ask you to **(click)** think about thinking about thinking
+            - Names are powerful
           </aside>
         </section>
 
         <section>
-          <h2>Linguistic Relativism</h2>
+          <h2>TODO</h2>
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+          >>> colors = ["purple", "green"]
+          >>> print(*colors)
+          >>> [*colors, "black"]
+          >>> first, *rest = colors
+          >>> def my_func(*args): pass
+          </code></pre>
           <aside class="notes" data-markdown>
-            - Linguistic relativism is the idea that our language shapes our thoughts
-            - The language we use can implicitly shape our perception of the world
             - Having a word for an idea makes it easier to discuss that idea *and* easier to think about it
-            - TODO speaking of which...
-            - What is the name for this operator? `print(*words)`
-            - What about this one? `["start", *words, "end"]`
-            - What about this one? `first, *rest = words`
-            - And this one? `def my_func(*args): pass`
+            - What is the name of this syntax?
+            - What about this one?
+            - And this one?
+            - What about this one?
             - Concepts are a lot easier to talk about when they have a name
-            - This feature doesn't have an official name
-            - Specific uses of this feature have a name... but most aren't well known and there isn't one unifying name
+            - Some of those syntaxes have a name, but not all of them do
+            - And there isn't an official name that we could use to refer to this prefix `*` syntax more generally
+          </aside>
+        </section>
+
+        <section>
+          <h2>Name Things<span class="fragment"> Well</span></h2>
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+          >>> colors = ["purple", "green"]
+          >>> print(*colors)
+          >>> [*colors, "black"]
+          >>> first, *rest = colors
+          >>> def my_func(*args): pass
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - So naming unnamed ideas is helpful
+            - And the names we choose are also important also
+            - But so are the *words* we chose, more generally...
           </aside>
         </section>
 
@@ -748,6 +840,9 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
               - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
           </aside>
         </section>
+
+      </section>
+      <section>
 
         <section>
           <h1>Iterating</h1>
@@ -920,6 +1015,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
         <section>
           <h2>&ldquo;This code is too complex&rdquo;</h2>
+          <p>TODO show a code example</p>
           <p class="fragment">&ldquo;This shouldn't be necessary&rdquo;</p>
           <aside class="notes" data-markdown>
             - If you find some code that *seems* unnecessarily complex, it might be wrong... or there might be a good reason for that complexity
@@ -1069,6 +1165,7 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
       </section>
       <section>
 
+        <!-- TODO Figure out what to do with this section... -->
         <section>
           <h1 class="fragment" style="margin-top: -2em;" data-fragment-index=3><code>self</code></h1>
           <pre class="python fragment" data-fragment-index=1><code data-noescape>    def __eq__(<span class="fragment bold" data-fragment-index=2>self</span>, other):
