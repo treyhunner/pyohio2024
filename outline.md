@@ -1,4 +1,3 @@
-- Lists can contain lists... what?
 - This is the meta portion of the talk, where I tell you what this talk is about... it's about metacognition
 - Learning about learning is probably the thing that initially got my interested in metacognition
     - What's effective for learning isn't always aligned with what we *think* is effective
@@ -29,42 +28,6 @@
     - "x contains 4"
     - "x is 4"
 
-- Metacognition
-    - What's metacognition?
-    - I enjoy metacognition
-- Naming things
-    - Having a word for a concept can be very handy
-    - Linguistic determinism vs relativism
-- Mental models
-    - Python oddities
-    - Making implicit mental models explicit
-- Progress
-    - The world can be both bad and better
-    - How do you climb a mountain? One step at a time.
-    - Working on progress in my teaching curriculum
-- You can ignore me if you want to
-    - This talk involves a lot of discussion about topics that I am not an expert in
-    - I *have* done quite of thinking about these topics, but that doesn't mean I know what I'm talking about
-    - Then again... how often do people actually know what they're talking about?
-- Cognitive dissonance
-    - This is the worst when your values and actions are misaligned
-    - Remedying cognitive disonnance
-        - **Deny the inconsistency** If you decide that there's not actually an inconsistency, then there's no experience of disonnance at all. "I don't understand".
-        - **Avoid the inconsistency**: If you can avoid situations that shine a lot on your disonnance, then the discomfort won't happen very often. "Out of sight, out of mind".
-        - **Change your beliefs** to be consistent with your behavior. "Do as I say, not as I do."??
-            - **Downplay**: conclude that the inconsistency isn't very significant.
-            - **Additional layers**: maintain your existing beliefs but adopt new ones that bridge the gap between your beliefs and your actions.
-            - ... TODO?
-        - **Change your behavior** to be consistent with your beliefs. Sometimes this is easy but the more stark the dissonance is, the more challenging the change usually is.
-    - Cognitive dissonance over my eating habits
-- Moral framework
-    - Deontology: each action is either right or wrong and we should try to perform only right actions.
-    - Consequentialism: actions should be judged based on their outcomes.
-        - Utilitariasism: The most ethical actions are the ones that produce the greatest good.
-    - Both of these moral frameworks have problems, but I'm *mostly* a consequentialist.
-    - I think outcomes are very important and most actions have a mix of positive and negative outcomes. I also think the heavy focus deontology has for focusing on the rightness and wrongness of an action based on rules can lead to an unhealthy focus on minimizing the bad actions.
-    - No world is free of bad actions.
-    - I'd rather focus on maximizing the good outcomes in the world rather than minimizing individual bad actions.
 - Focus on outcomes
     - Stop focusing on your moral worth. Try to maximize the good in the world.
     - Outcomes matter a lot more than intent
@@ -85,9 +48,6 @@
     - Improve your understanding of yourself
     - Improve your understanding of others
     - Try to improve the world
-
-
-
 
 
 Why?
@@ -132,3 +92,11 @@ My belief is that thinking about thinking makes me a better person
 And learning about learning makes me a better learner and a better teacher
 
 And if this belief holds true for everyone then metacognition is how we become better people, better learners, and better teachers.
+
+
+Deontology is about "doing what's right"
+"It's the thought that counts"
+Consequentialism: doesn't matter what you do but what the result is
+"The road to hell is paved with bad intentions"
+Deontology has a clear right/wrong
+Consequentialism leans toward accepting that we might weight things incorrectly

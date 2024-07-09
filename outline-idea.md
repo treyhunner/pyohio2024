@@ -2,48 +2,6 @@ We often think of mental models are as something we consciously form, but some m
 
 ---
 
-Patterns are great
-
-Shortcuts are great
-
-Heuristics are great
-
-Our brains love patterns, mostly because we love shortcuts and patterns help us more effectively take shortcuts.
-
-And our brain is pretty adept at taking the *right* shortcuts *most* of the time.
-
-But all shortcuts are prone to systematic errors
-
----
-
-Cognitive Biases
-
-Cognitive Biases were invented by Amos Tversky and Daniel Kahneman in 1972.
-They're the reason we think funny.
-
-Or at least, they're the ones that coined that phrase.
-
-There are lots of common cognitive biases that occasionally cause us to make errors in judgement.
-
-
----
-
-Confirmation Bias
-
-[Googling "What is Python the best programming language?"]
-
----
-
-Anchoring Bias
-
-When Steve Jobs' announced the price of the iPad, he displayed $999 on the screen for many seconds before eventually announcing that the price would be $499.
-That made the iPad seem inexpensive when it was announced.
-
-This doesn't just apply to prices though.
-If I generate a random number, and then ask you to guess the percentage of countries that are in the UN, you'll be more likely to guess a higher percentage when the random number was higher.
-
----
-
 Availability Bias? Shark attacks.
 
 A bit similar to the anchoring bias in some ways.
@@ -59,27 +17,6 @@ Halo Effect? A well-designed website leads us to assume that the products are go
 ---
 
 Ostrich Effect? 
-
----
-
-Note that we can't possible overcome all of our cognitive biases at all times. Most of life involves mental shortcuts.
-
-In Thinking Fast and Slow, Daniel Kahneman talks about System 1 and System 2... which, speaking of naming things, are awful names. I'm not going to use those terms because they're so confusing.
-
-Instead I'll summarize his work, by saying that...
-
-Fast thinking involves fast mental work that appears nearly effortless
-
-Slow thinking in effortful and involves slow and deliberate mental work
-
-Slow thinking requires more energy and time than fast thinking and we can't possibly use slow thinking for all of our actions.
-
-Fast thinking *is* necessary, though it is also the cause of many of our cognitive biases.
-
----
-
-A lot of my brain machinery is pretty similar to yours.
-Sometimes our unconscious mental models have patterns
 
 ---
 
@@ -130,14 +67,6 @@ Rules, laws, and codes of conduct exist for the purpose of harm reduction and go
 It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
 It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
 Hopefully I'll improve, but it's never going to be as much as I'd like.
-
----
-
-System 1 and System 2
-
-Fast thinking
-
-Slow thinking
 
 ---
 
@@ -218,33 +147,6 @@ Our brains all have a limit at which we no longer are able to feel good about ou
 I'm a good person, so I don't do bad things... at least not *too* bad.
 
 I did enough bad things and they were bad enough, that I must be a bad person.
-
----
-
-Admitting you were wrong with small things is important.
-
----
-
-This slide is deliberately blank because I don't want to put shine a light on any one person or event in particular...
-
-When harm happens, 
-
-Danya Ruttenberg has written about apologies and making amends for wrong-doing.
-
-Acknowledge Wrongdoing: Clearly state what you did wrong without explaining away your actions.
-Express Remorse: Sincerely express regret for the harm caused.
-Make Amends: Take concrete steps to make things right, as best you can.
-Commit to Do Better: Demonstrate a commitment avoid repeating the same mistake in the future.
-Seek Forgiveness: Request forgiveness, understanding that forgiveness may take a long time or never come.
-
----
-
-Your models of the world are always a work-in-progress. Accept that and embrace it.
-
-When a more useful model comes along, try it on.
-
-Then play catch up.
-You need to change your mind before you change your actions.
 
 ---
 
@@ -330,11 +232,6 @@ That third idea might be a little uncomfortable, but it's the last two ideas tha
 
 ---
 
-Tonight:
-
-Add actual code and [TODO imagine a bucket image]
-
-
 Notes from Melanie:
 
 Consider changing the language of my students from people that come to me to learn Python
@@ -366,5 +263,3 @@ The goal isn't to do this for every negative interaction we have... the goal is 
 I teach Python to groups through team trainings and to individuals through Python Morsels.
 
 I know that 
-
-

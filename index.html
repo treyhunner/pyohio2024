@@ -137,19 +137,24 @@ True</span>
 
         <section>
           <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
-          TODO recursive function
->>> word = "octothorpe"
->>> word[0][0][0][0]
+>>> <span class="fragment">def factorial(n):
+...    if n == 0: return 1
+...    return n * factorial(n-1)
+...
+>>> </span><span class="fragment">word = "octothorpe"
+>>> </span><span class="fragment">word[0]</span><span class="fragment">
 'o'
->>> type(type(type)
-<class 'type'>
+>>> </span><span class="fragment">word[0][0]</span><span class="fragment">[0]</span><span class="fragment">[0]
+'o'
+>>> </span><span class="fragment">type(type(type)</span><span class="fragment">
+&lt;class 'type'></span>
           </code></pre>
           <aside class="notes" data-markdown>
-            - Recursive functions
+            - Recursive functions **(click)**
             - I mean recursion more generally...
-            - Did you know that Python's strings are an infinitely recursive data structure?
-            - Strings can be indexed and they return new strings, which can also be indexed, and so on and so on...
-            - Also the type of the type of type is type
+            - Did you know that Python's strings **(click)** are an infinitely recursive data structure?
+            - Strings can be indexed **(click)** and they return new strings **(click)**, which can also be indexed **(click)**, and so on **(click)** and so on... **(click)**
+            - Also the type of the type of type **(click)** is type **(click)**
           </aside>
         </section>
 
@@ -253,38 +258,20 @@ True</span>
       <section>
 
         <section>
-          TODO better and shorter Python oddity... maybe just revisit the one from earlier in the talk?
-          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
->>> numbers = [1, 2, 3]
->>> <span class="fragment" data-fragment-index=1>def set_numbers(new_numbers):
-...     <span class="fragment bold-current" data-fragment-index=6>print("before:", numbers)</span>
-...     <span class="fragment bold-current" data-fragment-index=5>numbers += new_numbers</span><span class="fragment" data-fragment-index=7></span>
-...     print("after:", numbers)
-...</span><span class="fragment" data-fragment-index=2>
->>> set_numbers([4, 5, 6])</span><span class="fragment" data-fragment-index=3>
-Traceback (most recent call last):
-  File "<python-input-2>", line 1, in <module>
-    set_numbers([4, 5, 6])
-    ~~~~~~~~~~~^^^^^^^^^^^
-  <span class="fragment bold-current" data-fragment-index=4>File "<python-input-1>", line 2, in set_numbers
-    print("before:", numbers)
-                     ^^^^^^^</span>
-UnboundLocalError: cannot access local variable 'numbers' where it is not associated with a value</span>
+          <pre class="python" style="width: 40%;"><code data-trim data-noescape>
+>>> x = []
+>>> <span class="fragment">x.append(x)
+>>> </span><span class="fragment">x</span><span class="fragment">
+[[...]]
+>>> </span><span class="fragment">[[...]]</span><span class="fragment">
+[[Ellipsis]]</span>
           </code></pre>
           <aside class="notes" data-markdown>
-            - Let's say we have a list of numbers
-            - And we define a function **(click)** that uses the `+=` operator on that list of numbers
-            - If we pass a list to this function, **(click)** what do you think we might see?
-            - What will this code output?
-            - It might print before and after with different numbers
-            - They could be the same numbers
-            - Or maybe an exception is raised on that `+=` line
-            - **(click)** It turns out... this code does raises an exception...
-            - But it raises it **(click)** on the *first* line in this function
-            - So nothing prints at all
-            - This happens because each variable name within a function is tied to one *specific* scope and Python determines a variable's scope when it *parses* the function, not when the function is called
-            - Since we're **(click)** assigning to this `numbers` variable, it must be a local variable... but that means we're **(click)** trying to read from a local variable before we've even assigned to it **(click)**
-            - I collect snippets of code like this
+            - As we've already seen, you can *append* a list **(click)** *to itself* in Python
+            - Python is smart enough **(click)** to represent that list using 3 dots **(click)** because otherwise it would need to show an infinite number of square brackets
+            - Interestingly, that string representation is *also* valid Python code **(click)**
+            - Though it represents a list containing **(click)** a list containing a Python's special `Ellipsis` object
+            - Which is a bit odd
             - I call this kind of code a "Python Oddity"
           </aside>
         </section>
@@ -713,6 +700,13 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
         </section>
 
         <section>
+          <h1>Sunk Cost Bias</h1>
+          <aside class="notes" data-markdown>
+            - TODO
+          </aside>
+        </section>
+
+        <section>
           <h1>etc.</h1>
           <aside class="notes" data-markdown>
             - TODO
@@ -809,23 +803,23 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
         </section>
 
         <section>
-          <h2>Name Things<span class="fragment"> Well</span></h2>
-          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
-          >>> colors = ["purple", "green"]
-          >>> print(*colors)
-          >>> [*colors, "black"]
-          >>> first, *rest = colors
-          >>> def my_func(*args): pass
-          </code></pre>
+          <h1>Name Things<span class="fragment"> Well</span></h1>
           <aside class="notes" data-markdown>
             - So naming unnamed ideas is helpful
-            - And the names we choose are also important also
+            - And the names we choose are also important also **(click)**
             - But so are the *words* we chose, more generally...
           </aside>
         </section>
 
         <section>
           <h2>Words Matter</h2>
+          <pre class="python" style="width: 50%;"><code data-trim data-noescape>
+          >>> colors = ["purple", "green"]
+          </code></pre>
+
+          <p>&ldquo;<code>colors</code> contains a list&rdquo;</p>
+          <p>&ldquo;<code>colors</code> is a list of strings&rdquo;</p>
+          <p>&ldquo;Let's update this list&rdquo;</p>
           <aside class="notes" data-markdown>
             - TODO when describing Python's variables, don't use the terms "contains", "holds", or even "is". Those words might implicitly lead someone new to Python to assume an incorrect mental model
             - TODO words matter only so much...
@@ -838,154 +832,6 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
               - Using phrases like instatiate, declare, etc... can be confusing
               - When we talk about a generator, do we mean a generator object or a generator function?
               - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
-          </aside>
-        </section>
-
-      </section>
-      <section>
-
-        <section>
-          <h1>Iterating</h1>
-          <!-- TODO show some image here instead? -->
-          <aside class="notes" data-markdown>
-            - Whether you're improving a mental model or trying to more quickly recognize a cognitive bias
-            - You probably won't be able to immediately and completely change your thought patterns
-          </aside>
-        </section>
-
-        <section>
-          <div style="display: grid; grid-template-columns: 25% 25% 25% 25%;" class="fragment">
-          <img src="make it stick.jpg" class="no-style">
-          <img src="learn like a pro.jpg" class="no-style">
-          <img src="learn better.jpg" class="no-style">
-          <img src="how we learn.jpg" class="no-style">
-          </div>
-          <aside class="notes" data-markdown>
-            - Every once in a while, I think about how I might improve the ways that I teach my students
-            - There is *always* some way that I could be teaching better than I am
-            - So... **(click)**
-            - I read books about teaching
-            - Learning about a way to improve my teaching abilities is exciting...
-            - but it's also nerve-wracking
-            - Right after learning about a way that I could improve, I feel a strong urge to immediately improve
-          </aside>
-        </section>
-
-        <section>
-          <h2><span class="fragment bold-current">Blocked</span> Versus <span class="fragment bold-current">Interleaved</span> Practice</h2>
-          <p class="fragment"></p>
-          <p class="fragment">&ldquo;Now I must update <em>all</em> my curriculum&rdquo;</p>
-          <aside class="notes" data-markdown>
-            - Years ago I read about **blocked practice** and **interleaved practice**
-            - blocked practice **(click)** involves dedicating a block of time to practicing *one* specific topic
-            - interleaved practice **(click)** involves jumping back and forth between multiple topics within a single practice session
-            - **(click)** Many traditional forms of teaching often explicitly or implicitly *encourage blocked practice*
-            - But interleaved practice is often more effective than blocked practice
-            - After learning about this, I *immediately* wished that **(click)** I could change all of my curriculum...
-            - but I had team trainings coming up and not a lot of time to change everything
-          </aside>
-        </section>
-
-        <section>
-          <h2>The Options</h2>
-          <ol>
-            <li class="fragment">Immediately fix the problem</li>
-            <li class="fragment">Deny that there's a problem</li>
-            <li class="fragment">Appreciate the status quo while noting the problem</li>
-          </ol>
-          <aside class="notes" data-markdown>
-            - So I pretty much had 2 options...
-            - I could **drop everything** I'm doing **(click)** and pour all of my energy into fixing the problem that I didn't even know was a problem just days before
-            - Or I could **ignore this new information**, **(click)** deny that there was a problem, and decide that everything was as good as it can possibly be
-            - Of course... those weren't the only 2 options
-            - but it did *feel* that way
-            - I ended up eventually choosing a third option...
-            - I tried to both **(click)** appreciate what I had so far *and* gradually improve what I had done...
-            - to make it closer to the idealized version of my curriculum that I *imagine* might one day exist
-            - It has been years, and I am *still* working on that ideal version of my curriculum
-            - But I haven't given up
-          </aside>
-        </section>
-
-        <section>
-          <h2>
-            I may not be where I imagine,<br>but I am making progress.
-          </h2>
-          <aside class="notes" data-markdown>
-            - Progress is often gradual
-            - And it's hard to *see* progress *while it's happening*
-          </aside>
-        </section>
-
-        <section>
-          <div style="width: auto; max-width: max-content; margin: auto;">
-          <h3>The Python Software Foundation</h3>
-            <div style="text-align: left;">
-            <p class="fragment"><a href="https://en.wikipedia.org/wiki/Python_Software_Foundation">2001</a>: PSF was Founded</p>
-            <p class="fragment"><a href="https://pyfound.blogspot.com/2013/06/announcing-code-of-conduct-for-use-by.html">2013</a>: PSF adopts a Code of Conduct</p>
-            <p class="fragment"><a href="https://web.archive.org/web/20160409002306/https://www.python.org/psf/codeofconduct/">2016</a>: PSF notes email for reports</p>
-            <p class="fragment"><a href="https://wiki.python.org/psf/ConductWG/Charter?action=info">2017</a>: PSF forms a CoC workgroup</p>
-            <p class="fragment"><a href="https://pyfound.blogspot.com/2019/09/the-python-software-foundation-has_24.html">2019</a>: PSF adopts new Code of Conduct</p>
-            </div>
-          </div>
-          <aside class="notes" data-markdown>
-            - The Python Software Foundation was formed in 2001  **(click)**
-            - And the foundation didn't have a Code of Conduct **(click)** for its first decade of existence
-            - But even after a code of conduct was written...
-            - **(click)** There wasn't any official contact information to use use for reporting conduct issues in online PSF spaces for the next 3 years
-            - And until a year after that, **(click)** there wasn't actually a group of individuals dedicated to handling Code of Conduct issues... everything was handled directly by the board of directors
-            - But at that point the code of conduct was only about 10 sentences long and it wasn't actually enforceable...
-            - **(click)** Until a couple years later...
-            - Today the PSF has an actionable Code of Conduct with publicly documented reporting and enforcement processes and Code of Conduct issues are handled by a dedicated group of volunteers
-            - ...
-            - It's sometimes hard not to get discouraged by an exceptionally imperfect situation...
-            - I often think of a quote from Hans Rosling...
-          </aside>
-        </section>
-
-        <section>
-          <div>
-            <blockquote style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
-              “The world can be both bad and better.”
-            </blockquote>
-            <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
-          </div>
-          <aside class="notes" data-markdown>
-            - The world can be both *bad* and *better* at the same time
-            - This is true of some of the most pressing problems in the world and it's true of many of my problems as well
-            - This quote is about acknowledging that we often *feel* like there's a contradiction between a something being **less than ideal** but also **better than it used to be**
-            - Logically, there's no contradiction here... but it can be really challenging to hold both of these ideas in your head at the same time
-            - This is called a false dichotomy, a false binary, or...
-          </aside>
-        </section>
-
-        <section>
-          <div>
-            <h2>False Dilemma</h2>
-            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
-              “My abilities can be both <strong>improving</strong> and <strong>have room for improvement</strong>”
-            </blockquote>
-            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
-              “A scenario can be both <strong>okay</strong> and <strong>unideal</strong>”
-            </blockquote>
-          </div>
-          <aside class="notes" data-markdown>
-            - It's really hard to acknowledge that..
-            - **(click)** I can be **making progress** but still not be **where I want to be**
-            - Or...
-            - **(click)** I may not be where I *want* to be, but I might still be in a pretty okay place
-          </aside>
-        </section>
-
-        <section>
-          <h2>
-            I may not be where I <span class="fragment bold">imagine</span>,<br>but I am making <span class="fragment bold">progress</span>.
-          </h2>
-          <aside class="notes" data-markdown>
-            - It's often easier to see what *could be* than it is to appreciate what *is*
-            - This might bias our brains toward striving for more **(click)**
-            - Which is great...
-            - But if we don't also take a step back and **(click)** appreciate where we're at, we risk discouraging ourselves to the point of giving up
           </aside>
         </section>
 
@@ -1072,11 +918,12 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
           <p class="fragment"><strong>Consequentialism</strong>: Good Outcomes and Bad Outcomes</p>
           <p class="fragment">All Actions Bundle Good and Bad</p>
           <aside class="notes" data-markdown>
+            - First I'll note that while *I am not a philosopher*, I did run this slide by a philosopher and she assured me that this is definitely an oversimplification but it's also "good enough" for a quick a summary
             - There are 2 primary moral frameworks that I've heard philosophers talk about
             - Deontology, **(click)** which is a belief that each action is either right or wrong and we should try to perform only right actions.
             - and Consequentialism, **(click)** which is a belief that actions should be judged based on their outcomes
             - Both of these moral frameworks have problems
-            - Deontology focuses on the intent of an action and can lead to a fixation on minimizing bad actions while ignoring the outcomes of our actions
+            - Deontology focuses on the intent of an action and can lead to some black-and-white thinking
             - But consequentialism requires guessing about the outcomes of our actions and guesses are *bound* to be faulty
             - Problems aside, at heart, I am *mostly* a consequentialist
             - Meaning I believe that most of the time **(click)** we should try to weigh the good and the bad and maximize the outcome as best as we can
@@ -1165,6 +1012,159 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
       </section>
       <section>
 
+        <!--
+        <section>
+          <h1>Iterating</h1>
+          TODO show some image here instead?
+          <aside class="notes" data-markdown>
+            - Whether you're improving a mental model or trying to more quickly recognize a cognitive bias
+            - You probably won't be able to immediately and completely change your thought patterns
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: grid; grid-template-columns: 25% 25% 25% 25%;" class="fragment">
+          <img src="make it stick.jpg" class="no-style">
+          <img src="learn like a pro.jpg" class="no-style">
+          <img src="learn better.jpg" class="no-style">
+          <img src="how we learn.jpg" class="no-style">
+          </div>
+          <aside class="notes" data-markdown>
+            - Every once in a while, I think about how I might improve the ways that I teach my students
+            - There is *always* some way that I could be teaching better than I am
+            - So... **(click)**
+            - I read a lot of books about learning, teaching, and about habit formation
+            - Learning about a way to improve my teaching abilities is exciting...
+            - but it's also nerve-wracking
+            - Right after learning about a way that I could improve, I feel a strong urge to immediately improve
+          </aside>
+        </section>
+
+        <section>
+          <h2><span class="fragment bold-current">Blocked</span> Versus <span class="fragment bold-current">Interleaved</span> Practice</h2>
+          <p class="fragment"></p>
+          <p class="fragment">&ldquo;Now I must update <em>all</em> my curriculum&rdquo;</p>
+          <aside class="notes" data-markdown>
+            - Years ago I read about **blocked practice** and **interleaved practice**
+            - blocked practice **(click)** involves dedicating a block of time to practicing *one* specific topic
+            - interleaved practice **(click)** involves jumping back and forth between multiple topics within a single practice session
+            - **(click)** Many traditional forms of teaching often explicitly or implicitly *encourage blocked practice*
+            - But interleaved practice is often more effective than blocked practice
+            - After learning about this, I *immediately* wished that **(click)** I could change all of my curriculum...
+            - but I had team trainings coming up and not a lot of time to change everything
+          </aside>
+        </section>
+
+        <section>
+          <h2>The Options</h2>
+          <ol>
+            <li class="fragment">Immediately fix the problem</li>
+            <li class="fragment">Deny that there's a problem</li>
+            <li class="fragment">Appreciate the status quo while noting the problem</li>
+          </ol>
+          <aside class="notes" data-markdown>
+            - So I pretty much had 2 options...
+            - I could **drop everything** I'm doing **(click)** and pour all of my energy into fixing the problem that I didn't even know was a problem just days before
+            - Or I could **ignore this new information**, **(click)** deny that there was a problem, and decide that everything was as good as it can possibly be
+            - Of course... those weren't the only 2 options
+            - but it did *feel* that way
+            - I ended up eventually choosing a third option...
+            - I tried to both **(click)** appreciate what I had so far *and* gradually improve what I had done...
+            - to make it closer to the idealized version of my curriculum that I *imagine* might one day exist
+            - It has been years, and I am *still* working on that ideal version of my curriculum
+            - But I haven't given up
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+            I may not be where I imagine,<br>but I am making progress.
+          </h2>
+          <aside class="notes" data-markdown>
+            - Progress is often gradual
+            - And it's hard to *see* progress *while it's happening*
+          </aside>
+        </section>
+        -->
+
+        <section>
+          <div style="width: auto; max-width: max-content; margin: auto;">
+          <h3>The Python Software Foundation</h3>
+            <div style="text-align: left;">
+            <p class="fragment"><a href="https://en.wikipedia.org/wiki/Python_Software_Foundation">2001</a>: PSF was Founded</p>
+            <p class="fragment"><a href="https://pyfound.blogspot.com/2013/06/announcing-code-of-conduct-for-use-by.html">2013</a>: PSF adopts a Code of Conduct</p>
+            <p class="fragment"><a href="https://web.archive.org/web/20160409002306/https://www.python.org/psf/codeofconduct/">2016</a>: PSF notes email for reports</p>
+            <p class="fragment"><a href="https://wiki.python.org/psf/ConductWG/Charter?action=info">2017</a>: PSF forms a CoC workgroup</p>
+            <p class="fragment"><a href="https://pyfound.blogspot.com/2019/09/the-python-software-foundation-has_24.html">2019</a>: PSF adopts new Code of Conduct</p>
+            </div>
+          </div>
+          <aside class="notes" data-markdown>
+            - The Python Software Foundation was formed in 2001  **(click)**
+            - And the foundation didn't have a Code of Conduct **(click)** for its first decade of existence
+            - But even after a code of conduct was written...
+            - **(click)** There wasn't any official contact information to use use for reporting conduct issues in online PSF spaces for the next 3 years
+            - And until a year after that, **(click)** there wasn't actually a group of individuals dedicated to handling Code of Conduct issues... everything was handled directly by the board of directors
+            - But at that point the code of conduct was only about 10 sentences long and it wasn't actually enforceable...
+            - **(click)** Until a couple years later...
+            - Today the PSF has an actionable Code of Conduct with publicly documented reporting and enforcement processes and Code of Conduct issues are handled by a dedicated group of volunteers
+            - ...
+            - It's sometimes hard not to get discouraged by an exceptionally imperfect situation...
+            - I often think of a quote from Hans Rosling...
+          </aside>
+        </section>
+
+        <section>
+          <div>
+            <blockquote style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
+              “The world can be both bad and better.”
+            </blockquote>
+            <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
+          </div>
+          <aside class="notes" data-markdown>
+            - The world can be both *bad* and *better* at the same time
+            - This is true of some of the most pressing problems in the world and it's true of many of my problems as well
+            - This quote is about acknowledging that we often *feel* like there's a contradiction between a something being **less than ideal** but also **better than it used to be**
+            - Logically, there's no contradiction here... but it can be really challenging to hold both of these ideas in my head at the same time
+          </aside>
+        </section>
+
+        <section>
+          <div>
+            <h1>False Dilemma</h1>
+            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
+              “My abilities can be both <strong>improving</strong> and <strong>have room for improvement</strong>”
+            </blockquote>
+            <blockquote style="box-shadow: none; margin-bottom: 0;" class="fragment">
+              “A scenario can be both <strong>okay</strong> and <strong>unideal</strong>”
+            </blockquote>
+          </div>
+          <aside class="notes" data-markdown>
+            - It's hard to acknowledge that..
+            - **(click)** I can be **making progress** but still not be **where I want to be**
+            - Or...
+            - **(click)** I may not be where I *want* to be, but I might still be in a pretty okay place
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+            I may not be where <span class="fragment bold" data-fragment-index=1>I imagine</span>,<br>but I am <span class="fragment bold" data-fragment-index=2>making progress</span>.
+          </h2>
+          <aside class="notes" data-markdown>
+            - Progress is often gradual
+            - And it's hard to *see* progress *while it's happening*
+            - It's easier to see what *could be* than it is to appreciate what *is*
+            - This might bias our brains toward striving for more **(click)**
+            - Which evolutionarily, might be a good idea...
+            - But if we don't also take a step back and **(click)** appreciate where we're at right now, we risk discouraging ourselves to the point of giving up
+          </aside>
+        </section>
+
+        <!-- TODO more on progress -->
+
+      </section>
+      <section>
+
         <!-- TODO Figure out what to do with this section... -->
         <section>
           <h1 class="fragment" style="margin-top: -2em;" data-fragment-index=3><code>self</code></h1>
@@ -1237,6 +1237,20 @@ UnboundLocalError: cannot access local variable 'numbers' where it is not associ
 
       </section>
       <section>
+
+        <section>
+          <h1>Thinking about our thinking</h1>
+          <p>Learning and Teaching</p>
+          <p>Habit Formation</p>
+          <p>Self-compassion</p>
+          <p>Emotional intelligence</p>
+          <p>Empathy and Compassion</p>
+          <p>Cognitive Discontent</p>
+          <aside class="notes" data-markdown>
+            - TODO
+          </aside>
+        </section>
+
 
         <section>
           <h1 class="fragment" data-fragment-index=7>The Obvious</h1>
