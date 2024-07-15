@@ -153,6 +153,10 @@ pre.python code {
   font-family: monospace;
 }
 
+.reveal svg.no-mono text {
+  font-family: unset;
+}
+
 .reveal table {
   margin: auto;
   border-collapse: collapse;

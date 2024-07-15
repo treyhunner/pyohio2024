@@ -46,18 +46,6 @@ Try to effect positive change as much as you can.
 
 ---
 
-A mental model of the world that depends on humans having a considerable amount of free will.
-
-Is that accurate though?
-
-And does it matter?
-
-I think it does.
-
-If every action we take is entirely taken thanks to free will, then every success or mistake that an individual makes is theirs alone. "You get what you deserve."
-
-If instead, our genetics, our childhood environment, and countless other factors shape our actions then that ownership doesn't as much sense anymore. "TODO?"
-
 Extending grace (?) to those around us can be helpful.
 Then again, you shouldn't let unchecked harm run amok.
 Rules, laws, and codes of conduct exist for the purpose of harm reduction and good feeling maximizing (???)
@@ -77,10 +65,6 @@ Purposely incurring technical debt. It requires slowing down your thinking. It r
 Examples in Python, programming, etc.?
 
 - Code of conduct violation: what I'm being accused of is a bad thing, but I'm a good person.
-- I stopped running the Hacker News meetup because it felt inconsistent with my beliefs about it
-- I believe software maintainability is important and I also think clever and succinct coding solutions are better than less clever and verbose ones. I reconcile these two beliefs by also thinking that we should focus on hiring software developers who are "smart" enough to understand the clever solutions.
-- Code maintainability is paramount. And yet we cut corners when writing tests.
-- "Diverse teams are more effective". You just recommended your company hire your friend who has a very similar background to you.
 
 Nothing in black and white. There's always a trade-off. Sometimes it's a pretty clear cut trade-off, but often the balance is *not* so obvious... at least not at first.
 
@@ -138,6 +122,30 @@ I wouldn't do that because it would be bad, which would mean *I'm* bad.
 
 ---
 
+It's hard not to get wrapped up in your own self of `self`
+
+Who are you?
+
+Are you a good person or a bad person?
+
+Are you think kind of person who would `____`?
+
+Our identities are part of us.
+
+---
+
+As Julia Galef said in The Scout Mindset, thinking like a "scout" means holding your identity lightly.
+
+It's not easy to avoid...
+
+Identifying with the code we write
+
+Identifying with the actions we perform
+
+Identifying with the actions we *want to* perform
+
+---
+
 TODO I am speaking as a cisgender straight white man with pretty good self-esteem who doesn't currently suffer from depression.
 
 Our brains all have a limit at which we no longer are able to feel good about ourselves.
@@ -150,41 +158,13 @@ I did enough bad things and they were bad enough, that I must be a bad person.
 
 ---
 
-TODO Do chairs exist?
-
-There is no objective experience of reality.
-
-Our brains are simply modeling the world.
-
-TODO a few quick facts on why/how this is the case...
-
----
-
-Things you can improve:
-
-your mental model of the various social constructs around us:
+What are the mental models you have about...
 
 - Python
-- Economics: markets and incentives
-    - What are markets and competition good at?
-    - What are the downsides to markets?
-    - When/where do people's incentives align and where do they misalign?
-    - What are positive and negative externalities?
-- Politics
-    - What are the likely consequences of a new law?
-    - What are the likely consequences
-- Gender
-    - How do different societies perceive gender today?
-    - How has the role of gender changed throughout history?
-    - What purpose has gender served evolutionarily?
-    - What purpose does gender serve today?
-- Sexuality
-- Religion
-- Free will: including blame-worthiness, praise-worthiness and how much of a role luck plays in the specific outcomes over an individual's lifetime
-- Self: do individual humans exist?
-- Ontology: does anything exist?
-- Empathy
-    - TODO
+- Economics
+- US politics
+- What gender is
+- Yourself
 
 ---
 
@@ -232,19 +212,6 @@ That third idea might be a little uncomfortable, but it's the last two ideas tha
 
 ---
 
-Notes from Melanie:
-
-Consider changing the language of my students from people that come to me to learn Python
-
-Melanie thinks I should mention and screenshot my spreadsheet of suffering and mention that I'm a nerd
-
-Let's look at some pictures of cute animals to cleanse our pallat (sad chicken)... oh wait that wasn't the right one... here's an actually happy animal
-
-Change the Python oddity example because it's confusing
-
-
----
-
 You said something in a code review that your coworker was offended by.
 
 How did they experience what you said as offensive?
@@ -263,3 +230,150 @@ The goal isn't to do this for every negative interaction we have... the goal is 
 I teach Python to groups through team trainings and to individuals through Python Morsels.
 
 I know that 
+
+
+---
+
+Our brains are very concerned with our perception of ourselves.
+
+Am I smart?
+
+Do I belong?
+
+Am I good?
+
+---
+
+--Cognitive dissonance--
+
+This is partly why cognitive dissonance can be so hard to grapple with.
+
+When my actions don't align with what we feel is good or correct, I feel unsettled.
+
+But cognitive dissonance is just one way to feel uncomfortable.
+
+---
+
+About 10 years ago, many of my local meetups decided to add explicit codes of conduct and noting the code of conduct at the beginning of every meeting.
+
+I remember after one meetup event, an attendee told me that the code of conduct made him feel uncomfortable.
+
+Uncomfortable
+
+He felt like with our frequent mention of the code of conduct that he needed to be careful about what he said around others.
+
+I told this attendee that I understood his feeling.
+He acknowledged that he would probably acclimate to the code of conduct the same way he might acclimate to volunteering at an elementary school, where he needed to be careful about his language.
+
+In the meantime, the discomfort he felt might be a good thing.
+Maybe the temporary discomfort might nudge him to be a bit more deliberate with his words, especially around new attendees who he might not know well.
+
+Discomfort
+
+---
+
+Uncomfortable
+
+Discomfort
+
+Don't get me wrong...
+
+I'm not advocating for discomfort
+
+
+---
+
+The point: to help you grapple with the fact that your brian is both an *amazing thing* and it's *constantly making mistakes*.
+
+
+---
+
+Move vegan section out of default states, after progress, and after discomfort, to talk specifically about cognitive dissonance as a form of discomfort that I continue to sit with.
+
+---
+
+A more real world example with the words and phrases we use.
+
+"Light years" are *not* a measure of time
+
+"Organic food" is a weird phrase because inorganic food doesn't exist. (a metal apple)
+
+A "Calorie" in nutrition and a "calorie" in chemistry are not the same thing... but in a frustrating way.
+1 capital-C "Calorie" is equal to 1,000 lowercase-c "calories".
+
+"Serverless"... what does it even mean?
+
+"Theory of Relativity"
+Once a theory becomes broadly accepted, it doesn't become a fact... it just stays in "theory" land forever.
+The proper functioning of GPS satellites heavily depends of this so-called theory.
+
+"Literally".
+I literally do not understand what happened to this word.
+
+"guys"
+
+---
+
+...
+
+---
+
+I don't know about you, but when I have a problem I often think of solutions to my problem that involve writing code.
+
+I wrote Python programs to help me reconcile my finances get my taxes in order.
+Could I have used off-the-shelf software to solve this problem *for* me?
+
+But I didn't.
+
+Sometimes, Python is a hammer and our problems all look like nails.
+
+---
+
+Many years ago, I was working an Python project that needed to serialize JSON data.
+Today, I would have solved my problem by using the `json` module in the Python standard library.
+
+But at the time, we were using Python 2.4, which did not *have* a `json` module.
+
+There was a third-party `simplejson` library, which later became the official `json` module.
+But I chose not to use that.
+
+Instead, I wrote my own JSON formatter.
+It was fragile and not something I would want to share publicly... which is the reason I've never talked about it publicly until now.
+
+Why did I do this?
+
+I don't really have an answer.
+
+My guess... is that I was experiencing
+
+"Not Invented Here" syndrome
+
+Why would I use someone else's code when I know how to write the code myself.
+
+---
+
+My *default* state was to write code to solve my problems.
+
+Instead of finding code that someone else had written or, better yet, finding a library that someone was maintaining.... I solved the problem with *my own* code.
+
+---
+
+Today, I think of "Not Invented" here as "Not Thought of By Me".
+
+"Not Thought of By Me" is a bit broader...
+
+Instead of asking your coworker to help you brainstorm a problem, you might try to solve everything on your own.
+
+What if you don't have a coworker to ask?
+Well, there's always a search engine.
+
+Or today, there's always a chat bot.
+
+There is NO shame in using Google, asking a coworker for help, or using a chat bot.
+
+And yes, you shouldn't assume a chat bot will give you the right answer, in full the first time you ask it a question.
+But you also shouldn't assume that the code you found on StackOverflow is correct or even that the library you're using does what you *think* it does.
+
+Always verify that your solution actually works.
+
+---
