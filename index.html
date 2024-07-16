@@ -890,39 +890,30 @@ True</span>
 
         <section>
           <h2>Words Matter</h2>
-          <h3 class="fragment" style="margin-bottom: 1em;">Our words imply mental models</h3>
-          <pre class="python fragment" style="width: 60%;"><code data-trim data-noescape>
+          <h3 class="fragment">Our words imply mental models</h3>
+          <pre class="python fragment" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
 >>> colors = ["purple", "green", "blue"]
           </code></pre>
-          <ul style="list-style-type: none; padding-bottom: 2em;">
+          <ul style="list-style-type: none;">
             <li class="fragment"><span class="fragment">❌</span> &ldquo;<code>colors</code> <strong>contains</strong> a list of strings&rdquo;</li>
             <li class="fragment"><span class="fragment">⚠️</span> &ldquo;<code>colors</code> <strong>is</strong> a list of strings&rdquo;</li>
             <li class="fragment"><span class="fragment">✅</span> &ldquo;<code>colors</code> <strong>points to</strong> a list of strings&rdquo;</li>
-            <!--<li class="fragment"><span class="fragment">⚠️</span> &ldquo;Let's update this list&rdquo;</li>-->
           </ul>
+          <p class="fragment" style="font-size: 2em;">➡️</p>
           <aside class="notes" data-markdown>
             - Words have 
             - When I'm teaching Python, I find that the phrases I use can **(click)** accidentally imply an incorrect mental model
-            - We've assigned a `colors` variable to a list of strings
+            - Let's say **(click)** we've assigned a `colors` variable to a list of strings
             - So `colors` contains a list **(click)**
             - Except... it doesn't **(click)**
             - Because variables don't *contain* objects in Python
-            - So `colors` *is* a list **(click)**
-            - That's *better*, **(click)** but it sort of implies that there's a one-to-one relationship between our variable and the list
-            - What about `colors` **(click)** *points to* a list?
+            - Okay... maybe we could say
+            - `colors` *is* a list **(click)**
+            - That's *better*, **(click)** but it sort of implies that there's a one-to-one relationship between our variable and the list.
+            - ... which isn't the case
+            - What if we said `colors` **(click)** *points to* a list?
             - This one might sound a little funny, but **(click)** this is the phrase I usually use while teaching
             - Even when I never mention the words pointer or reference, that verb "points" **(click)** evokes a more accurate mental picture
-            - TODO
-            - TODO words matter only so much...
-              - variables in Python aren't pointers because they can't be dereferenced
-              - If someone says the phrase "generator comprehension", I know they mean "generator expression" and in fact every time I hear generator comprehension I *wish* that was the official term
-              - The phrase "the `reversed` function" is technically incorrect because `reversed` is actually a class... but that phrase is also perfectly acceptable because we thanks to duck typing in Python, the word "function" is often used to mean "an object you can call" rather than an actual function object
-              - The phrases `print` method and `print` statement are technically incorrect and I try to avoid those as a teacher, but I also try to only gently nudge my students toward talking about `print` as a function.
-              - The term "argument" can be confusing... function argument, command-line argument, or are we talking about a variable name in a function definition... which is technically a parameter but the words "variable" or "argument" are often used instead
-              - "We call the `append` function on the list" might paint a slightly different picture than "we call the `append` method on the list" even thuogh methods are technically functions
-              - Using phrases like instatiate, declare, etc... can be confusing
-              - When we talk about a generator, do we mean a generator object or a generator function?
-              - Named concepts that I'm grateful for: duck typing, monkey patching, truthiness (technically called truth value testing), dunder methods (officially "special methods"), the "walrus operator" and "assignment expressions" (one about the operator and the other about the expression)
           </aside>
         </section>
 
@@ -1036,21 +1027,27 @@ USE_TZ = True
         </section>
 
         <section>
-          <h1>TODO</h1>
+          <h2 class="fragment">Have a problem?</h2>
+          <h2 class="fragment">Write code!</h2>
+          <h1 class="fragment"><span class="fragment">🗝️</span> <span>🔨</span></h1>
           <aside class="notes" data-markdown>
-            - I don't know about you, but when I have a problem I often think of solutions to my problem that involve writing code.
-            - I wrote Python programs to help me reconcile my finances get my taxes in order.
+            - I don't know about you, but when I have a problem **(click)** I often think of solutions to my problem that involve writing code. **(click)**
+            - I've written Python programs to help me reconcile my finances get my taxes in order every year.
             - Could I have used off-the-shelf software to solve this problem *for* me?
             - Maybe.
             - But I *didn't*. Instead, I wrote code.
-            - Sometimes, Python is a hammer and our problems all look like nails.
+            - Sometimes, Python is a hammer **(click)** and our problems **(click)** all *look* like nails.
           </aside>
         </section>
 
         <section>
-          <h1>TODO json</h1>
+          <h1 class="fragment">JSON data</h1>
+          <h2 class="fragment"><code>import json</code></h2>
+          <h2 class="fragment"><code class="fragment strike">simplejson</code></h2>
+          <h2 class="fragment">Do It Yourself</h2>
           <aside class="notes" data-markdown>
-            - Many years ago, I was working an Python project that needed to serialize JSON data.
+            - TODO fragments for this and next few slides
+            - Many years ago, I was working on a Python project that needed to serialize JSON data.
             - Today, I would have solved my problem by using the `json` module in the Python standard library.
             - But at the time, we were using Python 2.4, which did not *have* a `json` module.
             - There was a third-party `simplejson` library, which later became the official `json` module.
@@ -1061,19 +1058,25 @@ USE_TZ = True
         </section>
 
         <section>
-          <h1>TODO Not Invented Here</h1>
+          <h1 class="fragment">Not Invented Here</h1>
+          <p class="fragment">someone else's code? 👎</p>
+          <p class="fragment">my code 👍</p>
           <aside class="notes" data-markdown>
             - I don't really have an answer.
-            - In hindsight, I think I was experiencing
+            - I have guesses.
+            - I suspect that I was experiencing
             - "Not Invented Here" syndrome
             - Why would I use someone else's code when I know how to write the code myself.
             - My *default* state was to write code to solve my problems.
-            - Instead of finding code that someone else had written or, better yet, finding a library that someone was maintaining.... I solved the problem with *my own* code.
+            - Instead of finding code that someone else had written or finding a library that someone was maintaining.... I solved the problem by *writing my own code*.
           </aside>
         </section>
 
         <section>
-          <h1>TODO Not Invented Here</h1>
+          <h1 class="fragment">Not Thought of By Me</h1>
+          <p class="fragment">Ask a coworker for help</p>
+          <p class="fragment">Use a search engine</p>
+          <p class="fragment">Ask Chat GPT, Claude, etc.</p>
           <aside class="notes" data-markdown>
             - Today, I think of "Not Invented" here as "Not Thought of By Me".
             - "Not Thought of By Me" is a bit broader...
@@ -1089,14 +1092,28 @@ USE_TZ = True
         </section>
 
         <section>
-          <h1>TODO please ask robots & humans to help you get unstuck</h1>
+          <h1 class="fragment" data-fragment-index=1><span class="fragment fade-out" data-fragment-index=2>Don't Build it Yourself</span></h1>
+          <h1 class="fragment" data-fragment-index=2>Ask for Help</h1>
+          <h2 class="fragment" data-fragment-index=3>I use a search engine ~500 times/mo</h2>
+          <h2 class="fragment" data-fragment-index=4>I start ~2 new LLM chats per day</h2>
           <aside class="notes" data-markdown>
-            - I perform an online search N hundred times each time
-            - I start a new chat conversation a language language model N hundred times each month
+            - I am lucky that I've had business colleagues remind me for years to **(click)** stop building things myself
+            - I do *still* build things myself, but I'm also not afraid to ask for help
+            - I perform about 500 online searches every month
+            - That's over 15 searches on average every day
+            - I start a *new* chat conversation a language language model a couple times a day
             - There is NO shame in using Google, asking a coworker for help, or using a chat bot.
           </aside>
         </section>
 
+        <section>
+          TODO
+          <aside class="notes" data-markdown>
+            - TODO regardless of what default state you have... consider questioning it sometimes?... I don't know
+          </aside>
+        </section>
+
+        <!--
         <section>
           <h1>TODO FUN</h1>
           <aside class="notes" data-markdown>
@@ -1107,9 +1124,24 @@ USE_TZ = True
             - Don't be afraid to ask for help, especially when you're more concerned about solving a problem than having fun
           </aside>
         </section>
+        -->
 
       </section>
       <section>
+
+        <section>
+          <h1 class="fragment" data-fragment-index=4>Iterating</h1>
+          <h2 class="fragment" data-fragment-index=1>Questioning a default</h2>
+          <h2 class="fragment" data-fragment-index=2>Responding to a cognitive bias</h2>
+          <h2 class="fragment" data-fragment-index=3>Updating a mental model</h2>
+          <aside class="notes" data-markdown>
+            - Whether you're questioning a default state,
+            - Trying to more grapple wit a bias you have,
+            - Or you're trying to adjust to a new mental model...
+            - You probably *can't* solve your problem overnight
+            - You're going to need to iterate
+          </aside>
+        </section>
 
         <section>
           <div style="width: auto; max-width: max-content; margin: auto;">
@@ -1220,23 +1252,34 @@ USE_TZ = True
         </section>
 
         <section>
+          <h2>Gradual progress</h2>
+          <p>Small steps add up over time</p>
+          <aside class="notes" data-markdown>
+            - Progress is often gradual
+            - Which makes sense...
+            - It's hard to make a big change overnight
+            - But small frequent steps can *really* add up over time
+          </aside>
+        </section>
+
+        <section>
           <h2>
             I may not be where <span class="fragment bold" data-fragment-index=1>I imagine</span>,<br>but I am <span class="fragment bold" data-fragment-index=2>making progress</span>.
           </h2>
           <aside class="notes" data-markdown>
-            - Progress is often gradual
-            - And it's hard to *see* progress *while it's happening*
-            - It's easier to see what *could be* than it is to appreciate what *is*
-            - This might bias our brains toward striving for more **(click)**
+            - So progress is often gradual, but..
+            - it's also hard to *see* progress *while it's happening*
+            - It's easier to see what *could be* than to appreciate what *is*
+            - This might a bias our brains have toward striving for more **(click)**
             - Which evolutionarily, might be a good idea...
             - But if we don't also take a step back and **(click)** appreciate how far we've come, we risk discouraging ourselves to the point of giving up
           </aside>
         </section>
 
-        <!-- TODO more on progress... maybe on finding a way to embrace the discomfort that comes with progress? -->
-
       </section>
       <section>
+
+        <!-- TODO more on progress... maybe on finding a way to embrace the discomfort that comes with progress? -->
 
         <!--
           TODO new section here on discontent/discomfort/uncomfortability

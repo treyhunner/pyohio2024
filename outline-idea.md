@@ -254,40 +254,6 @@ But cognitive dissonance is just one way to feel uncomfortable.
 
 ---
 
-About 10 years ago, many of my local meetups decided to add explicit codes of conduct and noting the code of conduct at the beginning of every meeting.
-
-I remember after one meetup event, an attendee told me that the code of conduct made him feel uncomfortable.
-
-Uncomfortable
-
-He felt like with our frequent mention of the code of conduct that he needed to be careful about what he said around others.
-
-I told this attendee that I understood his feeling.
-He acknowledged that he would probably acclimate to the code of conduct the same way he might acclimate to volunteering at an elementary school, where he needed to be careful about his language.
-
-In the meantime, the discomfort he felt might be a good thing.
-Maybe the temporary discomfort might nudge him to be a bit more deliberate with his words, especially around new attendees who he might not know well.
-
-Discomfort
-
----
-
-Uncomfortable
-
-Discomfort
-
-Don't get me wrong...
-
-I'm not advocating for discomfort
-
-
----
-
-The point: to help you grapple with the fact that your brian is both an *amazing thing* and it's *constantly making mistakes*.
-
-
----
-
 Move vegan section out of default states, after progress, and after discomfort, to talk specifically about cognitive dissonance as a form of discomfort that I continue to sit with.
 
 ---
@@ -307,6 +273,8 @@ A "Calorie" in nutrition and a "calorie" in chemistry are not the same thing... 
 Once a theory becomes broadly accepted, it doesn't become a fact... it just stays in "theory" land forever.
 The proper functioning of GPS satellites heavily depends of this so-called theory.
 
+"Biweekly" and "Bimonthly"
+
 "Literally".
 I literally do not understand what happened to this word.
 
@@ -318,62 +286,75 @@ I literally do not understand what happened to this word.
 
 ---
 
-I don't know about you, but when I have a problem I often think of solutions to my problem that involve writing code.
+Progress isn't easy...
 
-I wrote Python programs to help me reconcile my finances get my taxes in order.
-Could I have used off-the-shelf software to solve this problem *for* me?
+And until you've reached the end (show a gradually filling animation approaching the end slowly) the fact that you're not there yet is *going* to feel uncomfortable.
 
-But I didn't.
+[Uncomfortable]
 
-Sometimes, Python is a hammer and our problems all look like nails.
-
----
-
-Many years ago, I was working an Python project that needed to serialize JSON data.
-Today, I would have solved my problem by using the `json` module in the Python standard library.
-
-But at the time, we were using Python 2.4, which did not *have* a `json` module.
-
-There was a third-party `simplejson` library, which later became the official `json` module.
-But I chose not to use that.
-
-Instead, I wrote my own JSON formatter.
-It was fragile and not something I would want to share publicly... which is the reason I've never talked about it publicly until now.
-
-Why did I do this?
-
-I don't really have an answer.
-
-My guess... is that I was experiencing
-
-"Not Invented Here" syndrome
-
-Why would I use someone else's code when I know how to write the code myself.
+Sitting with discomfort is *not* easy.
 
 ---
 
-My *default* state was to write code to solve my problems.
+About 10 years ago, some of my local meetups decided to add explicit codes of conduct and the code of conduct was noted at the beginning of every meeting.
 
-Instead of finding code that someone else had written or, better yet, finding a library that someone was maintaining.... I solved the problem with *my own* code.
+[Code of Conduct]
+
+I remember after one meetup event, an attendee told me that the code of conduct made him feel uncomfortable.
+
+[Uncomfortable]
+
+He felt that the code of conduct being mentioned at every meeting made him feel like he needed to be extra careful about what he said around others.
+
+I told this attendee that I understood his feeling.
+He acknowledged that he would probably acclimate to the code of conduct the same way humans tend to acclimate to other changes in environment and behavior.
+
+[Acclimating]
+
+Humans are reselient, but acclimating *does* take time.
+
+[Acclimating is challenging]
+
+We didn't just talk about acclimating...
+
+We also talked about the discomfort itself and whether it was a good thing.
+
+[Discomfort]
+
+Maybe the temporary discomfort might nudge him to be a bit more deliberate with his words, especially around newer attendees.
+
+[Deliberate]
 
 ---
 
-Today, I think of "Not Invented" here as "Not Thought of By Me".
+Discomfort
 
-"Not Thought of By Me" is a bit broader...
+Deliberate
 
-Instead of asking your coworker to help you brainstorm a problem, you might try to solve everything on your own.
+Don't get me wrong...
 
-What if you don't have a coworker to ask?
-Well, there's always a search engine.
+I'm not advocating for discomfort for its own sake.
 
-Or today, there's always a chat bot.
+Don't stick your hand in a bucket of ice water for no good reason.
 
-There is NO shame in using Google, asking a coworker for help, or using a chat bot.
+But TODO need a good analogy that involves slowing down and doing something a bit uncomfortable for the benefit of the whole and maybe even for our own benefit...?
 
-And yes, you shouldn't assume a chat bot will give you the right answer, in full the first time you ask it a question.
-But you also shouldn't assume that the code you found on StackOverflow is correct or even that the library you're using does what you *think* it does.
-
-Always verify that your solution actually works.
 
 ---
+
+The point: to help you grapple with the fact that your brian is both an *amazing thing* and it's *constantly making mistakes*.
+
+---
+
+I think of System 1 as not just faster-thinking but also more implicit.
+
+I think of System 2 as more explicit because it's a bit slower and more deliberate.
+
+The Zen of Python says:
+Explicit is better than implicit
+
+So is System 2 *better* than System 1?
+No, but also yes.
+
+It's more powerful, but it's slower and it takes more energy.
+Changing our conditioning to slow down and step into System 2 takes hard work... and that work isn't always worth it.
