@@ -248,9 +248,7 @@ Am I good?
 
 This is partly why cognitive dissonance can be so hard to grapple with.
 
-When my actions don't align with what we feel is good or correct, I feel unsettled.
-
-But cognitive dissonance is just one way to feel uncomfortable.
+When my actions don't align with what I think is good or correct, I feel unsettled.
 
 ---
 
@@ -267,13 +265,15 @@ A more real world example with the words and phrases we use.
 A "Calorie" in nutrition and a "calorie" in chemistry are not the same thing... but in a frustrating way.
 1 capital-C "Calorie" is equal to 1,000 lowercase-c "calories".
 
-"Serverless"... what does it even mean?
+"Biannually": twice each year or once every 2 years?
+
+When I read "4 ounces"... are we talking about volume or weight?
+
+"Serverless"... this word can mean a lot of things, but it rarely means "without a server"
 
 "Theory of Relativity"
 Once a theory becomes broadly accepted, it doesn't become a fact... it just stays in "theory" land forever.
 The proper functioning of GPS satellites heavily depends of this so-called theory.
-
-"Biweekly" and "Bimonthly"
 
 "Literally".
 I literally do not understand what happened to this word.
@@ -283,47 +283,6 @@ I literally do not understand what happened to this word.
 ---
 
 ...
-
----
-
-Progress isn't easy...
-
-And until you've reached the end (show a gradually filling animation approaching the end slowly) the fact that you're not there yet is *going* to feel uncomfortable.
-
-[Uncomfortable]
-
-Sitting with discomfort is *not* easy.
-
----
-
-About 10 years ago, some of my local meetups decided to add explicit codes of conduct and the code of conduct was noted at the beginning of every meeting.
-
-[Code of Conduct]
-
-I remember after one meetup event, an attendee told me that the code of conduct made him feel uncomfortable.
-
-[Uncomfortable]
-
-He felt that the code of conduct being mentioned at every meeting made him feel like he needed to be extra careful about what he said around others.
-
-I told this attendee that I understood his feeling.
-He acknowledged that he would probably acclimate to the code of conduct the same way humans tend to acclimate to other changes in environment and behavior.
-
-[Acclimating]
-
-Humans are reselient, but acclimating *does* take time.
-
-[Acclimating is challenging]
-
-We didn't just talk about acclimating...
-
-We also talked about the discomfort itself and whether it was a good thing.
-
-[Discomfort]
-
-Maybe the temporary discomfort might nudge him to be a bit more deliberate with his words, especially around newer attendees.
-
-[Deliberate]
 
 ---
 
@@ -358,3 +317,29 @@ No, but also yes.
 
 It's more powerful, but it's slower and it takes more energy.
 Changing our conditioning to slow down and step into System 2 takes hard work... and that work isn't always worth it.
+
+---
+
+When my someone tells me "what you did hurt me", I feel two competing emotions.
+
+I feel:
+
+- Empathy: I know what being feels like
+- Defensive: my actions and myself are being judged
+
+My actions are being judged and I am being judged.
+
+TODO my defensiveness is often stronger, especially when the hurt that was caused or my own sense of agency are big
+
+---
+
+- It's mid-February 2020
+- I had just finished a client training that involved me traveling through an airport full of international travelers and we were in a global pandemic and I was experiencing a mix of ignorance and denial about the state of my world
+- After I traveled home for what I, didn't know at the time, would be my last flight of 2020... I listened to a podcast episode that had me thinking about morality and ethics
+- After listening to that episode, and as the US was starting to lock down due to COVID-19, I started listening to an audiobook by the guest of that podcast episode
+- This book had me considering very odd lines of thinking... at least odd for me at the time
+    - I wondered whether I needed to donate much of my money to be a good person
+    - and whether I have a moral obligation to donate one of my kidneys?
+    - and whether my way of living was causing undue suffering in the world...
+- I'd like to note... that I love food and I am a *somewhat* adventurous eater
+- ...
