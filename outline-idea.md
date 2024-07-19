@@ -343,3 +343,63 @@ TODO my defensiveness is often stronger, especially when the hurt that was cause
     - and whether my way of living was causing undue suffering in the world...
 - I'd like to note... that I love food and I am a *somewhat* adventurous eater
 - ...
+
+
+---
+
+Getting uncomfortable is often the only way to change the status quo.
+
+---
+
+Overconfidence Bias
+
+Also called the Dunning-Kruger Effect
+
+We *all* experience an overconfidence bias... it's a natural part of gaining expertise.
+
+TODO Example of airplane pilot crashes and the increase after N hours until M hours
+
+When you're brand new, you know that you don't know enough. When you're very experienced, you much better at actually knowing things. But there's a point during learning where we tend to "know enough to be dangerous", meaning we don't know *nothing* but we think we're more skilled than we are.
+
+It is extremely difficult to *notice* our *own* overconfidence without some sort of outside input.
+
+According to Dunning, one of the best ways to overcome *your* overconfidence bias is to team up with others who might be able to notice *your* overconfidence.
+
+For abilities that are quantifiable, like your typing accuracy, you might be able to take a test.
+But for abilities that are hard to quantify, like professional skills and social skills, you'll need to seek input from other people... as many as you can.
+
+While making this talk, I *knew* that it wasn't where I wanted it be.
+I rehearsed, revised, and wrote down advice I received from over a dozen people.
+It's still the talk I'd like to be giving you today, I *have* made a lot of progress, which is a topic I'll talk about in a bit.
+
+---
+
+Where is your attention?
+
+When learning something new, we often remember better when we take a guess and *then* reveal the answer.
+Why? No one really knows, but "surprise" is a pretty good guess.
+When we're surprised our brain pays more attention.
+
+Early humans that paid to paid attention to surprises may have been less likely to be killed by predators.
+
+Focus.
+Ask questions.
+Be curious.
+Develop habits.
+Seek advice.
+Introspect.
+
+These are all ways to catch our attention. Catching the attention of our brain is the first step toward progress.
+
+Once an idea has your attention, you'll mull it over.
+And thinking *about* an idea is the first step toward being able to *act* on that idea.
+
+---
+
+Show the 4 g's (g3, g4, g1, g2) and ask which one is correct.
+
+Exposure versus experience or expertise
+
+I've seen one of these g's many times, but it never caught my attention
+
+The devil's in the g-tails
