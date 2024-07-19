@@ -166,11 +166,13 @@ Notes after rehearsal with Michael...
 Reminding folks what we're talking about and what we're going to talk about... especially toward the end extend that
 
 
-MVP
-
 Perfection is the enemy of the good
 
-Starting Python Morsels as a mailing list
+Maxmizing versus satisficing
+
+MVP
+
+Example: Starting Python Morsels as a mailing list
 
 
 Someone tried to accomplish something there.
