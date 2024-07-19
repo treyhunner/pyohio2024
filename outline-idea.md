@@ -403,3 +403,31 @@ Exposure versus experience or expertise
 I've seen one of these g's many times, but it never caught my attention
 
 The devil's in the g-tails
+
+---
+
+Your brain doesn't directly experience the world around you
+
+Your brain is constantly *modeling* the world
+
+And it does so... flawlessly
+
+Not flawlessly... flawfully
+
+Falafely?
+
+Fluffily.
+
+Nevermind that thought...
+
+What I'm trying to say is that words matter
+
+The wordsweuseandconsumeaffectourthoughts
+
+The models your brain makes have...
+
+flies
+
+floss
+
+flaws

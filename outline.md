@@ -157,3 +157,24 @@ Consequentialism: doesn't matter what you do but what the result is
 "The road to hell is paved with bad intentions"
 Deontology has a clear right/wrong
 Consequentialism leans toward accepting that we might weight things incorrectly
+
+
+---
+
+Notes after rehearsal with Michael...
+
+Reminding folks what we're talking about and what we're going to talk about... especially toward the end extend that
+
+
+MVP
+
+Perfection is the enemy of the good
+
+Starting Python Morsels as a mailing list
+
+
+Someone tried to accomplish something there.
+Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
+
+
+Inventing your own library feels good in the moment until afterward when you realize you now have your own somewhat flawed library to maintain.
