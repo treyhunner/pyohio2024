@@ -46,12 +46,6 @@ Try to effect positive change as much as you can.
 
 ---
 
-Extending grace (?) to those around us can be helpful.
-Then again, you shouldn't let unchecked harm run amok.
-Rules, laws, and codes of conduct exist for the purpose of harm reduction and good feeling maximizing (???)
-
----
-
 It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
 It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
 Hopefully I'll improve, but it's never going to be as much as I'd like.
@@ -62,102 +56,6 @@ Purposely incurring technical debt. It requires slowing down your thinking. It r
 
 ---
 
-Examples in Python, programming, etc.?
-
-- Code of conduct violation: what I'm being accused of is a bad thing, but I'm a good person.
-
-Nothing in black and white. There's always a trade-off. Sometimes it's a pretty clear cut trade-off, but often the balance is *not* so obvious... at least not at first.
-
-As humans, we tend to get very wrapped up in our sense of self.
-Our egos are a big part of how we experience existence.
-
-Making a conscious effort to think about and talk through your own actions as if you were another person can be really helpful for temporarily suspending our egos.
-
----
-
-Who has attempted to meditate before?
-Who has found meditating challenging because the thinking just keeps happening?
-
-Sometimes meditation teachers will say that you shouldn't try to stop thoughts from happening.
-Just let them happen.
-Observe the thought and acknowledge it and it will eventually be on its way.
-
-That's a little bit similar to the way I try to handle cognitive dissonance.
-One idea 
-
-- I have been experiencing cognitive dissonance 
-
-A bit of a warning: you may have a feeling of cognitive dissonance over3
-
----
-
-Admit your failings to yourself.
-
-Admit your failings to others.
-
-It's especially hard when you haven't yet and may never move through a particular failing.
-
-Saying "I failed", "I learned from it", and "now I'm better for it" isn't so hard.
-In fact, it can feel empowering.
-
-Saying "I failed" and "I'm still failing"... that's hard.
-
-Our brains like to defend us.
-When we act inconsistently with our own values, we prefer not to think too hard about that fact.
-
-> That didn't happen.
-> Okay, but it wasn't bad.
-> Well, it wasn't *very* bad.
-> Besides, it wasn't my fault.
-> And if it was, that wasn't my intention.
-> And regardless, my actions were justified.
-
-- An adaptation of "The Narcissist's Prayer"
-
----
-
-I'm a good person.
-I wouldn't do that because it would be wrong, which would mean *I'm* wrong.
-I wouldn't do that because it would be bad, which would mean *I'm* bad.
-
----
-
-It's hard not to get wrapped up in your own self of `self`
-
-Who are you?
-
-Are you a good person or a bad person?
-
-Are you think kind of person who would `____`?
-
-Our identities are part of us.
-
----
-
-As Julia Galef said in The Scout Mindset, thinking like a "scout" means holding your identity lightly.
-
-It's not easy to avoid...
-
-Identifying with the code we write
-
-Identifying with the actions we perform
-
-Identifying with the actions we *want to* perform
-
----
-
-TODO I am speaking as a cisgender straight white man with pretty good self-esteem who doesn't currently suffer from depression.
-
-Our brains all have a limit at which we no longer are able to feel good about ourselves.
-
---I did a bad thing, so I'm a bad person.--
-
-I'm a good person, so I don't do bad things... at least not *too* bad.
-
-I did enough bad things and they were bad enough, that I must be a bad person.
-
----
-
 What are the mental models you have about...
 
 - Python
@@ -165,120 +63,6 @@ What are the mental models you have about...
 - US politics
 - What gender is
 - Yourself
-
----
-
-300 years from now, which of my actions will look absurd?
-
-Which of my actions will look immoral or naive?
-
----
-
-We mostly experience the world from a first-person perspective.
-
-Attempting to seek out or model a third-person perspective can be very helpful when seeking a resolution to a conflict.
-
-Taking on a second-person perspective is the hardest, that is thinking from the perspective of the person you're directly interacting with. Empathy.
-
----
-
-So in summary:
-
-- Admit that you have a human brain
-- Give your beliefs names and shapes
-    - Naming things: give important ideas names
-    - Mental models: make your mental models explicit
-- Iterate, accepting discomfort
-- Think outside yourself
-    - Modeling your thinking 
-    - There are levels to this
-- Note opportunities for improvement
-
-- Hold your identity lightly? - Julia Galef
-
-
----
-
-I'm going to talk about:
-
-- Naming Things
-- Mental Models
-- Iterating on Your Beliefs
-- Cognitive Dissonance
-- Admitting Your Flaws
-
-That third idea might be a little uncomfortable, but it's the last two ideas that where I'll be hoping you don't throw vegetables at me.
-
-
----
-
-You said something in a code review that your coworker was offended by.
-
-How did they experience what you said as offensive?
-What were you feeling when you said that?
-Why did you feel that?
-Why did you say what you did?
-Was there another way you *could* have said what you did?
-
-This sort of deliberate reflection takes energy and time.
-It can also be emotionally taxing.
-
-The goal isn't to do this for every negative interaction we have... the goal is to help us recognize a pattern so that we can occasionally slow down and act more deliberately until our new thinking patterns and actions become our new habit.
-
----
-
-I teach Python to groups through team trainings and to individuals through Python Morsels.
-
-I know that 
-
-
----
-
-Our brains are very concerned with our perception of ourselves.
-
-Am I smart?
-
-Do I belong?
-
-Am I good?
-
----
-
---Cognitive dissonance--
-
-This is partly why cognitive dissonance can be so hard to grapple with.
-
-When my actions don't align with what I think is good or correct, I feel unsettled.
-
----
-
-Move vegan section out of default states, after progress, and after discomfort, to talk specifically about cognitive dissonance as a form of discomfort that I continue to sit with.
-
----
-
-A more real world example with the words and phrases we use.
-
-"Light years" are *not* a measure of time
-
-"Organic food" is a weird phrase because inorganic food doesn't exist. (a metal apple)
-
-A "Calorie" in nutrition and a "calorie" in chemistry are not the same thing... but in a frustrating way.
-1 capital-C "Calorie" is equal to 1,000 lowercase-c "calories".
-
-"Biannually": twice each year or once every 2 years?
-
-When I read "4 ounces"... are we talking about volume or weight?
-
-"Serverless"... this word can mean a lot of things, but it rarely means "without a server"
-
-"Theory of Relativity"
-Once a theory becomes broadly accepted, it doesn't become a fact... it just stays in "theory" land forever.
-The proper functioning of GPS satellites heavily depends of this so-called theory.
-
-"Literally".
-I literally do not understand what happened to this word.
-
-"guys"
 
 ---
 
@@ -317,19 +101,6 @@ No, but also yes.
 
 It's more powerful, but it's slower and it takes more energy.
 Changing our conditioning to slow down and step into System 2 takes hard work... and that work isn't always worth it.
-
----
-
-When my someone tells me "what you did hurt me", I feel two competing emotions.
-
-I feel:
-
-- Empathy: I know what being feels like
-- Defensive: my actions and myself are being judged
-
-My actions are being judged and I am being judged.
-
-TODO my defensiveness is often stronger, especially when the hurt that was caused or my own sense of agency are big
 
 ---
 
@@ -396,6 +167,36 @@ And thinking *about* an idea is the first step toward being able to *act* on tha
 
 ---
 
+- TODO notes from Michael
+  - Someone tried to accomplish something there.
+  - Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
+
+
+---
+
+CONFIRMATION BIAS
+
+I'm using a regular expression to normalize some text. No matter how I write it, the text doesn't seem to change.
+
+Assumptions worth trying to invalidate:
+
+- Or more fundamentially, the function I've written is actually being called
+- The text being passed to this function is the text I think it is
+- That regular expression pattern matches what I think it matches
+- The substitution function does what I think it does
+
+Need help questioning your assumptions?
+Talk to a duck.
+Rubber duck debugging gives us someone to talk to when we don't have someone to talk to.
+Walk through your code with the duck.
+Or imagine what the duck might ask you if it could talk.
+Since we live in 2024, I'd also seriously consider talking to a robot.
+Claude, Chat GPT, Gemini, or one of the dozens of other large language models that can pretend to be a human trying to help you question your beliefs and assumptions instead of trying to confirm them.
+
+---
+
+PHANTOM MENTAL MODELS
+
 Show the 4 g's (g3, g4, g1, g2) and ask which one is correct.
 
 Exposure versus experience or expertise
@@ -406,7 +207,90 @@ The devil's in the g-tails
 
 ---
 
-- TODO notes from Michael
-  - Someone tried to accomplish something there.
-  - Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
+REFLECTION for the sake of progress
 
+Reference Dunning-Kruger effect when talking about progress...
+
+Asking for honest feedback from others isn't easy... in fact, it's often really anxiety-inducing. But it can be *really* helpful in identifying where you need to change
+
+It could be very broad and general: How could I be doing what I'm doing better?
+
+But sometimes more specific feedback can be easier to address...
+
+Or, when it comes to asking feedback on Python Morsels or on my curriculum: what didn't work well for you? Where did you get suck or confused and how did you manage to get unstuck, if you did?
+
+Or when watching a video or reading an article I've written: what didn't make sense? where did you get lost?
+
+Outside input can also help disconfirm your assumptions... I sometimes ask my customers to walk me through how they use Python Morsels and I often find that they are *not* using it the way I thought they were.
+
+---
+
+Not Invented Here
+
+json module...
+
+---
+
+Progress?
+
+Progress isn't inevitable.
+
+Enlightenment Now, Factfulness, Not The End of the World... many of the most critical reviews of these books are from folks who read them and felt that the big picture message was that progress is inevitable and we can simply sit back and watch it happen.
+
+---
+
+What's the value in appreciating the progress we've made?
+
+1. So we don't take it for granted
+2. So that we don't turn toward fatalism
+
+We need to talk about the bad things. Pointing out problems helps us identify progress-to-be-made.
+
+We can't *only* talk about the bad things because we risk fatalism.
+
+---
+
+Actionability...
+
+Is it measurable?
+Is it actionable?
+
+---
+
+Perfection is the enemy of the good
+
+Example: Starting Python Morsels as a mailing list
+
+But also, if we get too hung up on the "bad" part, we risk losing hope.
+
+Fatalism
+
+Maximizing versus satisficing
+
+MVP
+
+---
+
+There are times when giving up makes sense.
+
+---
+
+The End of History Illusion
+
+How much have you changed over the last 10 years?
+- Your preferences
+- Your personality
+- Core values
+- Life goals
+
+How much will you change over the next 10 years?
+
+It's hard to predict personal growth because while it's easy to see our past selves as less mature than our current selves, it's hard to feel like *we're* not fully formed.
+
+---
+
+Related to the growth mindset. It's a lot easier for change and growth to occur if you think that you *can* change and grow.
+
+(borrow this from my mentoring talk)
+
+---
