@@ -1,6 +1,43 @@
 
 ---
 
+Where is your attention?
+
+When learning something new, we often remember better when we take a guess and *then* reveal the answer.
+Why? No one really knows, but "surprise" is a pretty good guess.
+When we're surprised our brain pays more attention.
+
+Early humans that paid to paid attention to surprises may have been less likely to be killed by predators.
+
+Focus.
+Ask questions.
+Be curious.
+Develop habits.
+Seek advice.
+Introspect.
+
+These are all ways to catch our attention. Catching the attention of our brain is the first step toward progress.
+
+Once an idea has your attention, you'll mull it over.
+And thinking *about* an idea is the first step toward being able to *act* on that idea.
+
+---
+
+I think of System 1 as not just faster-thinking but also more implicit.
+
+I think of System 2 as more explicit because it's a bit slower and more deliberate.
+
+The Zen of Python says:
+Explicit is better than implicit
+
+So is System 2 *better* than System 1?
+No, but also yes.
+
+It's more powerful, but it's slower and it takes more energy.
+Changing our conditioning to slow down and step into System 2 takes hard work... and that work isn't always worth it.
+
+---
+
 When my someone tells me "what you did hurt me", I feel two competing emotions.
 
 I feel:
@@ -310,3 +347,32 @@ Consequentialism: doesn't matter what you do but what the result is
 "The road to hell is paved with bad intentions"
 Deontology has a clear right/wrong
 Consequentialism leans toward accepting that we might weight things incorrectly
+
+---
+
+- It's mid-February 2020
+- I had just finished a client training that involved me traveling through an airport full of international travelers and we were in a global pandemic and I was experiencing a mix of ignorance and denial about the state of my world
+- After I traveled home for what I, didn't know at the time, would be my last flight of 2020... I listened to a podcast episode that had me thinking about morality and ethics
+- After listening to that episode, and as the US was starting to lock down due to COVID-19, I started listening to an audiobook by the guest of that podcast episode
+- This book had me considering very odd lines of thinking... at least odd for me at the time
+    - I wondered whether I needed to donate much of my money to be a good person
+    - and whether I have a moral obligation to donate one of my kidneys?
+    - and whether my way of living was causing undue suffering in the world...
+- I'd like to note... that I love food and I am a *somewhat* adventurous eater
+- ...
+
+---
+
+Discomfort
+
+Deliberate
+
+Don't get me wrong...
+
+I'm not advocating for discomfort for its own sake.
+
+Don't stick your hand in a bucket of ice water for no good reason.
+
+But TODO need a good analogy that involves slowing down and doing something a bit uncomfortable for the benefit of the whole and maybe even for our own benefit...?
+
+

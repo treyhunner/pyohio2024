@@ -1,6 +1,8 @@
-We often think of mental models are as something we consciously form, but some mental models are unconscious...
+## Intro
 
----
+The point: to help you grapple with the fact that your brian is both an *amazing thing* and it's *constantly making mistakes*.
+
+## Confirmation Bias
 
 Availability Bias? Shark attacks.
 
@@ -20,105 +22,7 @@ Ostrich Effect?
 
 ---
 
-The past is immutable, but the future isn't.
-
-You can't change the actions you've already taken.
-
-You *can* affect the actions you haven't *yet* taken.
-
----
-
-Deliberately acting differently today than you did yesterday.
-
-Our brains are constantly changing, whether we like it or not. We may as well embrace that change and try to steer it in a positive direction for ourselves and for everyone else.
-
-Progress requires change and progress is nothing to be ashamed of.
-
----
-
-Our lives span decades, not centuries.
-
-Life is short.
-
-Enjoy the time you're given.
-
-Try to effect positive change as much as you can.
-
----
-
-It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
-It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
-Hopefully I'll improve, but it's never going to be as much as I'd like.
-
----
-
 Purposely incurring technical debt. It requires slowing down your thinking. It requires deliberacy.
-
----
-
-What are the mental models you have about...
-
-- Python
-- Economics
-- US politics
-- What gender is
-- Yourself
-
----
-
-...
-
----
-
-Discomfort
-
-Deliberate
-
-Don't get me wrong...
-
-I'm not advocating for discomfort for its own sake.
-
-Don't stick your hand in a bucket of ice water for no good reason.
-
-But TODO need a good analogy that involves slowing down and doing something a bit uncomfortable for the benefit of the whole and maybe even for our own benefit...?
-
-
----
-
-The point: to help you grapple with the fact that your brian is both an *amazing thing* and it's *constantly making mistakes*.
-
----
-
-I think of System 1 as not just faster-thinking but also more implicit.
-
-I think of System 2 as more explicit because it's a bit slower and more deliberate.
-
-The Zen of Python says:
-Explicit is better than implicit
-
-So is System 2 *better* than System 1?
-No, but also yes.
-
-It's more powerful, but it's slower and it takes more energy.
-Changing our conditioning to slow down and step into System 2 takes hard work... and that work isn't always worth it.
-
----
-
-- It's mid-February 2020
-- I had just finished a client training that involved me traveling through an airport full of international travelers and we were in a global pandemic and I was experiencing a mix of ignorance and denial about the state of my world
-- After I traveled home for what I, didn't know at the time, would be my last flight of 2020... I listened to a podcast episode that had me thinking about morality and ethics
-- After listening to that episode, and as the US was starting to lock down due to COVID-19, I started listening to an audiobook by the guest of that podcast episode
-- This book had me considering very odd lines of thinking... at least odd for me at the time
-    - I wondered whether I needed to donate much of my money to be a good person
-    - and whether I have a moral obligation to donate one of my kidneys?
-    - and whether my way of living was causing undue suffering in the world...
-- I'd like to note... that I love food and I am a *somewhat* adventurous eater
-- ...
-
-
----
-
-Getting uncomfortable is often the only way to change the status quo.
 
 ---
 
@@ -145,35 +49,6 @@ It's still the talk I'd like to be giving you today, I *have* made a lot of prog
 
 ---
 
-Where is your attention?
-
-When learning something new, we often remember better when we take a guess and *then* reveal the answer.
-Why? No one really knows, but "surprise" is a pretty good guess.
-When we're surprised our brain pays more attention.
-
-Early humans that paid to paid attention to surprises may have been less likely to be killed by predators.
-
-Focus.
-Ask questions.
-Be curious.
-Develop habits.
-Seek advice.
-Introspect.
-
-These are all ways to catch our attention. Catching the attention of our brain is the first step toward progress.
-
-Once an idea has your attention, you'll mull it over.
-And thinking *about* an idea is the first step toward being able to *act* on that idea.
-
----
-
-- TODO notes from Michael
-  - Someone tried to accomplish something there.
-  - Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
-
-
----
-
 CONFIRMATION BIAS
 
 I'm using a regular expression to normalize some text. No matter how I write it, the text doesn't seem to change.
@@ -195,6 +70,36 @@ Claude, Chat GPT, Gemini, or one of the dozens of other large language models th
 
 ---
 
+Not Invented Here
+
+json module...
+
+---
+
+Action Bias
+
+Action is not always better than inaction.
+
+Chesterton's fence is a principle related to the action bias.
+
+---
+
+Also related to Chesterton's Fence, is the overconfidence bias and the related Dunning-Kruger effect.
+
+---
+
+Rapid fire:
+
+- Hindsight Bias: the "I-knew-it-all-along" effect
+- etc. TODO
+
+
+## Mental Models
+
+We often think of mental models are as something we consciously form, but some mental models are unconscious...
+
+---
+
 PHANTOM MENTAL MODELS
 
 Show the 4 g's (g3, g4, g1, g2) and ask which one is correct.
@@ -207,15 +112,73 @@ The devil's in the g-tails
 
 ---
 
+What are the mental models you have about...
+
+- Python
+- Economics
+- US politics
+- What gender is
+- Yourself
+
+---
+
+## Progress
+
+---
+
+Getting uncomfortable is often the only way to change the status quo.
+
+---
+
+The past is immutable, but the future isn't.
+
+You can't change what's been done.
+
+You *can* affect the actions you haven't *yet* taken.
+
+---
+
+Deliberately acting differently today than you did yesterday.
+
+Progress requires change and progress is nothing to be ashamed of.
+
+---
+
+It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
+It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
+Hopefully I'll improve, but it's never going to be as much as I'd like.
+
+---
+
+If you adopt a growth mindset, you believe that through directed effort, you can and you will improve your skills: that your skills aren't fixed but are expandable. If you put in the right effort, you will grow.
+
+The interesting thing about the growth mindset, is that...
+
+You're more likely to learn if you adopt a growth mindset: you're more likely to grow your skills if you believe in your ability to do so.
+
+This isn't some sort of magical thinking where you will something into existence simply be believing it to be true.
+
+Instead, this is focusing on *removing* a barrier that our brains sometimes put up.
+
+If you see yourself as fixed and unchanging, you're less likely to improve your skills.
+
+TODO I have one more cognitive bias I'd like to note before I wrap up... (end of history illusion)
+
+---
+
 REFLECTION for the sake of progress
 
 Reference Dunning-Kruger effect when talking about progress...
 
 Asking for honest feedback from others isn't easy... in fact, it's often really anxiety-inducing. But it can be *really* helpful in identifying where you need to change
 
+It's so hard to pretend to be objective about *yourself* and your own abilities.
+
+I gathered actionable feedback from over a dozen people on this talk. It was both painful and helpful.
+
 It could be very broad and general: How could I be doing what I'm doing better?
 
-But sometimes more specific feedback can be easier to address...
+But sometimes more specific ask can be easier to address...
 
 Or, when it comes to asking feedback on Python Morsels or on my curriculum: what didn't work well for you? Where did you get suck or confused and how did you manage to get unstuck, if you did?
 
@@ -223,30 +186,7 @@ Or when watching a video or reading an article I've written: what didn't make se
 
 Outside input can also help disconfirm your assumptions... I sometimes ask my customers to walk me through how they use Python Morsels and I often find that they are *not* using it the way I thought they were.
 
----
-
-Not Invented Here
-
-json module...
-
----
-
-Progress?
-
-Progress isn't inevitable.
-
-Enlightenment Now, Factfulness, Not The End of the World... many of the most critical reviews of these books are from folks who read them and felt that the big picture message was that progress is inevitable and we can simply sit back and watch it happen.
-
----
-
-What's the value in appreciating the progress we've made?
-
-1. So we don't take it for granted
-2. So that we don't turn toward fatalism
-
-We need to talk about the bad things. Pointing out problems helps us identify progress-to-be-made.
-
-We can't *only* talk about the bad things because we risk fatalism.
+Melanie said: talk more about how I do this and why I do it... because I know that I don't know what I'm doing as well as I *think* I do...
 
 ---
 
@@ -257,35 +197,7 @@ Is it actionable?
 
 ---
 
-Perfection is the enemy of the good
-
-Example: Starting Python Morsels as a mailing list
-
-But also, if we get too hung up on the "bad" part, we risk losing hope.
-
-Fatalism
-
-Maximizing versus satisficing
-
-MVP
-
----
-
 There are times when giving up makes sense.
-
----
-
-The End of History Illusion
-
-How much have you changed over the last 10 years?
-- Your preferences
-- Your personality
-- Core values
-- Life goals
-
-How much will you change over the next 10 years?
-
-It's hard to predict personal growth because while it's easy to see our past selves as less mature than our current selves, it's hard to feel like *we're* not fully formed.
 
 ---
 
@@ -294,3 +206,12 @@ Related to the growth mindset. It's a lot easier for change and growth to occur 
 (borrow this from my mentoring talk)
 
 ---
+
+---
+
+---
+
+- TODO notes from Michael
+  - Someone tried to accomplish something there.
+  - Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
+

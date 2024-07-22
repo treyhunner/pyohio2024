@@ -264,7 +264,7 @@ True</span>
 
       </section>
       <section>
-        <!-- section: metacognition & recursion -->
+        <!-- section: metacognition -->
         <!-- SECTION TIME: 3 minutes -->
 
         <!--
@@ -450,6 +450,29 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section>
+          <pre class="python"><code data-trim data-noescape style="font-size: 25px; line-height: 30px;">
+>>> <span class="fragment" data-fragment-index=1>first = []
+>>> </span><span class="fragment" data-fragment-index=3>second = first
+>>> <span class="fragment" data-fragment-index=5>first.append(9)
+>>> </span><span class="fragment" data-fragment-index=6>first
+[9]
+>>> </span><span class="fragment" data-fragment-index=7>second</span><span class="fragment" data-fragment-index=8>
+[9]</span></code></pre>
+          <aside class="notes" data-markdown>
+            - Let's test your mental of Python's variables
+            - Let's say we assign a variable to an empty list **(click)**
+            - Then when we assign another variable to the first one **(click)**
+            - Let's say we then append `9` to that first list **(click)**
+            - How many elements are in the second list? **(click)**
+            - 0... or 1? *(pause)*
+            - Think about it for a moment. Commit to your guess before I reveal the answer...
+            - Have it in your mind: 0 or 1.
+            - The answer... is 1 **(click)**
+            - Let's take a look at a couple different mental models for Python's variables that might help explain what's going on here.
+          </aside>
+        </section>
+
+        <section>
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape style="font-size: 25px; line-height: 30px;">
 >>> <span class="fragment" data-fragment-index=1>first = []
@@ -484,7 +507,7 @@ Namespaces are one honking great idea -- let's do more of those!</span>
           </div>
           <h2 style="color: #d00;" class="fragment" data-fragment-index=9>This mental model breaks down</h2>
           <aside class="notes" data-markdown>
-            - We could try to mentally model Python's variables and data structures as buckets that contain objects
+            - First, let's try mentally model Python's variables and data structures as buckets that contain objects
             - If we assign a variable to an empty list **(click)**, that variable contains that list **(click)**
             - Then when we assign another variable to the first one, **(click)** the list is copied into a new bucket **(click)**
             - Let's say we then append `9` to that first list **(click)**, which would **(click)** mutate the first list
@@ -496,7 +519,8 @@ Namespaces are one honking great idea -- let's do more of those!</span>
           </aside>
         </section>
 
-        <section data-transition="fade-in none-out">
+
+        <section data-transition="slide-in none-out">
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape style="font-size: 25px; line-height: 30px;">
 >>> <span class="fragment" data-fragment-index=1>first = []
@@ -541,7 +565,7 @@ Namespaces are one honking great idea -- let's do more of those!</span>
           </aside>
         </section>
 
-        <section data-transition="none-in fade-out">
+        <section data-transition="none-in slide-out">
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape style="font-size: 25px; line-height: 30px;">
 >>> first = []
@@ -598,11 +622,12 @@ Namespaces are one honking great idea -- let's do more of those!</span>
             - Do we add a sticky note that says which list it's in and which index it's at?
             - What if we point **(click)** another variable to the outer list? Do we need to add *another* sticky note on the object?
             - This is getting complicated
+            - TODO note that it works for explaining how variables work but doesn't work well for explaining how objects work
             - Let's give up on this mental model and try a third one...
           </aside>
         </section>
 
-        <section>
+        <section data-transition="slide-in none-out">
           <div style="display: grid; grid-auto-flow: column;">
             <pre class="python"><code data-trim data-noescape>
 >>> <span class="fragment" data-fragment-index=1>first = []
@@ -612,7 +637,7 @@ Namespaces are one honking great idea -- let's do more of those!</span>
 [9]
 >>> </span><span class="fragment" data-fragment-index=8>second
 [9]
->>> </span><span class="fragment" data-fragment-index=9>rows = [first]
+>>> </span><span style="visibility: hidden;">rows = [first]
 >>> </span>
             </code></pre>
             <div>
@@ -621,19 +646,19 @@ Namespaces are one honking great idea -- let's do more of those!</span>
                 <path d="M 200 23 L 200 0 L 420 0 L 420 23" fill="#dae8fc" stroke="#6c8ebf" stroke-miterlimit="10"/>
                 <path d="M 200 23 L 200 250 L 420 250 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
                 <path d="M 200 23 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
-                <text x="309.5" y="15" fill="#000" text-anchor="middle" font-size="12px">Objects</text>
+                <text x="309.5" y="15" fill="#000" text-anchor="middle" font-size="12px">Object Land</text>
                 </g>
                 <g>
                 <path d="M 0 23 L 0 0 L 160 0 L 160 23" fill="#e1d5e7" stroke="#9673a6" stroke-miterlimit="10"/>
                 <path d="M 0 23 L 0 250 L 160 250 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
                 <path d="M 0 23 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
-                <text x="79.5" y="15" fill="#000" text-anchor="middle" font-size="13px">Variables</text>
+                <text x="79.5" y="15" fill="#000" text-anchor="middle" font-size="13px">Variable Land</text>
                 </g>
                 <g class="fragment" data-fragment-index=2>
                   <path d="M 250.5 70 L 227.5 70 L 227.5 120 L 250.5 120" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
                   <path d="M 250.5 70 L 307.5 70 L 307.5 120 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
                   <path d="M 250.5 70 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
-                  <text x="238.5" y="98.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,239,95)">list</text>
+                  <text x="238.5" y="98.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,239,95)" class="fragment bold-current" data-fragment-index=9>list</text>
 
                   <rect x="20" y="39" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
                   <text x="79" y="67" fill="#000" font-size="13px" text-anchor="middle">first</text>
@@ -647,6 +672,102 @@ Namespaces are one honking great idea -- let's do more of those!</span>
                   <path d="M 226.43 107.84 L 220.8 113.27 L 221.42 109.41 L 218.71 106.6 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
                 </g>
                 <g class="fragment" data-fragment-index=6>
+                  <path d="M 353 40 L 330 40 L 330 90 L 353 90" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 353 40 L 390 40 L 390 90 L 353 90" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 353 40 L 353 90" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <text x="341" y="68.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,341.5,65)" class="fragment bold-current" data-fragment-index=10>int</text>
+                  <text x="370" y="68" fill="#000" font-size="13px" text-anchor="middle" class="fragment bold-current" data-fragment-index=10>9</text>
+
+                  <path d="M 287.5 95 L 324.8 68.67" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 329.09 65.64 L 325.39 72.54 L 324.8 68.67 L 321.35 66.82 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+
+                  <rect x="262.5" y="85" width="25" height="20" fill="none" stroke="#000"/>
+                  <text x="274" y="98.5" fill="#00f" font-size="13px" text-anchor="middle" class="fragment bold-current" data-fragment-index=9>0</text>
+                </g>
+                <g style="visibility: hidden;">
+                  <rect x="20" y="179" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
+                  <text x="79" y="207" fill="#000" font-size="13px" text-anchor="middle">rows</text>
+                  <path d="M 140 205 L 213.63 205" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 218.88 205 L 211.88 208.5 L 213.63 205 L 211.88 201.5 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 267.5 195 L 285.86 126.15" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 287.21 121.08 L 288.79 128.75 L 285.86 126.15 L 282.03 126.94 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+
+                  <path d="M 243 180 L 220 180 L 220 230 L 243 230" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 243 180 L 300 180 L 300 230 L 243 230" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 243 180 L 243 230" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <text x="231" y="208.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,231.5,205)">list</text>
+                  <rect x="255" y="194" width="25" height="20" fill="none" stroke="#000"/>
+                  <text x="267" y="208.5" fill="#00f" font-size="13px" text-anchor="middle">0</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <aside class="notes" data-markdown>
+            - Let's mentally model variables and data structures as references or pointers
+            - We have two words: variable land and object land
+            - When we **(click)** assign a variable to an empty list, we *point* **(click)** that variable to that new list object
+            - Then when we assign **(click)** another variable to the first one, we point **(click)** the second variable to the same object
+            - If we **(click)** modify the first list **(click)**, the first list changes **(click)** and so does the second **(click)** because *they're the same list*
+            - But wait... why does our list have an arrow pointing to an integer?
+            - Well, just as variables don't contain objects, neither do objects
+            - Objects only *point* to objects, so the list's index `0` **(click)** points to the integer `9` **(click)**
+            - That's also why... if we **(click)** put our list inside another list, we'll simply be **(click)** pointing one of the indexes in that new list to *our* existing list
+            - Variables can point to objects and objects can point to other objects.
+            - Nothing ever points to variables.
+            - Variables are just a name that references an object living in object land
+            - This mental model *is* a bit more complex than the sticky note model, but it stretches a bit further
+            - The indirection between variables and objects is tricky, but it also makes it easier to understand how data structures work
+            - I'd argue that this mental model is the closest one to how Python actually models variables and objects
+            - But keep in mind that *every* mental model has its limits
+          </aside>
+        </section>
+
+
+        <section data-transition="none-in slide-out">
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> first = []
+>>> second = first
+>>> first.append(9)
+>>> first
+[9]
+>>> second
+[9]
+>>> <span class="fragment" data-fragment-index=9>rows = [first]
+>>> 
+            </span></code></pre>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="500" height="299" viewBox="0 0 421 251">
+                <g>
+                <path d="M 200 23 L 200 0 L 420 0 L 420 23" fill="#dae8fc" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <path d="M 200 23 L 200 250 L 420 250 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <path d="M 200 23 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <text x="309.5" y="15" fill="#000" text-anchor="middle" font-size="12px">Object Land</text>
+                </g>
+                <g>
+                <path d="M 0 23 L 0 0 L 160 0 L 160 23" fill="#e1d5e7" stroke="#9673a6" stroke-miterlimit="10"/>
+                <path d="M 0 23 L 0 250 L 160 250 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
+                <path d="M 0 23 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
+                <text x="79.5" y="15" fill="#000" text-anchor="middle" font-size="13px">Variable Land</text>
+                </g>
+                <g>
+                  <path d="M 250.5 70 L 227.5 70 L 227.5 120 L 250.5 120" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 250.5 70 L 307.5 70 L 307.5 120 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 250.5 70 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <text x="238.5" y="98.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,239,95)">list</text>
+
+                  <rect x="20" y="39" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
+                  <text x="79" y="67" fill="#000" font-size="13px" text-anchor="middle">first</text>
+                  <path d="M 140 65 L 221.26 81.25" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 226.4 82.28 L 218.85 84.34 L 221.26 81.25 L 220.23 77.48 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+                </g>
+                <g>
+                  <rect x="20" y="109" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
+                  <text x="79" y="137" fill="#000" font-size="13px" text-anchor="middle">second</text>
+                  <path d="M 140 135 L 221.42 109.41" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 226.43 107.84 L 220.8 113.27 L 221.42 109.41 L 218.71 106.6 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+                </g>
+                <g>
                   <path d="M 353 40 L 330 40 L 330 90 L 353 90" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
                   <path d="M 353 40 L 390 40 L 390 90 L 353 90" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
                   <path d="M 353 40 L 353 90" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
@@ -677,17 +798,196 @@ Namespaces are one honking great idea -- let's do more of those!</span>
               </svg>
             </div>
           </div>
-
           <aside class="notes" data-markdown>
             - Let's mentally model variables and data structures as references or pointers
-            - When we **(click)** assign a variable to an empty list, we *point* **(click)** that variable to the object
+            - We have two words: variable land and object land
+            - When we **(click)** assign a variable to an empty list, we *point* **(click)** that variable to that new list object
             - Then when we assign **(click)** another variable to the first one, we point **(click)** the second variable to the same object
             - If we **(click)** modify the first list **(click)**, the first list changes **(click)** and so does the second **(click)** because *they're the same list*
-            - And if we **(click)** put our list inside another list, we'll simply be **(click)** pointing one of the indexes in that new list to *our* existing list
+            - But wait... why does our list have an arrow pointing to an integer?
+            - Well, just as variables don't contain objects, neither do objects
+            - Objects only *point* to objects, so the list's index `0` **(click)** points to the integer `9` **(click)**
+            - That's also why... if we **(click)** put our list inside another list, we'll simply be **(click)** pointing one of the indexes in that new list to *our* existing list
+            - Variables can point to objects and objects can point to other objects.
+            - Nothing ever points to variables.
+            - Variables are just a name that references an object living in object land
             - This mental model *is* a bit more complex than the sticky note model, but it stretches a bit further
             - The indirection between variables and objects is tricky, but it also makes it easier to understand how data structures work
             - I'd argue that this mental model is the closest one to how Python actually models variables and objects
             - But keep in mind that *every* mental model has its limits
+          </aside>
+        </section>
+
+        <section>
+          <p class="fragment" data-fragment-index=1>&ldquo;when I <span class="fragment bold" data-fragment-index=6>change</span> <code>first</code>, it doesn't always <span class="fragment bold" data-fragment-index=6>change</span> <code>second</code>&rdquo;</p>
+          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
+>>> first = [2, 1, 3, 4]
+>>> second = first
+>>> <span class="fragment" data-fragment-index=2>x.append(7)
+>>> </span><span class="fragment" data-fragment-index=3>second
+[2, 1, 3, 4, 7]
+>>> </span><span class="fragment" data-fragment-index=4>first = [100, 200, 300]
+>>> </span><span class="fragment" data-fragment-index=5>second
+[2, 1, 3, 4, 7]
+>>> </span>
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - There is an interaction I've had repeatedly over the years:
+            - A student will tell me that they've assigned two variables (`first` and `second`) to the same value and then they'll say **(click)** "when I change `first`, it doesn't *always* change `second`"
+            - When I ask what they mean, inevitably they'll show me something like this...
+            - "here I changed first" **(click)** "and second changed" **(click)**
+            - But "*here* when I change first" **(click)**... "second doesn't change" **(click)**
+            - Why?
+            - The word "change" **(click)** is the problem here.
+          </aside>
+        </section>
+
+        <section>
+          <h2>&ldquo;change&rdquo;</h2>
+          <p class="fragment" data-fragment-index=6>assigning a variable or mutating a value</p>
+          <h2 class="fragment" data-fragment-index=2>&ldquo;bianually&rdquo;</h2>
+          <p class="fragment" data-fragment-index=3>twice a year or once every two years</p>
+          <h2 class="fragment" data-fragment-index=4>&ldquo;4 ounces&rdquo;</h2>
+          <p class="fragment" data-fragment-index=5>a half cup or a quarter pound</p>
+          <aside class="notes" data-markdown>
+            - "change" is accidentally playing two different roles
+            - It's like the word biannually **(click)**: do we mean **(click)** twice a year or once every two years?
+            - Or ounces **(click)**... are we talking **(click)** volume or weight?
+            - With change: we might be **(click)** changing a variable or we might be changing a value
+            - Assignments change variables and mutations change values
+          </aside>
+        </section>
+
+        <section>
+          <p class="fragment" data-fragment-index=4>&ldquo;when I mutate the list, both <code>first</code> and <code>second</code>&rdquo;</p>
+          <p class="fragment" data-fragment-index=3>&ldquo;when I reassign <code>first</code>, it doesn't affect <code>second</code>&rdquo;</p>
+          <p class="fragment strike" data-fragment-index=1>&ldquo;when I change <code>first</code>, it doesn't always change <code>second</code>&rdquo;</p>
+          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
+>>> first = [2, 1, 3, 4]
+>>> second = first
+>>> first.append(7)
+>>> second
+[2, 1, 3, 4, 7]
+>>> first = [100, 200, 300]
+>>> second
+[2, 1, 3, 4, 7]
+>>>
+          </code></pre>
+          <h2 class="fragment" data-fragment-index=2>&ldquo;Explicit is better than implicit&rdquo;</h2>
+          <aside class="notes" data-markdown>
+            - So instead of using the word "change" **(click)** I encourage folks learning with me to be more explicit **(click)**
+            - ... as the Zen of Python says: explicit is better than implicit
+            - When we **(click)** reassign first, second still points to the same object
+            - But if we instead **(click)** mutate the object that first points to, if second points to the same object, then both first and second will seem as if they changed
+            - The word change **can be ambiguous** in Python... and ambiguity can reinforce fuzzy and incorrect mental models
+            - Just to drive home these two types of change, let's look at the diagram we drew for that third mental model again...
+            - TODO show the variables and objects diagram again and show what mutation and assignment actually do in the diagram
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: grid; grid-auto-flow: column;">
+            <pre class="python"><code data-trim data-noescape>
+>>> first = [2, 1, 3, 4]
+>>> second = first
+>>> <span class="fragment" data-fragment-index=1>first.append(7)
+>>> </span><span class="fragment" data-fragment-index=3>second
+[2, 1, 3, 4, 7]
+>>> </span><span class="fragment" data-fragment-index=5>first = [100, 200, 300]
+>>> </span><span class="fragment" data-fragment-index=7>second
+[2, 1, 3, 4, 7]
+>>>
+            </span></code></pre>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="500" height="299" viewBox="0 0 421 251">
+                <g>
+                <path d="M 200 23 L 200 0 L 420 0 L 420 23" fill="#dae8fc" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <path d="M 200 23 L 200 250 L 420 250 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <path d="M 200 23 L 420 23" fill="none" stroke="#6c8ebf" stroke-miterlimit="10"/>
+                <text x="309.5" y="15" fill="#000" text-anchor="middle" font-size="12px">Object Land</text>
+                </g>
+                <g>
+                <path d="M 0 23 L 0 0 L 160 0 L 160 23" fill="#e1d5e7" stroke="#9673a6" stroke-miterlimit="10"/>
+                <path d="M 0 23 L 0 250 L 160 250 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
+                <path d="M 0 23 L 160 23" fill="none" stroke="#9673a6" stroke-miterlimit="10"/>
+                <text x="79.5" y="15" fill="#000" text-anchor="middle" font-size="13px">Variable Land</text>
+                </g>
+                <g>
+                  <path d="M 250.5 70 L 227.5 70 L 227.5 120 L 250.5 120" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 250.5 70 L 387.5 70 L 387.5 120 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 250.5 70 L 250.5 120" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <text x="238.5" y="98.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,239,95)">list</text>
+
+                  <rect x="20" y="39" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
+                  <text x="79" y="67" fill="#000" font-size="13px" text-anchor="middle">second</text>
+                  <path d="M 140 65 L 221.26 81.25" fill="none" stroke="#000" stroke-miterlimit="10"/>
+                  <path d="M 226.4 82.28 L 218.85 84.34 L 221.26 81.25 L 220.23 77.48 Z" fill="#000" stroke="#000" stroke-miterlimit="10"/>
+                </g>
+                <g>
+                  <rect x="20" y="109" width="120" height="50" fill="#e1d5e7" stroke="#9673a6"/>
+                  <text x="79" y="137" fill="#000" font-size="13px" text-anchor="middle">first</text>
+                  <path d="M 140 135 L 221.42 109.41" fill="none" stroke="#000" stroke-miterlimit="10" class="fragment fade-out" data-fragment-index=6 />
+                  <path d="M 226.43 107.84 L 220.8 113.27 L 221.42 109.41 L 218.71 106.6 Z" fill="#000" stroke="#000" stroke-miterlimit="10" class="fragment fade-out" data-fragment-index=6 />
+                </g>
+                <g>
+                  <text x="319" y="98.5" fill="#00f" font-size="13px" text-anchor="middle" class="fragment fade-out" data-fragment-index=2>[2, 1, 3, 4]</text>
+                  <text x="319" y="98.5" fill="#00f" font-size="13px" text-anchor="middle" class="fragment" data-fragment-index=2>[2, 1, 3, 4, 7]</text>
+                </g>
+                <g class="fragment" data-fragment-index=6>
+                  <path d="M 140 135 L 213.63 201.5" fill="none" stroke="#000" stroke-miterlimit="10"/>
+<path d="M 218.88 205 L 211.88 208.5 L 213.63 205 L 211.88 201.5 Z" 
+      fill="#000" 
+      stroke="#000" 
+      stroke-miterlimit="10"
+      transform="rotate(45, 218.88, 205)"/>
+
+                  <path d="M 243 180 L 220 180 L 220 230 L 243 230" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 243 180 L 375 180 L 375 230 L 243 230" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <path d="M 243 180 L 243 230" fill="none" stroke="#82b366" stroke-miterlimit="10"/>
+                  <text x="231" y="208.5" fill="#000" text-anchor="middle" font-size="13px" transform="rotate(-90,231.5,205)">list</text>
+                  <text x="307" y="208.5" fill="#00f" font-size="13px" text-anchor="middle">[100, 200, 300]</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <aside class="notes" data-markdown>
+            - TODO show the variables and objects diagram again and show what mutation and assignment actually do in the diagram
+          </aside>
+        </section>
+
+        <section>
+          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
+>>> colors = ["purple", "green", "blue"]
+          </code></pre>
+          <ul style="list-style-type: none; margin-left: -2em;">
+            <li class="fragment" data-fragment-index=1>
+              <span class="fragment" data-fragment-index=3>❌</span>
+              &ldquo;<code>colors</code> <strong>contains</strong> a list of strings&rdquo;</li>
+            <li class="fragment" data-fragment-index=2>
+              <span class="fragment" data-fragment-index=3>⚠️</span>
+              &ldquo;<code>colors</code> <strong>is</strong> a list of strings&rdquo;</li>
+            <li class="fragment" data-fragment-index=4>
+              <span class="fragment" data-fragment-index=5>✅</span>
+              &ldquo;<code>colors</code> <strong>points to</strong> a list of strings&rdquo;</li>
+          </ul>
+          <p class="fragment" style="font-size: 2em;">➡️</p>
+          <aside class="notes" data-markdown>
+            - While teaching, I used to use phrases like "`colors` contains a list" **(click)**
+            - Or... "`colors` is a list" **(click)**
+            - But I found that using these phrases sometimes caused confusion **(click)**, especially when I tried to teach how variables actually work
+            - Now I usually use the phrase "points to" **(click)**
+            - This phrase doesn't hint at an incorrect mental model **(click)**
+            - And while the word "pointer" is a technical term that's not *usually* used by Python developers, it's also a term that *evokes* an idea **(click)** that we're familiar with
+            - Brand new programmers and senior developers both seem to understand this phrase...
+            - They may not yet understand the mental model I'm implying with it, but at least I haven't caused confusion by hinting at an *incorrect* mental model
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">Word Choice Matters</h1>
+          <aside class="notes" data-markdown>
+            - Your choice of words matters **(click)**
+            - The words we use are a shortcut to a mental model, an implied mental model that's vague and based on connotation... but there are usually bigger ideas hiding beneath our words
           </aside>
         </section>
 
@@ -808,6 +1108,13 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section>
+          <h1>TODO Confirmation Bias Example</h1>
+          <aside class="notes" data-markdown>
+            - TODO why does my regular expression not work?
+          </aside>
+        </section>
+
+        <section>
           <h1>Anchoring Bias</h1>
           <div style="display: grid; grid-auto-flow: column;">
             <img src="999.png" style="" class="fragment">
@@ -841,14 +1148,143 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section>
-          <h1>Bandwagon Effect</h1>
-          <h2 class="fragment">bandwagon.js</h2>
-          <img class="fragment no-style" src="hype-driven-development.webp" style="height: 400px;">
+          <h1 class="fragment">Not Invented Here</h1>
+          <p class="fragment">someone else's code? 👎</p>
+          <p class="fragment">my code 👍</p>
           <aside class="notes" data-markdown>
-            - Another common bias is the Bandwagon Effect
-            - Which is the also the name of a front-end web framework **(click)** that was released last week
-            - I heard it's great. **(click)**
-            - Maybe tomorrow you should rewrite your entire code base to use it.
+            - There's also the "Not Invented Here" syndrome
+            - Why would I use someone else's code when I know how to write the code myself.
+            - This is definitely a bias that has affected me before...
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="fragment">Have a problem?</h2>
+          <h2 class="fragment">Write code!</h2>
+          <h1 class="fragment"><span class="fragment">🗝️</span> <span>🔨</span></h1>
+          <aside class="notes" data-markdown>
+            - As a Python programmer, when I have a problem **(click)** I often think of solutions to my problem that involve writing code. **(click)**
+            - I've written Python programs to help me reconcile my finances get my taxes in order every year.
+            - Could I have used off-the-shelf software to solve this problem *for* me?
+            - Maybe.
+            - But I *didn't*. Instead, I wrote code.
+            - Sometimes, Python is a hammer **(click)** and our problems **(click)** all *look* like nails.
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">JSON data</h1>
+          <h2 class="fragment"><code>import json</code></h2>
+          <h2 class="fragment"><code class="fragment strike">simplejson</code></h2>
+          <h2 class="fragment">Do It Yourself</h2>
+          <aside class="notes" data-markdown>
+            - TODO fragments for this and next few slides
+            - Many years ago, I was working on a Python project that needed to serialize JSON data.
+            - Today, I would have solved my problem by using the `json` module in the Python standard library.
+            - But at the time, we were using Python 2.4, which did not *have* a `json` module.
+            - There was a third-party `simplejson` library, which later became the official `json` module.
+            - But I chose not to use that.
+            - Instead, I wrote my own JSON formatter.
+            - Why did I do this?
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment">Not Thought of By Me</h1>
+          <p class="fragment">Ask a coworker for help</p>
+          <p class="fragment">Use a search engine</p>
+          <p class="fragment">Ask Chat GPT, Claude, etc.</p>
+          <aside class="notes" data-markdown>
+            - Today, I think of "Not Invented" here as "Not Thought of By Me".
+            - "Not Thought of By Me" is a bit broader...
+            - Instead of asking your coworker to help you brainstorm a problem, you might try to solve everything on your own.
+            - What if you don't have a coworker to ask?
+            - Well, there's always a search engine.
+            - And today, there's always a chat bot.
+            - And yes, you should *not* assume a chat bot will give you the right answer, in full the first time you ask it a question.
+            - But you also shouldn't assume that the code you found on StackOverflow is correct
+            - And you should probably check to very that the third-party library you're using actually does what you *think* it does
+            - You should verify that your solution actually works... but that doesn't mean you need to invent the solution yourself.
+          </aside>
+        </section>
+
+        <section>
+          <h1 class="fragment" data-fragment-index=1><span class="fragment fade-out" data-fragment-index=2>Don't Build it Yourself</span></h1>
+          <h1 class="fragment" data-fragment-index=2>Ask for Help</h1>
+          <h2 class="fragment" data-fragment-index=3>I use a search engine ~500 times/mo</h2>
+          <h2 class="fragment" data-fragment-index=4>I start ~2 new LLM chats per day</h2>
+          <aside class="notes" data-markdown>
+            - I am lucky that I've had business colleagues remind me for years to **(click)** stop building things myself
+            - I do *still* build things myself, but I'm also not afraid to ask for help
+            - I perform about 500 online searches every month
+            - That's over 15 searches on average every day
+            - I start a *new* chat conversation a language language model a couple times a day
+            - There is NO shame in using Google, asking a coworker for help, or using a chat bot.
+          </aside>
+        </section>
+
+        <section>
+          <h1>Status Quo Bias</h1>
+          <h1 class="fragment">Default State</h1>
+          <aside class="notes" data-markdown>
+            - Our brains tend to prefer the way things are, especially when a situation is complex or outcomes are uncertain
+            - The "way things are" is the default **(click)** and defaults are *easy*
+            - But our brains *also* have a tendency for action... especially in high-pressure situations or situations where there's a perceived need for an immediate response
+          </aside>
+        </section>
+
+        <section>
+          <h1>Action Bias</h1>
+          <aside class="notes" data-markdown>
+            - There's also the action bias
+            - If the situation we're in isn't ideal, we often prefer to take action
+            - Action is not always better than inaction.
+            - There's a principle related to this bias, one about...
+          </aside>
+        </section>
+
+        <section data-background-image="fence2.jpg" data-transition="none">
+          <h2 class="fragment" style="margin-top: -4.5em; margin-left: 3em;">Chesterton's Fence</h2>
+          <aside class="notes" data-markdown>
+            - ...Fences.
+            - Let's say you acquire some land and on that land you find a fence
+            - You don't like fence
+            - It's not a pretty fence and it has a strange location
+            - You don't know what purpose it could possibly serve
+            - Should you tear down this fence?
+            - **(click)** Chesterton's Fence is the idea that you shouldn't take down a fence unless you understand the reason the fence was put there in the first place
+            - This often comes up in legacy codebases...
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="fragment">&ldquo;This code is too complex&rdquo;</h2>
+          <p class="fragment">&ldquo;This shouldn't be necessary&rdquo;</p>
+          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
+def dedent(text):  # Python's textwrap.dedent (most of it)
+    margin = None
+    text = _whitespace_only_re.sub('', text)
+    indents = _leading_whitespace_re.findall(text)
+    for indent in indents:
+        if margin is None:
+            margin = indent
+        elif indent.startswith(margin):
+            pass
+        elif margin.startswith(indent):
+            margin = indent
+        else:
+            for i, (x, y) in enumerate(zip(margin, indent)):
+                if x != y:
+                    margin = margin[:i]
+                    break
+    if margin:
+        text = re.sub(r'(?m)^' + margin, '', text)
+    return text
+          </code></pre>
+          <aside class="notes" data-markdown>
+            - If you find some code that *seems* unnecessarily complex **(click)**, it might be wrong... or there might be a good reason for that complexity
+            - Sometimes something **(click)** seemingly unnecessary is actually necessary
+            - So Chesterton's Fence is a principle about overcoming the "Action Bias", but it's also related to overconfidence...
           </aside>
         </section>
 
@@ -869,12 +1305,14 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section>
-          <h1>Status Quo Bias</h1>
-          <h1 class="fragment">Default State</h1>
+          <h1>Bandwagon Effect</h1>
+          <h2 class="fragment">bandwagon.js</h2>
+          <img class="fragment no-style" src="hype-driven-development.webp" style="height: 400px;">
           <aside class="notes" data-markdown>
-            - Our brains tend to prefer the way things are
-            - The "way things are" is the default **(click)** and defaults are *easy*
-            - We'll talk about default states later...
+            - Another common bias is the Bandwagon Effect
+            - Which is the also the name of a front-end web framework **(click)** that was released last week
+            - I heard it's great. **(click)**
+            - Maybe tomorrow you should rewrite your entire code base to use it.
           </aside>
         </section>
 
@@ -920,150 +1358,6 @@ Namespaces are one honking great idea -- let's do more of those!</span>
             - I think I might remember publicly admitting my own sunk cost bias on stage at PyOhio
             - And *hopefully* I'll pause for a moment to **(click)** seriously consider whether I edit my video
             - Or **(click)** re-record it
-          </aside>
-        </section>
-
-      </section>
-      <section>
-        <!-- section: names & words -->
-        <!-- SECTION TIME: 6 minutes -->
-
-        <!--
-        <section>
-          <div style="display: grid; grid-auto-flow: column;">
-          <h1 class="fragment" data-fragment-index=3><code style="font-weight: bold;">:=</code></h1>
-          <img src="walrus-operator.png" class="fragment no-style" height="150" data-fragment-index=4>
-          </div>
-          <pre class="python" data-fragment-index=1><code data-trim data-noescape style="overflow: hidden;">
-import hashlib
-
-def compute_md5(filename):
-    md5 = hashlib.md5()
-    with open(filename, mode="rb") as f:
-        while <span class="fragment bold" data-fragment-index=2>chunk := f.read(8192)</span>:
-            md5.update(chunk)
-    return md5.hexdigest()
-          </code></pre>
-          <h1 class="fragment" data-fragment-index=5>walrus operator</h1>
-          <aside class="notes" data-markdown>
-            - The "walrus operator" which is used for an assignment expression in Python **(click)**
-            - This operator **(click)** has a name and it even **(click)** looks like its name
-            - This operator is rarely used, but it has a memorable name **(click)**, which makes it easier to learn and easier to talk about
-            - Names are important... but are so *words* more generally
-          </aside>
-        </section>
-        -->
-
-        <section>
-          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
->>> colors = ["purple", "green", "blue"]
-          </code></pre>
-          <ul style="list-style-type: none; margin-left: -2em;">
-            <li class="fragment" data-fragment-index=1>
-              <span class="fragment" data-fragment-index=3>❌</span>
-              &ldquo;<code>colors</code> <strong>contains</strong> a list of strings&rdquo;</li>
-            <li class="fragment" data-fragment-index=2>
-              <span class="fragment" data-fragment-index=3>⚠️</span>
-              &ldquo;<code>colors</code> <strong>is</strong> a list of strings&rdquo;</li>
-            <li class="fragment" data-fragment-index=4>
-              <span class="fragment" data-fragment-index=5>✅</span>
-              &ldquo;<code>colors</code> <strong>points to</strong> a list of strings&rdquo;</li>
-          </ul>
-          <p class="fragment" style="font-size: 2em;">➡️</p>
-          <aside class="notes" data-markdown>
-            - While teaching, I used to use phrases like "`colors` contains a list" **(click)**
-            - Or... "`colors` is a list" **(click)**
-            - But I found that using these phrases sometimes caused confusion **(click)**, especially when I tried to teach how variables actually work
-            - Now I usually use the phrase "points to" **(click)**
-            - This phrase doesn't hint at an incorrect mental model **(click)**
-            - And while the word "pointer" is a technical term that's not *usually* used by Python developers, it's also a term that *evokes* an idea **(click)** that we're familiar with
-            - Brand new programmers and senior developers both seem to understand this phrase...
-            - They may not yet understand the mental model I'm implying with it, but at least I haven't caused confusion by hinting at an *incorrect* mental model
-          </aside>
-        </section>
-
-        <section>
-          <p class="fragment" data-fragment-index=1>&ldquo;when I <span class="fragment bold" data-fragment-index=6>change</span> <code>x</code>, it doesn't always <span class="fragment bold" data-fragment-index=6>change</span> <code>y</code>&rdquo;</p>
-          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
->>> x = [2, 1, 3, 4]
->>> y = x
->>> <span class="fragment" data-fragment-index=2>x.append(7)
->>> </span><span class="fragment" data-fragment-index=3>y
-[2, 1, 3, 4, 7]
->>> </span><span class="fragment" data-fragment-index=4>x = [100, 200, 300]
->>> </span><span class="fragment" data-fragment-index=5>y
-[2, 1, 3, 4, 7]
->>> </span>
-          </code></pre>
-          <aside class="notes" data-markdown>
-            - There is an interaction I've had repeatedly over the years:
-            - A student will tell me that they've assigned two variables (`x` and `y`) to the same value and then they'll say **(click)** "when I change `x`, it doesn't *always* change `y`"
-            - When I ask what they mean, inevitably they'll show me something like this...
-            - "here I changed x" **(click)** "and y changed" **(click)**
-            - But "*here* when I change x" **(click)**... "y doesn't change" **(click)**
-            - Why?
-            - The word "change" **(click)** is the problem here.
-          </aside>
-        </section>
-
-        <section>
-          <h2>&ldquo;change&rdquo;</h2>
-          <p class="fragment" data-fragment-index=6>assigning a variable or mutating a value</p>
-          <h2 class="fragment" data-fragment-index=2>&ldquo;bianually&rdquo;</h2>
-          <p class="fragment" data-fragment-index=3>twice a year or once every two years</p>
-          <h2 class="fragment" data-fragment-index=4>&ldquo;4 ounces&rdquo;</h2>
-          <p class="fragment" data-fragment-index=5>a half cup or a quarter pound</p>
-          <aside class="notes" data-markdown>
-            - "change" is accidentally playing two different roles
-            - It's like the word biannually **(click)**: do we mean **(click)** twice a year or once every two years?
-            - Or ounces **(click)**... are we talking **(click)** volume or weight?
-            - With change: we might be **(click)** changing a variable or we might be changing a value
-            - Assignments change variables and mutations change values
-          </aside>
-        </section>
-
-        <section>
-          <p class="fragment" data-fragment-index=4>&ldquo;when I mutate the list, both <code>x</code> and <code>y</code>&rdquo;</p>
-          <p class="fragment" data-fragment-index=3>&ldquo;when I reassign <code>x</code>, it doesn't affect <code>y</code>&rdquo;</p>
-          <p class="fragment strike" data-fragment-index=1>&ldquo;when I change <code>x</code>, it doesn't always change <code>y</code>&rdquo;</p>
-          <pre class="python" style="width: 60%; margin: 1em auto;"><code data-trim data-noescape>
->>> x = [2, 1, 3, 4]
->>> y = x
->>> x.append(7)
->>> y
-[2, 1, 3, 4, 7]
->>> x = [100, 200, 300]
->>> y
-[2, 1, 3, 4, 7]
->>>
-          </code></pre>
-          <h2 class="fragment" data-fragment-index=2>&ldquo;Explicit is better than implicit&rdquo;</h2>
-          <aside class="notes" data-markdown>
-            - So instead of using the word "change" **(click)** I encourage folks learning with me to be more explicit **(click)**
-            - ... as the Zen of Python says: explicit is better than implicit
-            - When we **(click)** reassign x, y still points to the same object
-            - But if we instead **(click)** mutate the object that x points to, if y points to the same object, then both x and y will seem as if they changed
-            - The word change **can be ambiguous** in Python... and ambiguity can reinforce fuzzy and incorrect mental models
-          </aside>
-        </section>
-
-        <section>
-          <h1 class="fragment">Word Choice Matters</h1>
-          <aside class="notes" data-markdown>
-            - Your choice of words matters **(click)**
-            - The words we use are a shortcut to a mental model, an implied mental model that's vague and based on connotation... but there are usually bigger ideas hiding beneath our words
-          </aside>
-        </section>
-
-        <section>
-          <h2 class="fragment">Words used out of habit</h2>
-          <h2 class="fragment">Words read/heard by many people</h2>
-          <h2 class="fragment">Consider your words to improve</h2>
-          <p class="fragment">your <strong>writing</strong><span class="fragment">, <strong>communication</strong></span><span class="fragment">, and perceived <strong>empathy</strong></span></p>
-          <aside class="notes" data-markdown>
-            - The words we choose are important, especially when we use certain words and phrases habitually **(click)** or when our words will be **(click)** heard or read by many people
-            - Thinking **(click)** about the words you use can help you **(click)** write better documentation, communicate **(click)** more effectively, and even communicate **(click)** more compassionately
-            - TODO LINK TO THESE LATER IN TALK? And more generally thinking about the words and phrases we use can make you a better coworker and a better friend: see Ned Batchelder's keynote on interpersonal interactions (and April Wensel's talk and Jesse Jiryu Davis' talk too?)
           </aside>
         </section>
 
@@ -1208,13 +1502,33 @@ def compute_md5(filename):
         </section>
 
         <section>
+          <aside class="notes" data-markdown>
+            - When solving a programming problem... what's the first step?
+            - Make sure you understand problem.
+            - But what's the first step after that?
+            - Break down the problem into parts.
+          </aside>
+        </section>
+
+        <section>
           <h1>Gradual progress</h1>
           <h2 class="fragment">Small steps add up over time</h2>
           <aside class="notes" data-markdown>
-            - Progress is often gradual
-            - Which makes sense...
+            - "Don't let perfection be the enemy of the good"
+            - This is a common saying because we often let our version of a future *ideal* get in the way of *more gradual progress*
             - It's hard to make a big change overnight
+            - So lasting progress often comes in the form of small steps...
             - **(click)** But small frequent steps can *really* add up over time
+          </aside>
+        </section>
+
+        <section>
+          <aside class="notes" data-markdown>
+            Have an idea for a new business... "What's the MVP?"
+            - Preferably, start with the smallest steps you can to gather feedback and see where you should go next...
+            - That first step will probably be *smaller* than the ideal that you imagine
+            - I have one example from myself where I'm grateful that I took this advice to hear for myself
+            - Example: Starting Python Morsels as a mailing list
           </aside>
         </section>
 
@@ -1228,28 +1542,6 @@ def compute_md5(filename):
             - This might a bias our brains have toward striving for more **(click)**
             - Which might be helpful...
             - But if we don't also take a step back and **(click)** appreciate how far we've come, we risk discouraging ourselves to the point of giving up
-          </aside>
-        </section>
-
-      </section>
-      <section>
-        <!-- section: discomfort -->
-        <!-- SECTION TIME: 2 minutes -->
-
-        <section>
-          <h1>Agenda</h1>
-          <ul>
-            <li class="bold"><strong>Mental Models</strong></li>
-            <li class="bold"><strong>Cognitive Biases</strong></li>
-            <li><strong>Names and Words</strong></li>
-            <li><strong>Making Progress</strong></li>
-            <li class"fragment bold">Discomfort</li>
-            <li>Default States</li>
-            <li>Cognitive Dissonance</li>
-          </ul>
-          <aside class="notes" data-markdown>
-            - Making progress is *slow* which often uncomfortable **(click)**
-            - Making progress involves acknowledging that there's progress to be made, and taking your first step...
           </aside>
         </section>
 
@@ -1268,190 +1560,110 @@ def compute_md5(filename):
             </rect>
           </svg>
           <aside class="notes" data-markdown>
-            - Down the slow path to change
-            - And until you've reached the end of your change, which may never happen, the fact that you're not there yet feels uncomfortable.
-            - But the change *itself* can often be uncomfortable too.
-            - And sitting with *discomfort* isn't easy
-          </aside>
-        </section>
-
-      </section>
-      <section>
-        <!-- section: default states -->
-        <!-- SECTION TIME: 2 minutes -->
-
-        <!--
-        <section>
-          <h1 class="fragment" style="margin-top: -2em;" data-fragment-index=3><code>self</code></h1>
-          <pre class="python fragment" data-fragment-index=1><code data-noescape>    def __eq__(<span class="fragment bold" data-fragment-index=2>self</span>, other):
-        if not isinstance(other, type(<span class="fragment bold" data-fragment-index=2>self</span>)):
-            return NotImplemented
-        return <span class="fragment bold" data-fragment-index=2>self</span>.value  == other.value</code></pre>
-          <aside class="notes" data-markdown>
-            - I sometimes tell my students that unlike **(click)** most other object-oriented programming languages
-            - In Python, we're deliberately **egocentric**... **(click)**
-            - A class instance isn't a separate object because we *are* **(click)** the object
-            - Real life is a little bit different from Python...
+            - Of course, the slow path to change *isn't easy*
+            - Until you've reached your imagined future, which may never happen, the fact that you're not there yet feels uncomfortable
           </aside>
         </section>
 
         <section>
           <aside class="notes" data-markdown>
-            - Our brains are very concerned with our perception of ourselves.
-            - Am I smart?
-            - Do I belong?
-            - Am I good?
-          </aside>
-        </section>
-
-      </section>
-      <section>
-      -->
-
-        <section data-background-image="fence2.jpg" data-transition="none">
-          <h2 class="fragment" style="margin-top: -4.5em; margin-left: 3em;">Chesterton's Fence</h2>
-          <aside class="notes" data-markdown>
-            - ...Fences.
-            - Let's say you acquire some land and on that land you find a fence
-            - You don't like fence
-            - It's not a pretty fence and it has a strange location
-            - You don't know what purpose it could possibly serve
-            - Should you tear down this fence?
-            - **(click)** Chesterton's Fence is the idea that you shouldn't take down a fence unless you understand the reason the fence was put there in the first place
-            - This often comes up in legacy codebases...
+- It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
+- It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
+- Hopefully I'll improve, but it's never going to be as much as I'd like.
           </aside>
         </section>
 
         <section>
-          <h2 class="fragment">&ldquo;This code is too complex&rdquo;</h2>
-          <p class="fragment">&ldquo;This shouldn't be necessary&rdquo;</p>
-          <pre class="python"><code data-trim data-noescape style="overflow: hidden;">
-def dedent(text):  # Python's textwrap.dedent (most of it)
-    margin = None
-    text = _whitespace_only_re.sub('', text)
-    indents = _leading_whitespace_re.findall(text)
-    for indent in indents:
-        if margin is None:
-            margin = indent
-        elif indent.startswith(margin):
-            pass
-        elif margin.startswith(indent):
-            margin = indent
-        else:
-            for i, (x, y) in enumerate(zip(margin, indent)):
-                if x != y:
-                    margin = margin[:i]
-                    break
-    if margin:
-        text = re.sub(r'(?m)^' + margin, '', text)
-    return text
-          </code></pre>
           <aside class="notes" data-markdown>
-            - If you find some code that *seems* unnecessarily complex **(click)**, it might be wrong... or there might be a good reason for that complexity
-            - Sometimes something **(click)** seemingly unnecessary is actually necessary
+- It's hard to admit to myself that I could be doing something better than I am... especially hard when I'm making either no progress or very slow progress at improving in that particular area.
+- It also feels embarrassing to admit that I'm not doing as well as I could be and I probably never will.
+- Hopefully I'll improve, but it's never going to be as much as I'd like.
           </aside>
         </section>
 
         <section>
-          <h2>TODO bring the default of writing code back into the talk in its own section here...</h2>
+          <div>
+            <blockquote style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
+              “The world can be both bad and better.”
+            </blockquote>
+            <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
+          </div>
           <aside class="notes" data-markdown>
-            - TODO dig up the slides I deleted
+I'd like to look at the two sides of that quote a bit more...
+
+What's the value in appreciating the progress we've made?
+If we focus too much on the "bad", without considering the "better", we risk fatalism.
+We can't *only* talk about the bad things because we risk fatalism.
+
+But what's the value in recognizing the "bad"?
+So we don't take progress (the "better") for granted.
+
+Some of my favorite books on the progress human's have made over time have some very critical reviews that are well worth acknowledging. The most concerning reviews, for me, are the ones from readers who felt that the writing made them feel as if we can simply sit back and watch progress happen... that progress is inevitable.
+
+Enlightenment Now, Factfulness, Not The End of the World...
+
+Positive change isn't inevitable.
+
+If we focus too much on the better we risk complacency...
+We need to talk about the bad things. Pointing out problems helps us identify progress-to-be-made.
           </aside>
         </section>
 
         <section>
-          <h1>Sensible Defaults</h1>
-          <pre class="python fragment" style="width: 50%;"><code data-trim data-noescape>
-DEBUG = False
-TIME_ZONE = "UTC"
-LANGUAGE_CODE = "en-us"
-USE_I18N = True
-USE_TZ = True
-          </code></pre>
+          <div>
+            <blockquote style="box-shadow: none; margin-bottom: 0; font-size: 1.85em;">
+              “The world can be both bad and better.”
+            </blockquote>
+            <nobr style="font-size: 1.2em;">&mdash; Hans Rosling in Factfulness</nobr>
+          </div>
           <aside class="notes" data-markdown>
-            - The Django web framework has a settings file which allows you to customize how Django works
-            - Before you chance a setting **(click)**
-            - It's important to understand whether you *should* change that setting
-            - After all, Django's default settings are mostly pretty sensible
-            - Outside of code...
-          </aside>
-        </section>
-
-        <section>
-          <h1>Defaults: Often Sensible</h1>
-          <p><span class="fragment">Custom</span><span class="fragment">, Cultural Norm</span><span class="fragment">, Personal Habit</span></p>
-          <h1 class="fragment">Status Quo Bias</h1>
-          <aside class="notes" data-markdown>
-            - Keeping a default in-place is often a good idea
-            - Regardless of whether that default comes from a **(click)** social custom, a **(click)** cultural norm, or **(click)** a personal habit
-            - But defaults don't *always* lead to the best outcomes... and **(click)**
-            - Our brains often *bias* us toward our current default state
+            - On an individual level, it's important to focus on the *better* in a future-looking way
+            - To progress effectively, we must believe that we *can* improve
+            - If you adopt a growth mindset, you believe that through directed effort, you can and you will improve your skills: that your skills aren't fixed but are expandable. If you put in the right effort, you will grow.
+            - The interesting thing about the growth mindset, is that...
+            - You're more likely to learn if you adopt a growth mindset: you're more likely to grow your skills if you believe in your ability to do so.
+            - This isn't some sort of magical thinking where you will something into existence simply be believing it to be true.
+            - Instead, this is focusing on *removing* a barrier that our brains sometimes put up.
+            - If you see yourself as fixed and unchanging, you're less likely to improve your skills.
+            - And keep in mind that this *isn't* something you either *have* or you don't
+            - You may think "I have a growth mindset already because I decided to learn to play the clarinet last year"
+            - But Carol Dweck, the psychologist who pioneered this mindset theory, has also researched "Domain-Specific Mindsets"
+            - You may have a growth mindset about the clarinet but you may have a fixed mindset about the way you communicate with your coworkers
+            - TODO I have one more cognitive bias I'd like to note before I wrap up... and I'd like to demonstrate it with a question.
           </aside>
         </section>
 
       </section>
       <section>
 
-        <!-- TODO show agenda again and say "we did it"? -->
-
         <section>
-          <h1 class="fragment" data-fragment-index=5>Attention</h1>
-          <p class="fragment" data-fragment-index=1>Be curious about your biases</p>
-          <p class="fragment" data-fragment-index=2>Explore mental models (yours and more)</p>
-          <p class="fragment" data-fragment-index=3>Identify iteration potential</p>
-          <p class="fragment" data-fragment-index=4>Study your discomfort</p>
+          <h1>How much have you changed over the past 10 years?</h1>
+          <p>preferences, personality, goals, core values</p>
           <aside class="notes" data-markdown>
-            - Be curious about your own biases **(click)**
-            - And enlist colleagues to help you spot your biases
-            - Explore your current mental models and explore *other* mental models **(click)**
-            - Try to notice where your current mental models break down
-            - Don't fixate on your flaws or your failings, but don't completely ignore your potential to iterate **(click)**
-            - Appreciate how far you've come, but don't forget to acknowledge that you *are* a work-in-progress
-            - When you're feeling uncomfortable, ask yourself why **(click)**
-            - Sometimes discomfort is a sign that we're actively making progress...
-            - Or that there *is* progress to be made
-            - And think about what you're paying attention to **(click)**
-            - All of these require your brain's attention
-            - Where is your attention?
-          </aside>
-        </section>
-
-        <!--
-        <section>
-          <h1>Thinking about our thinking</h1>
-          <p>Learning and Teaching</p>
-          <p>Habit Formation</p>
-          <p>Self-compassion</p>
-          <p>Emotional intelligence</p>
-          <p>Empathy and Compassion</p>
-          <p>Cognitive Discontent</p>
-          <aside class="notes" data-markdown>
-            - TODO I need a conclusion!
+            - "how much have you changed over the past 10 years"...
+            - In terms of your preferences, your personality, your life goals, and your core values?
+            - When asked this question, many of us would say "I've changed quite a bit".
+            - But if I asked you, "how much *will* you change over the next 10 years"...
+            - You probably *won't* say "I'll change quite a bit".
+            - We don't *think* we'll change.
+            - Partly this is because it's hard to predict personal growth because we can't just remember... we need to imagine
+            - But also, seeing our past selves as less mature than our current selves feels more acceptable than imagining ourselves as not fully formed.
+            - We don't like to think of ourselves as a work-in-progress, but we *are* a work-in-progress
+            - Which... is a slightly scary thought: If we're a work-in-progress... what does that *mean* about us? Are we incomplete somehow?
           </aside>
         </section>
 
         <section>
-          <h1 class="fragment" data-fragment-index=7>The Obvious</h1>
-          <p class="fragment" data-fragment-index=1>Admit you have a human brain</p>
-          <p class="fragment" data-fragment-index=2>Give your beliefs names</p>
-          <p class="fragment" data-fragment-index=3>Make your mental models explicit</p>
-          <p class="fragment" data-fragment-index=4>Iterate on your beliefs</p>
-          <p class="fragment" data-fragment-index=5>Embrace discomfort</p>
-          <p class="fragment" data-fragment-index=6>Think outside yourself</p>
-          <h2 class="fragment" data-fragment-index=8>&ldquo;Explicit is better than implicit&rdquo;</h2>
+          <h1>TODO</h1>
           <aside class="notes" data-markdown>
-            - So...
-            - Accept that you have a beautiful but flawed human brain
-            - Give your beliefs names and shapes
-            - Try to make your mental models explicit, rather than implicit
-            - Iterate on your beliefs and your actions
-            - And accept that if you're making progress, then you will sometimes experience cognitive dissonance
-            - Sit with that discomfort
-            - And try to respond to it...
-            - And try to imagine what someone else might be experiencing and you might want to change your own thinking and behavior based on the experiences of others
+- Our brains are constantly changing, whether we like it or not. We may as well embrace that change and try to steer it in a positive direction for ourselves and for everyone else.
+- Today, you are a work-in-progress. There is progress for *you* to make, for yourself, for your community, and for the world.
+- Our lives span decades, not centuries.
+- Life is short.
+- Enjoy the time you're time you have and try to effect some positive change while you're here.
+
           </aside>
         </section>
-        -->
 
       </section>
       <section style="text-align: left;" data-background="#663399" data-background-transition="slide" data-transition="slide">
