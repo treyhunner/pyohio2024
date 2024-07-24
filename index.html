@@ -272,20 +272,15 @@ True</span>
         <!-- SECTION TIME: 3 minutes -->
 
         <section data-transition="none">
-          <h1>Meta<span class="fragment" data-fragment-index=1>cognition</span></h1>
-          <h3 class="fragment" style="margin-top: 1em;" data-fragment-index=2>
-            <span class="fragment fade-out" data-fragment-index=3>
-              Learning About Learning
-            </span>
-          </h3>
-          <h3 class="fragment" data-fragment-index=3>
+          <h1 class="fragment" data-fragment-index=2>Metacognition</h1>
+          <h1 class="fragment" data-fragment-index=1 style="margin-bottom: 0.3em;">
               Thinking About Thinking
-          </h3>
-          <p style="visibility: hidden;">Blank</p>
+          </h1>
           <aside class="notes" data-markdown>
-            - I'm going to talk about **(click)** metacognition
-            - which is either **(click)** learning about learning
-            - Or, more broadly... **(click)** thinking about thinking
+            - I'd like to talk about **(click)** thinking about thinking
+            - I'm going to refer this as metacognition **(click)**
+            - Technically I'm stretching this term a little bit beyond its academic use
+            - But I'm not an academic, so I'm allowed to misuse this term
             - When it comes to metacognition...
           </aside>
         </section>
@@ -314,8 +309,6 @@ True</span>
             - **(click)** language, **(click)** people's intentions, **(click)** how behavior is perceived
           </aside>
         </section>
-
-        <!-- TODO acknowledge that I'm stretching the word metacognition a bit outside of its specific meaning in cognitive science. I'm talking about thinking about your own thinking and thinking about the thinking of others, both in a reflective way and in deliberate future-thinking way. Deliberacy and explicitness of thought. Explicit is better than implicit. -->
 
         <section>
           <h1 class="fragment" style="margin: 0.5em auto;">Cognitive Biases</h1>
@@ -495,34 +488,65 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section>
-          <h1>TODO Confirmation Bias Example</h1>
-            <pre class="python"><code data-trim data-noescape>
-import re
-
-def ...(text):
-    text = re.sub(r"...", ..., text)
-    return text
-            </code></pre>
+          <h1 class="fragment" data-fragment-index=4 style="margin-top: -1em;">February 29, 1968</h1>
+          <div style="display: grid; grid-auto-flow: column; width: 50%; margin: auto;">
+            <h1 class="fragment" data-fragment-index=1>✅</h1>
+            <h1 class="fragment" data-fragment-index=2>🧪</h1>
+            <h1 class="fragment" data-fragment-index=3>😞</h1>
+          </div>
           <aside class="notes" data-markdown>
-            - TODO XXX why does my regular expression not work?
-            - Let's say you're using a regular expression to normalize some text.
-            - And no matter how you write it, the text doesn't seem to change.
+            - Years ago, I made an application that had **(click)** great code coverage and we'd thoroughly tested the application **(click)**
+            - Then our first user tried to sign up and it broke **(click)**
+            - Why did it break?
+            - Our first user had apparently born on **(click)** February 29th.
+            - And our age validation logic had a bug in it that resulted in an exception for a birthdate of February 29th
+            - We had confirmed that *our* birthdates worked, but we hadn't thought of all the edge cases
+            - You know might have helped?
+          </aside>
+        </section>
 
-Assumptions worth trying to invalidate:
+        <section data-background-color="#fff">
+          <h1>QA Tester</h1>
+          <div style="display: grid; grid-auto-flow: column; width: 50%; margin: auto;">
+            <h1 class="fragment">👩</h1>
+            <h1 class="fragment">👩‍🎤</h1>
+          </div>
+          <a href="https://github.com/python/cpython/issues/121609">
+            <img src="cpython-issue.png" class="fragment no-style" style="width: 700px; margin-top: 1em; margin-bottom: 1em;">
+          </a>
+          <aside class="notes" data-markdown>
+            - A quality assurance tester... good QA testers know how to break applications
+            - They try interesting birthdates, enter odd email addresses, and they paste emoji characters **(click)**, but not just *any* emoji... they paste emoji glyphs **(click)** that include zero-width joiners, which often break code.
+            - In fact, Python 3.13 *just recently* **(click)** had a bug that was related to zero-width joiners.
+            Need help questioning your assumptions?
+            Talk to a duck.
+            Rubber duck debugging gives us someone to talk to when we don't have someone to talk to.
+            Walk through your code with the duck.
+            Or imagine what the duck might ask you if it could talk.
+            Since we live in 2024, I'd also seriously consider talking to a robot.
+            Claude, Chat GPT, Gemini, or one of the dozens of other large language models that can pretend to be a human trying to help you question your beliefs and assumptions instead of trying to confirm them.
+          </aside>
+        </section>
 
-- Or more fundamentially, the function I've written is actually being called
-- The text being passed to this function is the text I think it is
-- That regular expression pattern matches what I think it matches
-- The substitution function does what I think it does
-
-Need help questioning your assumptions?
-Talk to a duck.
-Rubber duck debugging gives us someone to talk to when we don't have someone to talk to.
-Walk through your code with the duck.
-Or imagine what the duck might ask you if it could talk.
-Since we live in 2024, I'd also seriously consider talking to a robot.
-Claude, Chat GPT, Gemini, or one of the dozens of other large language models that can pretend to be a human trying to help you question your beliefs and assumptions instead of trying to confirm them.
-
+        <section data-background-color="#fff">
+          <div style="display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr); gap: 20px; padding: 40px; height: 700px; box-sizing: border-box;">
+            <div style="grid-column: 1 / 5; grid-row: 1 / 5;">
+              <img src="pyohio-friends.jpg" alt="Large image top-left" style="width: 100%; height: 100%; object-fit: cover;" class="fragment no-style" data-fragment-index=1>
+            </div>
+            <div style="grid-column: 5 / 8; grid-row: 2 / 5;">
+              <img src="bot-on-computer.jpg" alt="Small image right-middle" style="width: 100%; height: 100%; object-fit: cover;" class="fragment no-style" data-fragment-index=3>
+            </div>
+            <div style="grid-column: 4 / 7; grid-row: 5 / 8;">
+              <img src="rubber-duck.jpg" alt="Small image left-bottom" style="width: 100%; height: 100%; object-fit: cover;" class="fragment no-style" data-fragment-index=2>
+            </div>
+          </div>
+          <aside class="notes" data-markdown>
+            - Questioning your own assumptions is difficulty
+            - The next time you could use some help working around your own confirmation bias...
+            - Talk to a friend **(click)**
+            - Or walk through your code with the duck **(click)**
+            - Or ask a chat bot what assumptions you might be making **(click)**
+            - Chat bots and rubber ducks can both be pretty decent tools for *questioning* your beliefs and assumptions instead of trying to *confirm* them
           </aside>
         </section>
 
@@ -533,8 +557,7 @@ Claude, Chat GPT, Gemini, or one of the dozens of other large language models th
             <img src="499.png" style="" class="fragment">
           </div>
           <aside class="notes" data-markdown>
-            - There's also the anchoring bias
-            - which occurs when our brains inadvertently anchor our thinking on a specific piece of information, which can sometimes cloud our judgement
+            - An anchoring bias occurs when our brains inadvertently anchors our thinking on a specific piece of information, which can *sometimes* cloud our judgement
             - For example, when Steve Jobs, announced the price of the iPad, **(click)** he displayed $999 on the screen for many seconds before eventually announcing that the price of an iPad would be $499 **(click)**
             - That made the iPads *immediately* seem inexpensive
             - This doesn't just apply to prices though...
@@ -575,7 +598,7 @@ Claude, Chat GPT, Gemini, or one of the dozens of other large language models th
             - There's also the action bias
             - If the situation we're in isn't ideal, we often prefer to take action
             - Action is not always better than inaction.
-            - There's a principle related to this bias, one about...
+            - There's a principle related to this bias, which is about...
           </aside>
         </section>
 
@@ -685,15 +708,15 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
 
         <section>
           <h1 class="fragment">Not Thought of By Me</h1>
-          <p class="fragment">Ask a coworker for help 💖</p>
-          <p class="fragment">Use a search engine 🔍</p>
-          <p class="fragment">Ask Chat GPT, Claude, etc. 🤖</p>
+          <h2 class="fragment">Ask a coworker for help 💖</h2>
+          <h2 class="fragment">Use a search engine 🔍</h2>
+          <h2 class="fragment">Ask Chat GPT, Claude, etc. 🤖</h2>
           <aside class="notes" data-markdown>
             - I think of "Not Invented" here as "Not Thought of By Me", which isn't an officially recognized cognitive bias, though it *is* related to imposter syndrome and some other biases...
             - Instead of **(click)** asking your coworker to help you brainstorm a problem, you might try to solve everything on your own.
             - What if you don't even have a coworker to ask?
             - Well, **(click)** there's always a search engine.
-            - And today, **(click)** there's always a chat bot.
+            - And since we live in 2024, **(click)** there's always a chat bot.
             - And of course, you should *not* assume a chat bot will give you the right answer, at least not a fully working answer not after your prompt.
             - But you *also* shouldn't assume that the code you found on StackOverflow is correct
             - You do need to verify that your solution works... but that doesn't mean you need to invent the solution yourself.
@@ -1138,7 +1161,6 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - This mental model *is* a bit more complex than the sticky note model, but it stretches a bit further
             - The indirection between variables and objects is tricky, but it also makes it easier to understand how data structures work.
             - I'd argue that, of these 3 mental models, *this* one is the closest one to how Python actually models variables and objects
-            - TODO transition...
           </aside>
         </section>
 
@@ -1146,10 +1168,11 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <h1 class="fragment"><span class="fragment strike">Linguistic Determinism</span></h1>
           <h1 class="fragment">Linguistic Relativism</h1>
           <aside class="notes" data-markdown>
+            - To better understand the world, it's helpful to consider the mental models you use, but it's also helpful to consider the *words* you use...
             - Linguistic determinism **(click)** is the idea that our thoughts are constrained by the language we use. We can't think thoughts that we don't have words for.
             - This is *not* a real thing. **(click)** It *is* possible to think thoughts that we have no words for. That's how *new* words come to exist.
-            - Linguistic relativism **(click)** is the idea that our language *doesn't* determine our thoughts, but does *affect* them
-            - The language we use can implicitly shape our mental models
+            - Linguistic relativism **(click)** is the idea that our language *doesn't* determine our thoughts, but it does *affect* them
+            - The language we use can *implicitly shape* our mental models
           </aside>
         </section>
 
@@ -1167,8 +1190,8 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
 >>> </span>
           </code></pre>
           <aside class="notes" data-markdown>
-            - There is an interaction I've had repeatedly over the years:
-            - A student will tell me that they've assigned two variables (`first` and `second`) to the same value and then they'll say **(click)** "when I change `first`, it doesn't *always* change `second`"
+            - There's an interaction I've had repeatedly over the years:
+            - A Python learner will tell me that they've assigned two variables (`first` and `second`) to the same value and then they'll say **(click)** "when I change `first`, it doesn't *always* change `second`"
             - When I ask what they mean, inevitably they'll show me something like this...
             - "here I changed first" **(click)** "and second changed" **(click)**
             - But "*here* when I change first" **(click)**... "second doesn't change" **(click)**
@@ -1410,15 +1433,14 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             </div>
           </div>
           <aside class="notes" data-markdown>
-            - TODO improve transition locations here
-            - The Python Software Foundation was formed in 2001  **(click)**
-            - And the foundation didn't have a Code of Conduct **(click)** for its first decade of existence
+            - The Python Software Foundation was formed 23 years ago **(click)**
+            - And the foundation didn't have a Code of Conduct for its first decade of existence **(click)**
             - But even after a code of conduct was written...
-            - **(click)** There wasn't any official contact information to use use for reporting conduct issues in online PSF spaces for the next 3 years
-            - And until a year after that, **(click)** there wasn't actually a group of individuals dedicated to handling Code of Conduct issues... everything was handled directly by the board of directors
-            - But at that point the code of conduct was only about 10 sentences long and those of us *in* this new workgroup soon realized that it wasn't very clearly enforceable...
-            - **(click)** Until a couple years later...
-            - Today the PSF has an actionable Code of Conduct with publicly documented reporting and enforcement processes and Code of Conduct issues are handled by a dedicated group of volunteers
+            - There wasn't any official contact information to use for reporting issues for the next 3 years **(click)**
+            - And there wasn't a group of individuals dedicated to handling Code of Conduct issues until the Code of Conduct work group was formed a year later **(click)**
+            - But at that point the code of conduct was only about 10 sentences long and those of us *in* this new workgroup soon realized that it wasn't actually enforceable...
+            - Until it was rewritten a couple years later...**(click)**
+            - Today the PSF has an actionable Code of Conduct with publicly documented processes around reporting and enforcement and Code of Conduct issues are handled by a dedicated group of volunteers
             - But before 2019, the process for addressing code of conduct issues within certain PSF spaces was **(click)** ...unspecified
             - ...
             - It's sometimes hard not to get discouraged by an exceptionally imperfect situation...
@@ -1756,7 +1778,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
         </section>
 
         <section>
-          <h1>TODO img? some sort of visuals</h1>
+          <h1>TODO img? remembering... or imagining? or construction zone / work-in-progress?</h1>
           <aside class="notes" data-markdown>
             - We tend to *underestimate* the amount that our future selves will change
             - Partly, this is because it's hard to predict personal growth because we can't just **remember** how we *were*... we need to **imagine** how we *might* be
@@ -1805,7 +1827,6 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
         </div>
         <aside class="notes" data-markdown>
           - TODO make a resources link
-          - TODO maybe show 3 questions for them to take away on the screen?
           - ...
           - Thank you
         </aside>
