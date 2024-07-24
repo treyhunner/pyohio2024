@@ -215,3 +215,9 @@ Related to the growth mindset. It's a lot easier for change and growth to occur 
   - Someone tried to accomplish something there.
   - Sometimes the fence isn't what it was intended to do. Question why things are the way they are. Don't assume that something is as it should be, but also don't assume that it has no purpose.
 
+
+---
+
+Let's say you're a big believer in free market capitalism.
+
+It's your understanding that markets are the ....
