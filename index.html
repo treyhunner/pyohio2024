@@ -318,12 +318,9 @@ True</span>
         <!-- TODO acknowledge that I'm stretching the word metacognition a bit outside of its specific meaning in cognitive science. I'm talking about thinking about your own thinking and thinking about the thinking of others, both in a reflective way and in deliberate future-thinking way. Deliberacy and explicitness of thought. Explicit is better than implicit. -->
 
         <section>
-          <h1>Agenda</h1>
-          <ul>
-          <li class="fragment">Cognitive Biases</li>
-          <li class="fragment">Mental Models</li>
-          <li class="fragment">Making Progress</li>
-          </ul>
+          <h1 class="fragment" style="margin: 0.5em auto;">Cognitive Biases</h1>
+          <h1 class="fragment" style="margin: 0.5em auto;">Mental Models</h1>
+          <h1 class="fragment" style="margin: 0.5em auto;">Making Progress</h1>
           <aside class="notes" data-markdown>
             - I'd like to talk to you about 3 things...
             - Acknowledging our own **(click)** biases and trying to counterbalance them
@@ -333,7 +330,7 @@ True</span>
         </section>
 
         <section>
-          <pre class="python" style="width: 100%;"><code data-trim data-noescape class="hljs no-highlight">
+          <pre class="python" style="width: 100%;"><code data-trim data-noescape class="hljs no-highlight" style="font-size: 1.08em;">
 >>> <span class="fragment">import this</span><span class="fragment">
 The Zen of Python, by Tim Peters
 
@@ -1146,8 +1143,8 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
         </section>
 
         <section>
-          <h2 class="fragment"><span class="fragment strike">Linguistic Determinism</span></h2>
-          <h2 class="fragment">Linguistic Relativism</h2>
+          <h1 class="fragment"><span class="fragment strike">Linguistic Determinism</span></h1>
+          <h1 class="fragment">Linguistic Relativism</h1>
           <aside class="notes" data-markdown>
             - Linguistic determinism **(click)** is the idea that our thoughts are constrained by the language we use. We can't think thoughts that we don't have words for.
             - This is *not* a real thing. **(click)** It *is* possible to think thoughts that we have no words for. That's how *new* words come to exist.
@@ -1751,7 +1748,6 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           </div>
           <p>preferences, personality, goals, core values</p>
           <aside class="notes" data-markdown>
-            - TODO visuals
             - ..."how much *will* you change over the *next* 10 years"
             - What might you be like in 2034?
             - How much will you change compared to... today?
@@ -1789,13 +1785,13 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
 
       </section>
       <section style="text-align: left;" data-background="#663399" data-background-transition="slide" data-transition="slide">
-        <h3 style="margin-top: 1em;">Visit 🔗 <a href="#">TODO</a></h3>
-        <h4><nobr>For related resources</nobr></h4>
-        <h1 style="margin-top: 1em;">
-          Thank you 💖
-          </p>
-        </h1>
-        <div>
+        <h2 style="margin-top: 0.5em;">Resources &nbsp; <a href="#">trey.io/our-brains</a></h2>
+        <h3 style="margin-top: 1.5em;">
+          How will you notice your biases?<br>
+          What mental models do you have?<br>
+          What progress might you make?
+        </h3>
+        <div style="margin-top: 2.5em;">
           <p style="float: left; margin-right: 2em;">
             <strong>Trey Hunner</strong><br>
             <small>Python Team Trainer<br>
@@ -1836,6 +1832,9 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
+      if (window.self !== window.top) {
+        document.body.className += " notes";
+      }
     </script>
   </body>
 </html>

@@ -349,3 +349,33 @@ section.has-dark-background a:hover {
 .col {
   flex: 1;
 }
+
+
+/* Workaround */
+/* https://github.com/hakimel/reveal.js/issues/1265 */
+section {
+    &[data-transition*="none-out"] {
+        &.present, &.past {
+            transition-duration: 0s !important;
+        }
+    }
+    &[data-transition*="none-in"] {
+	&.future, &.present {
+	    transition-duration: 0s !important;
+	}
+    }
+}
+
+
+/* Special effect for this talk */
+.g {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+
+.reveal .controls {
+  visibility: hidden;
+}
+.notes .reveal .controls {
+  visibility: visible;
+}
