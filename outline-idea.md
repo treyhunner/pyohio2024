@@ -220,4 +220,44 @@ Related to the growth mindset. It's a lot easier for change and growth to occur 
 
 Let's say you're a big believer in free market capitalism.
 
-It's your understanding that markets are the ....
+It's your understanding that markets are the most effective mechanism for allocating resources.
+
+What could your mental model be missing?
+
+Well, we all know the issue with fossil fuels and climate change.
+
+Burning fossil fuels has a cost that *isn't* incurred by the *user* of fossil fuels.
+
+This is called a "negative externality".
+
+An externality is an economic cost or benefit that affects a third party who did not choose to incur that cost or benefit.
+
+Many free market lovers might agree that this is a situation where carbon taxes, cap-and-trade, or other programs make sense.
+
+The market is *failing* to effectively allocating resources, so taxes make sense in this situation.
+
+But notice I said an externality is an economic cost **or benefit**... there are also *positive* externalities.
+
+For example when someone get vaccinated, they benefit those *around them* in addition to themselves.
+
+When people get an education, the increase in their abilities and their skills benefits *other people* in society.
+
+Should the government subsidize positive externalities? After all, this is a type of market failing too, isn't it?
+
+Of course I'm not an economist, but I have read some things economists have written.
+
+---
+
+What do your mental models look like?
+
+What does your mental model of economics look like?
+What about immigration?
+Foreign policy?
+
+You vote based on all of these issues. But you probably have a pretty fuzzy mental model of them. I know I do.
+
+---
+
+Let's say you have strong feelings about immigration in the US.
+
+You have *some sort* of mental model around the US's immigration system... certainly much of this mental model is implicit and there are certainly gaps and inconsistencies in it.
