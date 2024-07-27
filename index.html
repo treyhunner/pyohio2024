@@ -213,7 +213,7 @@ True</span>
           </aside>
         </section>
 
-        <!-- TODO show the f g's?
+        <!-- show the f g's?
         <section>
           <div style="display: grid; gap: 20px; grid-template-columns: 1fr 1fr 1fr 1fr;">
             <img src="g2.png" class="fragment no-style" style="margin: auto; height: 150px;">
@@ -222,7 +222,6 @@ True</span>
             <img src="g4.png" class="fragment no-style" style="margin: auto; height: 150px;">
           </div>
           <aside class="notes" data-markdown>
-            - TODO
             - ...
           </aside>
         </section>
@@ -495,7 +494,7 @@ Namespaces are one honking great idea -- let's do more of those!</span>
         </section>
 
         <section data-background-color="#fff">
-          <h1>QA Tester</h1>
+          <h1>Quality Assurance</h1>
           <div style="display: grid; grid-auto-flow: column; width: 50%; margin: auto;">
             <h1 class="fragment">👩</h1>
             <h1 class="fragment">👩‍🎤</h1>
@@ -504,7 +503,7 @@ Namespaces are one honking great idea -- let's do more of those!</span>
             <img src="cpython-issue.png" class="fragment no-style" style="width: 700px; margin-top: 1em; margin-bottom: 1em;">
           </a>
           <aside class="notes" data-markdown>
-            - **Quality assurance**... good QA testers know how to break applications
+            - **Quality assurance**... good QA engineer knows how to break applications
             - They try **interesting birthdates**, enter **odd email** addresses, and they paste emoji characters **(CLICK)**, but not just *any* emoji... they paste emoji glyphs **(CLICK)** that include **zero-width joiners**... which often break code.
             - In fact, Python 3.13 *just recently* **(CLICK)** had a bug that was related to zero-width joiners.
             - Questioning your own assumptions is difficulty
@@ -856,13 +855,13 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           </div>
           <h2 style="color: #d00;" class="fragment" data-fragment-index=10>This mental model breaks down</h2>
           <aside class="notes" data-markdown>
-            - First, let's try mentally model Python's variables and data structures as **(CLICK)** buckets that contain objects
+            - First, let's try to mentally model variables as **(CLICK)** buckets that contain objects
             - If we assign a variable to an empty list **(CLICK)**, that variable **contains** that list **(CLICK)**
             - Then when we assign another variable to the first one, **(CLICK)** the list is **copied** into a new bucket **(CLICK)**
             - Let's say we then append `9` to that first list **(CLICK)**, which would **(CLICK)** mutate the first list
             - But the second list shouldn't change... **(CLICK)**
             - ... Except it *does* **(CLICK)** change!
-            - This mental model **(CLICK)** doesn't work... at least in Python
+            - This mental model **(CLICK)** doesn't work... at least not in Python
             - Variables in Python are *not* like **buckets that contain objects**
             - Let's try another model...
           </aside>
@@ -909,7 +908,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - When we assign a variable to an empty list **(CLICK)**, we attach that variable name to the object **(CLICK)**
             - Then when we assign **(CLICK)** another variable to the first one, we simply **(CLICK)** attach **another name** to the *same* object
             - So when we change **(CLICK)** that first list, the first one changes **(CLICK)** but the second one changes also **(CLICK)**... because it's all just one list
-            - This mental model works pretty well!
+            - This mental model works **pretty well**!
             - But what if...
           </aside>
         </section>
@@ -967,7 +966,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <aside class="notes" data-markdown>
             - ...we put that list **(CLICK)** inside another list?
             - At this point, should we **add another sticky note** that says **(CLICK)** which list it's in and which index it's at?
-            - What if we point **(CLICK)** another variable to the outer list? Do we need to add yet *another* note? **(CLICK)**
+            - And... what if we point **(CLICK)** another variable to the outer list? Do we need to add yet *another* note? **(CLICK)**
             - This is getting complicated
             - This mental model works *well* for explaining how **variables** work, but it doesn't work well for explaining how **objects** work
             - Let's try out a third mental model...
@@ -1201,7 +1200,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <aside class="notes" data-markdown>
             - It's like the word biannually **(CLICK)**: do we mean **(CLICK)** twice a year or once every two years?
             - Or ounces **(CLICK)**... are we talking **(CLICK)** volume or weight?
-            - With change **(CLICK)**... we might be **(CLICK)** changing a variable or we might be changing a object
+            - With change **(CLICK)**... we might be **(CLICK)** changing a variable or we might be changing an object
             - **Assignments** change variables and **mutations change objects**
           </aside>
         </section>
@@ -1227,7 +1226,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - ... as the Zen of Python says: explicit is better than implicit
             - When we **(CLICK)** reassign first, second still points to the same object
             - But if we instead **(CLICK)** mutate the object that first points to, if second **points to the same object**, then **both first and second** will *see* that change
-            - The word change **can be ambiguous** in Python... and ambiguity can reinforce **fuzzy and incorrect mental models**
+            - The word change can be **ambiguous** in Python... and ambiguity can reinforce **fuzzy and incorrect mental models**
             - Just to drive home these two types of change, let's try to use that third mental model again...
           </aside>
         </section>
@@ -1302,7 +1301,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - Integers are **immutable in Python** so this simplification *shouldn't* get us in trouble
             - So... we've assigned `second` to `first` which means both variables now point to **the same** 4-item list
             - When we **append** to `first` **(CLICK)**, the list changes **(CLICK)**
-           - When we look at `second`, **(CLICK)** we'll see that it changed because it **points to the same list**
+            - When we look at `second`, **(CLICK)** we'll see that it changed because it **points to the same list**
             - But if we **reassign** `first`, **(CLICK)** we're **pointing that variable** to a *new* list **(CLICK)**
             - Which means `second` is unchanged **(CLICK)**
             - The `second` variable still points to the **original list**, which hasn't been touched
@@ -1330,11 +1329,11 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - Over the years, I've gradually became more careful about my word choice
             - While teaching, **(CLICK)** I used to use phrases like "`colors` contains a list" **(CLICK)**
             - Or... "`colors` is a list" **(CLICK)**
-            - But I found that using these phrases sometimes caused confusion **(CLICK)**, especially once I tried to teach **how variables actually work** in Python
+            - But I found that using these phrases sometimes caused confusion **(CLICK)**, especially when I tried to teach **how variables actually work** in Python
             - Now I usually use the phrase "points to" **(CLICK)**
             - colors *points to* a list
             - This phrase doesn't hint at an incorrect mental model **(CLICK)**
-            - And while the word "pointer" is a **technical term** that's not *usually* in Python, it's also a term that **evokes an idea** that we're **familiar** with **(CLICK)**
+            - And while the word "pointer" is a **technical term** that's not *usually* used in Python, it's also a term that **evokes an idea** that we're **familiar** with **(CLICK)**
             - **Brand new** programmers *and* senior developers both seem to understand this phrase...
             - They may not yet understand the mental model **I'm implying** *with* it, but at least **I haven't caused confusion** by **hinting** at an **incorrect** mental model
           </aside>
@@ -1446,7 +1445,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - But at that point the code of conduct was only about **10 sentences long** and those of us *in* this new workgroup soon realized that it wasn't actually **enforceable**...
             - Until it was **rewritten** a couple years later...**(CLICK)**
             - Today the PSF has an **actionable** Code of Conduct with **publicly documented** processes around **reporting** and **enforcement** and Code of Conduct issues are handled by a **dedicated group of volunteers**
-            - But before 2019, the process for addressing code of conduct issues within certain PSF spaces was **(CLICK)** ...unspecified...
+            - But before 2019, the process for addressing code of conduct issues within certain PSF spaces was **(CLICK)** ...**unspecified**...
             - ...It's sometimes hard not to get discouraged by an exceptionally imperfect situation...
             - I often think of a quote from Hans Rosling...
           </aside>
@@ -1461,7 +1460,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           </div>
           <aside class="notes" data-markdown>
             - The world can be both *bad* and *better* at the same time
-            - This quote is about acknowledging that we often *feel* like there's a contradiction between a something being **less than ideal** but also **better than it used to be**
+            - This quote is about acknowledging that we often *feel* like there's a contradiction between something being **less than ideal** but also **better than it used to be**
             - Logically, there's **no contradiction** here...
             - But it can be very challenging to **hold both of these ideas in my head** at the same time
             - This quote is about massive **country-level** problems, but it also applies to **my** problems
@@ -1533,6 +1532,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             - **(CLICK)** I can be **making progress** but still not be **where I want to be**
             - Or...
             - **(CLICK)** I may not be where I *want* to be, but I might still be in a pretty okay place
+            - ...
           </aside>
         </section>
 
@@ -1563,18 +1563,18 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
             </ul>
           </div>
           <aside class="notes" data-markdown>
-            - I launched the Python Morsels web app in September 2018 **(CLICK)**
             - Python Morsels is a service to help working Python developers level-up their skills by solving a **real-word Python exercise** every week
+            - I launched the Python Morsels web app in September of 2018 **(CLICK)**
             - But it wasn't actually *started* in September of 2018
             - It started **(CLICK)** as a paid email list in February of 2018
-            - For the first 6 months of its existence, there was no web app
+            - For the first 6 months of its existence, there was **no web app**
             - The website was just a single page with a buy button
             - Of course, it didn't *really* start in February either.
             - I started **beta testing the exercises** for this service with a few friends in October of 2017. **(CLICK)**
             - Though even after the web app launched though... there was **(CLICK)** no way to **grade your work** and no way to **control how often** you received new exercise **(CLICK)**
             - Those features came *much* later
             - You've probably heard the phrase **(CLICK)** "minimum viable product"
-            - When you're starting a new project, it's easiest to start with the *smallest* steps *can* to **gather feedback**, and then **iterate**
+            - When you're starting a new project, it's easiest to start with the *smallest* steps you *can* to **gather feedback**, and then **iterate**
           </aside>
         </section>
 
@@ -1585,7 +1585,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <aside class="notes" data-markdown>
             - "Perfect is the enemy of good"
             - ... or "perfect is the enemy of progress" **(CLICK)**
-            - We often let a vision of an *ideal future* get in the way of *gradual progress*
+            - We often let a vision of an **ideal future** get in the way of **gradual progress**
             - Lasting progress often comes in the form of small steps...
             - **(CLICK)** But small steps can *really* add up over time
           </aside>
@@ -1600,7 +1600,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
                 attributeName="width" 
                 from="60" 
                 to="290" 
-                dur="110s"
+                dur="130s"
                 repeatCount="indefinite"
               />
             </rect>
@@ -1625,15 +1625,16 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           </aside>
         </section>
 
+        <!--
         <section data-background-image="mistakes.jpeg" data-background-position="50% 100%">
           <aside class="notes" data-markdown>
-            - TODO cut this slide?
             - It's **hard to admit to myself** that I *could be* doing something **better than I currently am**
             - It's especially hard for areas of **my life** and **my work** where I'm **improving *very* slowly**
             - Admitting that I could be better also feels a little **embarrassing**
             - Hopefully I'll improve, but I'll never improve as much as I'd like.
           </aside>
         </section>
+        -->
 
         <section>
           <div>
@@ -1673,7 +1674,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <aside class="notes" data-markdown>
             - **Positive change is *not* inevitable**.
             - If we focus on the **better** but *not* the **bad**, we risk **complacency**...
-            - Pointing out problems helps us **identify the progress-to-be-made**.
+            - **Pointing out** problems helps us **identify the progress-to-be-made**.
           </aside>
         </section>
 
@@ -1778,7 +1779,7 @@ def dedent(text):  # Python's textwrap.dedent (most of it)
           <aside class="notes" data-markdown>
             - ..."how much *will* you change over the *next* 10 years"
             - What might you be like in **July of 2034**?
-            - How much will you change compared to... today?
+            - How much will you change **compared to**... today?
             - If I had asked you *that*, you probably *wouldn't* have said "I'll change quite a bit"
           </aside>
         </section>
